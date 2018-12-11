@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="F:\AndroidStudioProject\tools\app\libs\sun.misc.BASE64Decoder.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="27.0.3"
+        sha1="acd93e3727886196f9b8434279ff445ba8611186">
+        <dex dex="F:\AndroidStudioProject\tools\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+
+</items>

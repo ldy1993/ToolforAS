@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">multiListView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">东阳的学习程序</string>
+    <string name="toast_camera">无法启用相机</string>
+    <string name="title_jni_test">jni测试程序</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

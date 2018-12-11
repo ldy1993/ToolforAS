@@ -1,0 +1,39 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\JAVA\adt-bundle-windows-x86_64-20140702\sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_4e79a"
+[1/2] Building C object CMakeFiles/cmTC_4e79a.dir/testCCompiler.c.o
+FAILED: F:\AndroidStudio\NDK\android-ndk-r16b-windows-x86_64\android-ndk-r16b\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe  --target=armv7-none-linux-androideabi --gcc-toolchain=F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sysroot   -isystem F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE -o CMakeFiles/cmTC_4e79a.dir/testCCompiler.c.o   -c F:\æ™ºèƒ½poså¼€å‘é¡¹ç›®\GitHub\01StudyTool\tools\app\.externalNativeBuild\cmake\release\armeabi-v7a\CMakeFiles\CMakeTmp\testCCompiler.c
+clang.exe: error: no such file or directory: 'F:\é…é¸¿å…˜poså¯®â‚¬é™æˆ¦ã€é©ç”›GitHub\01StudyTool\tools\app\.externalNativeBuild\cmake\release\armeabi-v7a\CMakeFiles\CMakeTmp\testCCompiler.c'
+clang.exe: error: no input files
+ninja: build stopped: subcommand failed.
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+ninja: error: GetFileAttributesEx(F:/æ™ºèƒ½poså¼€å‘é¡¹ç›®/GitHub/01StudyTool/tools/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake): ÎÄ¼şÃû¡¢Ä¿Â¼Ãû»ò¾í±êÓï·¨²»ÕıÈ·¡£
+
+
+
