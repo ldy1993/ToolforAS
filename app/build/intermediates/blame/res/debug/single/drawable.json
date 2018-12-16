@@ -2,5 +2,9 @@
     {
         "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_bg.xml",
         "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable\\btn_bg.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_bg.xml",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable\\btn_bg.xml"
     }
 ]

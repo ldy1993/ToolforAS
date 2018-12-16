@@ -4,12 +4,20 @@
         "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\layout\\mylist_item.xml"
     },
     {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\jnitestactivity.xml",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\jnitestactivity.xml"
+    },
+    {
         "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\layout\\a_a_activity_scan_camera.xml",
         "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\layout\\a_a_activity_scan_camera.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\a_a_activity_scan_camera.xml",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\a_a_activity_scan_camera.xml"
     },
     {
         "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\layout\\a_a_scan_idcard_activity_main.xml",
@@ -26,5 +34,25 @@
     {
         "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\layout\\jnitestactivity.xml",
         "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\layout\\jnitestactivity.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\a_a_activity_result.xml",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\a_a_activity_result.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mylist_item.xml",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\mylist_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\a_a_scan_idcard_activity_main.xml",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\a_a_scan_idcard_activity_main.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sublist_item.xml",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\sublist_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\activity_main.xml"
     }
 ]
