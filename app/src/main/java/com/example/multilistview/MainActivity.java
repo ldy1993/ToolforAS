@@ -1,20 +1,18 @@
 package com.example.multilistview;
 
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
     
-	private MyListView listView; 
+	private MyListView listView;
 	private MyListView subListView;
 	private MyAdapter myAdapter;
 	private SubAdapter subAdapter;
@@ -25,7 +23,7 @@ public class MainActivity extends Activity {
           		"DIY�ֹ���","�����","������Ϸ","������������"},
             new String[] {"ȫ������", "�ۺ��̳�", "����Ь��", "�˶�����","�鱦��Ʒ","��ױƷ","����ҵ�","���ӹ���","�Ҿӽ���"
           		,"���","���","�۾���","��ɫ����","���๺�ﳡ��","ʳƷ���","����/������","ҩ��"},
-            new String[] {"ȫ����������","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
+            new String[] {"USB_HOST_QR55","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
             new String[] {"ȫ","������","�ư�","���","KTV","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
@@ -42,16 +40,17 @@ public class MainActivity extends Activity {
             new String[] {"ȫ������aaa","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ"},
             };
-		String foods[] =new String []{"摄像头","JNI","建行调用","待定","待定","待定","待定","待定","待定","待定","待定"};
-		int images[] = new int[]{R.drawable.ic_category_0,R.drawable.ic_category_10,R.drawable.ic_category_30,R.drawable.ic_category_20
-				,R.drawable.ic_category_60,R.drawable.ic_category_50,R.drawable.ic_category_45,R.drawable.ic_category_50,R.drawable.ic_category_70,
-				R.drawable.ic_category_65,R.drawable.ic_category_80};
+		String foods[] =new String []{"摄像头","JNI","建行调用","USB","待定","待定","待定","待定","待定","待定","待定"};
+		int images[] = new int[]{R.drawable.ic_category_0, R.drawable.ic_category_10, R.drawable.ic_category_30, R.drawable.ic_category_20
+				, R.drawable.ic_category_60, R.drawable.ic_category_50, R.drawable.ic_category_45, R.drawable.ic_category_50, R.drawable.ic_category_70,
+				R.drawable.ic_category_65, R.drawable.ic_category_80};
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
+
         init();
         myAdapter=new MyAdapter(getApplicationContext(), foods, images);
         listView.setAdapter(myAdapter);

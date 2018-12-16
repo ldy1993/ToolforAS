@@ -47,6 +47,9 @@
         <activity
             android:name="com.example.jni.jniTest.JniTestActivity"
             android:label="@string/title_jni_test" />
+        <activity
+            android:name="com.example.USB.USB_HOSTActivity"
+            android:label="@string/title_activity_usb__host"></activity>
     </application>
 
 </manifest>

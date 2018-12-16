@@ -24,6 +24,7 @@
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.multilistview.MainActivity"
@@ -48,6 +49,9 @@
         <activity
             android:name="com.example.jni.jniTest.JniTestActivity"
             android:label="@string/title_jni_test" />
+        <activity
+            android:name="com.example.USB.USB_HOSTActivity"
+            android:label="@string/title_activity_usb__host" />
     </application>
 
 </manifest>

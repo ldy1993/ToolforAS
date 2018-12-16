@@ -55,23 +55,31 @@ public final class R {
         public static final int listitem_divide=0x7f020014;
     }
     public static final class id {
+        public static final int Bt1=0x7f090010;
+        public static final int Bt2=0x7f090011;
+        public static final int Bt3=0x7f090012;
+        public static final int Bt4=0x7f090013;
+        public static final int Et1=0x7f09000d;
+        public static final int Et2=0x7f09000e;
+        public static final int Et3=0x7f09000f;
         public static final int activity_main=0x7f090000;
         public static final int back_camera=0x7f090005;
-        public static final int colorlayout=0x7f09000d;
+        public static final int colorlayout=0x7f090015;
         public static final int copyright_label=0x7f090008;
         public static final int flash_camera=0x7f090006;
         public static final int help_word=0x7f090007;
         public static final int image=0x7f090001;
-        public static final int imageview=0x7f09000e;
+        public static final int imageview=0x7f090016;
         public static final int listView=0x7f09000b;
-        public static final int menu_settings=0x7f090011;
+        public static final int menu_settings=0x7f090019;
         public static final int number=0x7f090002;
         public static final int re_c=0x7f090003;
         public static final int scanButton=0x7f09000a;
         public static final int subListView=0x7f09000c;
         public static final int surfaceViwe=0x7f090004;
-        public static final int textview=0x7f09000f;
-        public static final int textview1=0x7f090010;
+        public static final int textview=0x7f090017;
+        public static final int textview1=0x7f090018;
+        public static final int tvResult=0x7f090014;
         public static final int txt=0x7f090009;
     }
     public static final class layout {
@@ -79,9 +87,10 @@ public final class R {
         public static final int a_a_activity_scan_camera=0x7f030001;
         public static final int a_a_scan_idcard_activity_main=0x7f030002;
         public static final int activity_main=0x7f030003;
-        public static final int jnitestactivity=0x7f030004;
-        public static final int mylist_item=0x7f030005;
-        public static final int sublist_item=0x7f030006;
+        public static final int activity_usb__host=0x7f030004;
+        public static final int jnitestactivity=0x7f030005;
+        public static final int mylist_item=0x7f030006;
+        public static final int sublist_item=0x7f030007;
     }
     public static final class menu {
         public static final int activity_main=0x7f080000;
@@ -91,11 +100,12 @@ public final class R {
         public static final int hello_world=0x7f070001;
         public static final int menu_settings=0x7f070002;
         public static final int title_activity_main=0x7f070003;
-        public static final int title_dashboard=0x7f070004;
-        public static final int title_home=0x7f070005;
-        public static final int title_jni_test=0x7f070006;
-        public static final int title_notifications=0x7f070007;
-        public static final int toast_camera=0x7f070008;
+        public static final int title_activity_usb__host=0x7f070004;
+        public static final int title_dashboard=0x7f070005;
+        public static final int title_home=0x7f070006;
+        public static final int title_jni_test=0x7f070007;
+        public static final int title_notifications=0x7f070008;
+        public static final int toast_camera=0x7f070009;
     }
     public static final class style {
         public static final int AppTheme=0x7f040000;

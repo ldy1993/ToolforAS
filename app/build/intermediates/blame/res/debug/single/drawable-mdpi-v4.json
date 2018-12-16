@@ -1,13 +1,5 @@
 [
     {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
-    },
-    {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
     },

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/Et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入请求金额"
+        android:digits="1234567890"/>
+    <EditText
+        android:id="@+id/Et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入返回金额"
+        android:digits="1234567890"/>
+    <EditText
+        android:id="@+id/Et3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入剩余金额"
+        android:digits="1234567890"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="22dp"
+            android:padding="20dp"
+            android:background="@color/line_color"
+            android:text="发起消费请求" />
+        <Button
+            android:id="@+id/Bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消费结果返回"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="@color/viewfinder_laser"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="22dp"
+            android:padding="20dp"
+            android:background="@color/colorAccent"
+            android:text="赋值" />
+        <Button
+            android:id="@+id/Bt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消消费"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="@color/viewfinder_laser"/>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="初始化界面" />
+
+</LinearLayout>
+</ScrollView>

@@ -1,7 +1,7 @@
 [
     {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_20.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_category_20.png"
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_80.png",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_80.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
@@ -16,24 +16,24 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_70.png"
     },
     {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_70.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_category_70.png"
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_10.png",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_10.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_a_camera.png",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\a_a_camera.png"
     },
     {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_action_search.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_action_search.png"
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_30.png",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_30.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_45.png",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_45.png"
     },
     {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_65.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_category_65.png"
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\listitem_divide.png",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\listitem_divide.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_action_search.png",
@@ -44,76 +44,16 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_50.png"
     },
     {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_0.png",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_0.png"
+    },
+    {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_65.png",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_65.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_a_icon.png",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\a_a_icon.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_80.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_category_80.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_80.png",
-        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_80.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_10.png",
-        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_10.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_10.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_category_10.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_30.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_category_30.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_30.png",
-        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_30.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_60.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_category_60.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\listitem_divide.png",
-        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\listitem_divide.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_50.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_category_50.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_a_camera.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\a_a_camera.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\listitem_divide.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\listitem_divide.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_a_icon.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\a_a_icon.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_45.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_category_45.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_0.png",
-        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_0.png"
-    },
-    {
-        "merged": "F:\\AndroidStudioProject\\tools\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_0.png",
-        "source": "F:\\AndroidStudioProject\\tools\\app\\src\\main\\res\\drawable-hdpi\\ic_category_0.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_category_60.png",

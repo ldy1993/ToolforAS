@@ -45,10 +45,14 @@ android {
 }
 
 dependencies {
-        compile fileTree(dir: 'libs', include: ['*.jar'])
-        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-            exclude group: 'com.android.support', module: 'support-annotations'
-        })
-        compile files('libs/sun.misc.BASE64Decoder.jar')
-        testCompile 'junit:junit:4.12'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/sun.misc.BASE64Decoder.jar')
+    compile files('libs/classes.jar')
+    compile files('libs/GLComm_V1.01.00_20171222.jar')
+//    compile files('libs/ldylibrary-debug.aar')
+//    compile(name:'ldylibrary-debug', ext:'aar')
+    testCompile 'junit:junit:4.12'
 }
