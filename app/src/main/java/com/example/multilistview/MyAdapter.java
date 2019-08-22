@@ -61,7 +61,6 @@ public class MyAdapter extends BaseAdapter {
 	    else{
 	    holder=(ViewHolder)convertView.getTag();
 	    }
-	    // 设置选中效果    
 	     if(selectedPosition == position)   
 	    {   
 	    	 holder.textView.setTextColor(Color.BLUE);
