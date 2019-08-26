@@ -1,9 +1,6 @@
-package com.example.multilistview;
-
-import java.util.List;
+package com.example.View;
 
 import android.content.Context;
-import android.database.DataSetObserver;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.example.scan.idcard.one;
+package com.example.function.scan.idcard.one;
 
 import android.app.Activity;
 import android.util.Log;
@@ -9,8 +9,8 @@ import android.view.View;
         import android.widget.EditText;
         import android.widget.ImageView;
 
-import com.example.multilistview.R;
-import com.example.scan.idcard.one.smartvision_bankCard.ScanCamera;
+import com.example.View.R;
+import com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera;
 
 //import io.card.payment.CardIOActivity;
 //        import io.card.payment.CreditCard;

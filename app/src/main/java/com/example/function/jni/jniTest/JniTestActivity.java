@@ -1,11 +1,11 @@
-package com.example.jni.jniTest;
+package com.example.function.jni.jniTest;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.multilistview.R;
+import com.example.View.R;
 
 public class JniTestActivity extends Activity {
 

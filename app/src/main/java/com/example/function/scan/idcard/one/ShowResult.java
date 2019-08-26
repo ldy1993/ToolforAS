@@ -1,4 +1,4 @@
-package com.example.scan.idcard.one;
+package com.example.function.scan.idcard.one;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.multilistview.R;
+import com.example.View.R;
 
 /**
  * Created by wanglu on 2017/2/7.

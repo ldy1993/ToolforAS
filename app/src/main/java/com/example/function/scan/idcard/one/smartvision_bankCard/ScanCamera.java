@@ -1,4 +1,4 @@
-package com.example.scan.idcard.one.smartvision_bankCard;
+package com.example.function.scan.idcard.one.smartvision_bankCard;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -38,9 +38,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.example.multilistview.R;
-import com.example.scan.idcard.one.ShowResult;
-import com.example.scan.idcard.one.view.ViewfinderView;
+import com.example.View.R;
+import com.example.function.scan.idcard.one.view.ViewfinderView;
 import com.wintone.bankcard.BankCardAPI;
 
 import java.io.IOException;

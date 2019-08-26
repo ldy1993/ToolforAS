@@ -1,4 +1,4 @@
-package com.example.scan.idcard.one.view;
+package com.example.function.scan.idcard.one.view;
 
 import android.content.Context;
 import android.content.res.Resources;

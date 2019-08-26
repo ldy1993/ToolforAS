@@ -1,4 +1,4 @@
-package com.example.multilistview;
+package com.example.View;
 
 
 import android.app.Activity;
@@ -9,19 +9,22 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Toast;
 
+import com.example.action.Method;
 
-public class MainActivity extends Activity {
+
+public class StartActivity extends Activity {
     
 	private MyListView listView;
 	private MyListView subListView;
 	private MyAdapter myAdapter;
 	private SubAdapter subAdapter;
-	
+
+
 	String cities[][] = new String[][] {
             new String[] {"银行卡识别", "调用sdk扫码", "文字识别", "人证识别", "人脸识别","待定1","待定2","待定3","待定4","待定5","待定6","待定7"},
             new String[] {"JNI测试","待定","待定","待定","待定","待定","待定","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
-          		"待定","待定","������Ϸ","������������"},
-            new String[] {"ȫ������", "�ۺ��̳�", "����Ь��", "�˶�����","�鱦��Ʒ","��ױƷ","����ҵ�","���ӹ���","�Ҿӽ���"
+          		"待定","待定","待定","������������"},
+            new String[] {"上传参数", "�ۺ��̳�", "����Ь��", "�˶�����","�鱦��Ʒ","��ױƷ","����ҵ�","���ӹ���","�Ҿӽ���"
           		,"���","���","�۾���","��ɫ����","���๺�ﳡ��","ʳƷ���","����/������","ҩ��"},
             new String[] {"USB_HOST_QR55","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
@@ -40,11 +43,11 @@ public class MainActivity extends Activity {
             new String[] {"ȫ������aaa","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ"},
             };
-		String foods[] =new String []{"摄像头","JNI","建行调用","USB","待定","待定","待定","待定","待定","待定","待定"};
+		String foods[] =new String []{"摄像头","JNI","建行调用","USB","通讯","待定","待定","待定","待定","待定","待定"};
 		int images[] = new int[]{R.drawable.ic_category_0, R.drawable.ic_category_10, R.drawable.ic_category_30, R.drawable.ic_category_20
 				, R.drawable.ic_category_60, R.drawable.ic_category_50, R.drawable.ic_category_45, R.drawable.ic_category_50, R.drawable.ic_category_70,
 				R.drawable.ic_category_65, R.drawable.ic_category_80};
-	
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +55,7 @@ public class MainActivity extends Activity {
 
 
         init();
-        myAdapter=new MyAdapter(getApplicationContext(), foods, images);
+        myAdapter=new MyAdapter(getApplicationContext(), foods, images);//创建适配器
         listView.setAdapter(myAdapter);
     
         selectDefult();
@@ -77,7 +80,7 @@ public class MainActivity extends Activity {
 						Toast.makeText(getApplicationContext(), cities[location][position], Toast.LENGTH_SHORT).show();
 						Log.e("ldy","location="+location+";position="+position);
 						//调用实现方法
-						ImplementMethod.implement_method(location,position,getApplicationContext());
+						Method.implement_method(location,position,getApplicationContext());
 
 					}
 				});
@@ -104,7 +107,7 @@ public class MainActivity extends Activity {
 	 				// TODO Auto-generated method stub
 	 				Toast.makeText(getApplicationContext(), cities[location][position], Toast.LENGTH_SHORT).show();
 					//调用实现方法
-	 				ImplementMethod.implement_method(location,position,getApplicationContext());
+	 				Method.implement_method(location,position,getApplicationContext());
 	 				}
 	 		});
    }
