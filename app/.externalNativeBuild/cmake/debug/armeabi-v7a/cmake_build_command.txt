@@ -3,7 +3,7 @@ arguments :
 -HF:\AndroidStudioProject\ToolforAS\app
 -BF:\AndroidStudioProject\ToolforAS\app\.externalNativeBuild\cmake\debug\armeabi-v7a
 -DANDROID_ABI=armeabi-v7a
--DANDROID_PLATFORM=android-16
+-DANDROID_PLATFORM=android-22
 -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=F:\AndroidStudioProject\ToolforAS\app\build\intermediates\cmake\debug\obj\armeabi-v7a
 -DCMAKE_BUILD_TYPE=Debug
 -DANDROID_NDK=F:\AndroidStudio\NDK\android-ndk-r16b-windows-x86_64\android-ndk-r16b

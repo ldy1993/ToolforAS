@@ -63,5 +63,5 @@ endif()
 
 
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "dl;c;dl")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/5.0.300080/lib/linux/i386;F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x;F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/x86-4.9/prebuilt/windows-x86_64/i686-linux-android/lib;F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/platforms/android-16/arch-x86/usr/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/5.0.300080/lib/linux/i386;F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x;F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/x86-4.9/prebuilt/windows-x86_64/i686-linux-android/lib;F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/platforms/android-22/arch-x86/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 16
+    compileSdkVersion 22
     buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "com.example.multilistview"
-        minSdkVersion 16
-        targetSdkVersion 16
+        minSdkVersion 22
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -62,4 +62,5 @@ dependencies {
 //    compile(name:'ldylibrary-debug', ext:'aar')
     testCompile 'junit:junit:4.12'
 //    implementation(name: 'CodeInput-release', ext: 'aar')
+    implementation project(':codeinputlib')
 }

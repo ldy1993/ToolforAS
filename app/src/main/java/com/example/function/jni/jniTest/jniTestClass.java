@@ -11,5 +11,10 @@ public class jniTestClass {
      */
     public static native String stringFromJNI();
 
-    public static native String getName();
+    /**
+     * 堆排序
+     * @param data
+     * @return
+     */
+    public static native int[] heapsort(int[] data);
 }

@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="排序算法"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/defaul">
+            <com.github.ldy.codeinputlib.CodeInput
+                android:id="@+id/inputdata"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:underline_color="#457ad1"
+                app:underline_selected_color="#9e1ace"
+                app:text_color="#b12eff"
+                app:hint_color="#77ce9d"
+                app:hint_text="输入0到5乱序数据"
+                app:codes="5"
+                app:size="1.7"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/tv_heapsort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:background="@drawable/defaul"
+                android:text="*************"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

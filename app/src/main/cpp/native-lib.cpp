@@ -18,3 +18,17 @@ Java_com_example_function_jni_jniTest_jniTestClass_stringFromJNI(
     LOGE( "刘东阳！！！");
     return env->NewStringUTF(hello.c_str());
 }
+
+//堆排序
+extern "C"
+JNIEXPORT jintArray JNICALL
+Java_com_example_function_jni_jniTest_jniTestClass_heapsort(JNIEnv *env, jclass type,
+                                                            jintArray data_) {
+    jint *data = env->GetIntArrayElements(data_, NULL);
+
+    // TODO
+    LOGE( "堆排序！！！");
+    int temp[5]={1,2,3,4,5};
+    env->ReleaseIntArrayElements(data_, temp, 0);
+    return data_;
+}

@@ -35,7 +35,7 @@ include rules.ninja
 build CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o: CXX_COMPILER__native-lib ../../../../src/main/cpp/native-lib.cpp
   DEFINES = -Dnative_lib_EXPORTS
   DEP_FILE = CMakeFiles\native-lib.dir\src\main\cpp\native-lib.cpp.o.d
-  FLAGS = -isystem F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC
+  FLAGS = -isystem F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=22 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -isystem F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = F:\AndroidStudioProject\ToolforAS\app\src\main\cpp\native-lib.cpp
   OBJECT_DIR = CMakeFiles\native-lib.dir
@@ -48,9 +48,9 @@ build CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o: CXX_COMPILER__nat
 #############################################
 # Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\x86\libnative-lib.so
 
-build ../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so: CXX_SHARED_LIBRARY_LINKER__native-lib CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o | F$:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/platforms/android-16/arch-x86/usr/lib/liblog.so
-  LANGUAGE_COMPILE_FLAGS = -isystem F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
-  LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a --sysroot F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/platforms/android-16/arch-x86 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
+build ../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so: CXX_SHARED_LIBRARY_LINKER__native-lib CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o | F$:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/platforms/android-22/arch-x86/usr/lib/liblog.so
+  LANGUAGE_COMPILE_FLAGS = -isystem F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=22 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a --sysroot F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/platforms/android-22/arch-x86 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
   LINK_LIBRARIES = -llog -latomic -lm "F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/libgnustl_static.a"
   OBJECT_DIR = CMakeFiles\native-lib.dir
   POST_BUILD = cd .

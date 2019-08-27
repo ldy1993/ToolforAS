@@ -7,9 +7,11 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="16" />
+
     <!-- 摄像头设备权限 -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- socket套接字对外权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
@@ -23,11 +25,12 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
+
         <activity
             android:name="com.example.function.comm.FilesUpActivity"
-            android:label="@string/title_activity_files_up"></activity>
+            android:label="@string/title_activity_files_up" />
         <activity
-            android:name="com.example.View.StartActivity"
+            android:name=".StartActivity"
             android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,7 +44,7 @@
         <activity android:name="com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera">
             <intent-filter>
                 <action android:name="wintone.bankCard.scan_camera" />
-
+                <category android:name="android.intent.category.HOME" />      
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

@@ -21,7 +21,7 @@ ANDROID_ABI:UNINITIALIZED=x86
 ANDROID_NDK:UNINITIALIZED=F:\AndroidStudio\NDK\android-ndk-r16b-windows-x86_64\android-ndk-r16b
 
 //No help, variable specified on the command line.
-ANDROID_PLATFORM:UNINITIALIZED=android-16
+ANDROID_PLATFORM:UNINITIALIZED=android-22
 
 //Archiver
 CMAKE_AR:FILEPATH=F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/x86-4.9/prebuilt/windows-x86_64/bin/i686-linux-android-ar.exe
@@ -193,10 +193,10 @@ Project_BINARY_DIR:STATIC=F:/AndroidStudioProject/ToolforAS/app/.externalNativeB
 Project_SOURCE_DIR:STATIC=F:/AndroidStudioProject/ToolforAS/app
 
 //Path to a library.
-log-lib:FILEPATH=F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/platforms/android-16/arch-x86/usr/lib/liblog.so
+log-lib:FILEPATH=F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/platforms/android-22/arch-x86/usr/lib/liblog.so
 
 //Dependencies for the target
-native-lib_LIB_DEPENDS:STATIC=general;F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/platforms/android-16/arch-x86/usr/lib/liblog.so;
+native-lib_LIB_DEPENDS:STATIC=general;F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/platforms/android-22/arch-x86/usr/lib/liblog.so;
 
 
 ########################

@@ -2,6 +2,8 @@ package com.example.View;
 
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -28,7 +30,7 @@ public class StartActivity extends Activity {
           		,"���","���","�۾���","��ɫ����","���๺�ﳡ��","ʳƷ���","����/������","ҩ��"},
             new String[] {"USB_HOST_QR55","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
-            new String[] {"ȫ","������","�ư�","���","KTV","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
+            new String[] {"上传sn到服务器","������","�ư�","���","KTV","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
             new String[] {"ȫ��","������","�ư�","���","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
@@ -43,7 +45,7 @@ public class StartActivity extends Activity {
             new String[] {"ȫ������aaa","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ"},
             };
-		String foods[] =new String []{"摄像头","JNI","建行调用","USB","通讯","待定","待定","待定","待定","待定","待定"};
+		String foods[] =new String []{"摄像头","JNI","銀行调用","USB","通讯","待定","待定","待定","待定","待定","待定"};
 		int images[] = new int[]{R.drawable.ic_category_0, R.drawable.ic_category_10, R.drawable.ic_category_30, R.drawable.ic_category_20
 				, R.drawable.ic_category_60, R.drawable.ic_category_50, R.drawable.ic_category_45, R.drawable.ic_category_50, R.drawable.ic_category_70,
 				R.drawable.ic_category_65, R.drawable.ic_category_80};
@@ -53,8 +55,12 @@ public class StartActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        init();
+		try {
+			this.getPackageManager().getPackageInfo("com.example.View", 0);
+		} catch (PackageManager.NameNotFoundException e) {
+			e.printStackTrace();
+		}
+		init();
         myAdapter=new MyAdapter(getApplicationContext(), foods, images);//创建适配器
         listView.setAdapter(myAdapter);
     
