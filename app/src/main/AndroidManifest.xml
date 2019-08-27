@@ -4,11 +4,10 @@
     android:versionCode="10"
     android:versionName="V2.0.0_20190826">
 
-    <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="16" />
-
-    <!-- 摄像头设备权限 -->
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 摄像头设备权限 -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" /> <!-- socket套接字对外权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -23,10 +22,9 @@
 
     <application
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/title_activity_main"
         android:theme="@style/AppTheme">
-
-        <activity
+         <activity
             android:name="com.example.function.comm.FilesUpActivity"
             android:label="@string/title_activity_files_up" />
         <activity
@@ -44,11 +42,16 @@
         <activity android:name="com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera">
             <intent-filter>
                 <action android:name="wintone.bankCard.scan_camera" />
-                <category android:name="android.intent.category.HOME" />      
+
+                <category android:name="android.intent.category.HOME" />
+                      
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name="com.example.function.scan.idcard.one.ShowResult" />
+        <activity android:name="com.example.function.study.A_activity" />
+        <activity android:name="com.example.function.study.B_activity"></activity>
+
         <activity
             android:name="com.example.function.jni.jniTest.JniTestActivity"
             android:label="@string/title_jni_test" />

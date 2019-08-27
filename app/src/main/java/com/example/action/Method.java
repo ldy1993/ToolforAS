@@ -7,6 +7,7 @@ import com.example.function.comm.FilesUpActivity;
 import com.example.function.USB.USB_HOSTActivity;
 import com.example.function.jni.jniTest.JniTestActivity;
 import com.example.function.scan.idcard.one.IdCardMainActivity;
+import com.example.function.study.A_activity;
 
 /**
  * ================================================
@@ -28,6 +29,8 @@ public class Method {
     private final static int USB_HOST=0; //USB测试
     private final static int COMM=4;   //通讯
     private final static int FILES_COMM=0; //文件上传
+    private final static int STUDY=5;   //学习
+    private final static int ACTIVITY_VALUE=0; //文件上传
     public static void implement_method(int location , int position, Context context)
     {
         switch (location)
@@ -69,6 +72,16 @@ public class Method {
                 {
                     case FILES_COMM:
                         Intent intent = new Intent(context, FilesUpActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
+                }
+                break;
+            case STUDY:
+                switch (position)
+                {
+                    case ACTIVITY_VALUE:
+                        Intent intent = new Intent(context, A_activity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
