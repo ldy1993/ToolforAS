@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="underline_default_color">#CCCCCC</color>
+    <color name="underline_selected_color">#000</color>
+    <color name="hintColor">#CCCCCC</color>
+    <color name="textColor">#000</color>
+    <color name="txt_error">#CC0000</color>
+    <color name="txt_normal_white">#FFFFFF</color>
+    <color name="txt_normal_black">#333333</color>
+    <color name="button_color">#FFFFFF</color>
+    <color name="main_background">#F4F4F4</color>
+    <color name="light_gray">#CCCCCC</color>
+    <color name="normal_gray">#999999</color>
+    <color name="heavy_gray">#666666</color>
+    <color name="menu_item_textcolor">#FF4A4A4A</color>
+    <color name="yellow">#FF7F08</color>
+    <color name="unabled_color">#D9D9D9</color>
+    <color name="textedit_hint">#999999</color>
+    <color name="colorPrimaryDark">#c7bcb6</color>
+    <color name="login_button_color">#b20731</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="error_stroke_color">#FF0000</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="cancel_button_text">#333333</color>
+    <color name="colorPrimary">#3299FF</color>
+    <color name="prompt_text_color">#858585</color>
+    <color name="title_blue">#138AF8</color>
+    <color name="white">#ffffff</color>
+    <color name="click_confirm">#3498FF</color>
+    <color name="confirm_bg">#3498DB</color>
+</resources>

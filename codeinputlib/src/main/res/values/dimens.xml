@@ -1,0 +1,38 @@
+<resources>
+  <dimen name="underline_stroke_width">2.0dip</dimen>
+  <dimen name="underline_width">35.0dip</dimen>
+  <dimen name="section_reduction">5.0dip</dimen>
+  <dimen name="text_size">15.0dip</dimen>
+  <dimen name="hint_size">15.0dip</dimen>
+  <dimen name="hint_small_size">12.0dip</dimen>
+  <dimen name="text_margin_bottom">15dp</dimen>
+  <dimen name="hint_margin_bottom">25dp</dimen>
+  <dimen name="view_height">60dp</dimen>
+  <dimen name="txt_small">14sp</dimen>
+  <dimen name="txt_normal">16sp</dimen>
+  <dimen name="txt_big">19sp</dimen>
+  <dimen name="txt_biger">27sp</dimen>
+  <dimen name="padding_ten">10dp</dimen>
+
+
+  <dimen name="height_common_button">45dp</dimen>
+
+  <dimen name="common_padding_left_right">15dp</dimen>
+  <dimen name="common_txt_padding_left_right">10dp</dimen>
+  <dimen name="common_small_txt_padding_left_right">3dp</dimen>
+  <dimen name="size_text_xlg">20sp</dimen>
+  <dimen name="font_size_large">23sp</dimen>
+  <dimen name="font_size_larger_small">24sp</dimen>
+  <dimen name="font_size_larger">25sp</dimen>
+  <dimen name="font_size_largest">60sp</dimen>
+  <dimen name="dialog_window_padding">10dp</dimen>
+  <dimen name="alert_width">280dp</dimen>
+  <dimen name="alert_height">180dp</dimen>
+  <dimen name="font_size_normal_small">19sp</dimen>
+  <dimen name="font_size_smallest_small">18sp</dimen>
+  <dimen name="font_size_smallest">14sp</dimen>
+  <dimen name="font_size_smaller">15sp</dimen>
+  <dimen name="font_size_small">17sp</dimen>
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>
