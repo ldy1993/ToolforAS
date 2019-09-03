@@ -16,7 +16,7 @@ import android.view.WindowManager.LayoutParams;
 import android.view.animation.LinearInterpolator;
 import android.widget.TextView;
 
-import com.ldy.View.CustomWidget.ProcessIcon;
+import com.ldy.View.CustomWidget.ProcessIcon.ProcessIcon;
 
 import SRnO.Tool.aar.R;
 

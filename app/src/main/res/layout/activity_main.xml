@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
-   	<com.ldy.study.MyListView
+   	<com.example.View.MyListView
     		    android:id="@+id/listView"
     		    android:layout_width="wrap_content"
     		    android:layout_height="wrap_content"
@@ -14,9 +14,9 @@
     		    android:listSelector="#00000000"
     		    android:background="#e4e3de"
     		    >
-    		</com.ldy.study.MyListView>
+    		</com.example.View.MyListView>
        		    
-       		 <com.ldy.study.MyListView
+       		 <com.example.View.MyListView
        		    android:id="@+id/subListView"
        		    android:layout_width="wrap_content"
     		    android:layout_height="wrap_content" 
@@ -24,7 +24,7 @@
     		    android:background="#e4e3de"
     		     >
        		        
-       		    </com.ldy.study.MyListView>
+       		    </com.example.View.MyListView>
     
 
 </LinearLayout>

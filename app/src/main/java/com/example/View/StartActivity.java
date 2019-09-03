@@ -25,7 +25,7 @@ public class StartActivity extends Activity {
 
 	String cities[][] = new String[][] {
             new String[] {"银行卡识别", "调用sdk扫码", "文字识别", "人证识别", "人脸识别","待定1","待定2","待定3","待定4","待定5","待定6","待定7"},
-            new String[] {"JNI测试","待定","待定","待定","待定","待定","待定","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
+            new String[] {"JNI测试","c算法","待定","待定","待定","待定","待定","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
           		"待定","待定","待定","������������"},
             new String[] {"上传参数", "�ۺ��̳�", "����Ь��", "�˶�����","�鱦��Ʒ","��ױƷ","����ҵ�","���ӹ���","�Ҿӽ���"
           		,"���","���","�۾���","��ɫ����","���๺�ﳡ��","ʳƷ���","����/������","ҩ��"},
@@ -33,9 +33,9 @@ public class StartActivity extends Activity {
             		"DIY�ֹ���","�����","������Ϸ","������������"},
             new String[] {"上传sn到服务器","������","�ư�","���","KTV","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
-            new String[] {"Activity的传值和回传","创建控件view和布局ViewGroup","�ư�","���","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
+            new String[] {"Activity的传值和回传","创建控件view和布局ViewGroup","自定义控件","���","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
-            new String[] {"ȫ����","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
+            new String[] {"RSA","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
             new String[] {"ȫ������","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
@@ -46,7 +46,7 @@ public class StartActivity extends Activity {
             new String[] {"ȫ������aaa","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ"},
             };
-		String foods[] =new String []{"摄像头","JNI","銀行调用","USB","通讯","学习","待定","待定","待定","待定","待定"};
+		String foods[] =new String []{"摄像头","JNI","銀行调用","USB","通讯","学习","java算法","待定","待定","待定","待定"};
 		int images[] = new int[]{R.drawable.ic_category_0, R.drawable.ic_category_10, R.drawable.ic_category_30, R.drawable.ic_category_20
 				, R.drawable.ic_category_60, R.drawable.ic_category_50, R.drawable.ic_category_45, R.drawable.ic_category_50, R.drawable.ic_category_70,
 				R.drawable.ic_category_65, R.drawable.ic_category_80};
@@ -57,7 +57,7 @@ public class StartActivity extends Activity {
         setContentView(R.layout.activity_main);
 
 		try {
-			this.getPackageManager().getPackageInfo("com.ldy.study", 0);
+			this.getPackageManager().getPackageInfo("SRnO.Tool.aar", 0);
 		} catch (PackageManager.NameNotFoundException e) {
 			e.printStackTrace();
 		}
