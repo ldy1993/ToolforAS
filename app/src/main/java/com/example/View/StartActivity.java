@@ -12,6 +12,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Toast;
 
 import com.example.action.Method;
+import com.ldy.study.R;
 
 
 public class StartActivity extends Activity {
@@ -32,7 +33,7 @@ public class StartActivity extends Activity {
             		"DIY�ֹ���","�����","������Ϸ","������������"},
             new String[] {"上传sn到服务器","������","�ư�","���","KTV","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
-            new String[] {"Activity的传值和回传","������","�ư�","���","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
+            new String[] {"Activity的传值和回传","创建控件view和布局ViewGroup","�ư�","���","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
             new String[] {"ȫ����","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
@@ -56,7 +57,7 @@ public class StartActivity extends Activity {
         setContentView(R.layout.activity_main);
 
 		try {
-			this.getPackageManager().getPackageInfo("com.example.View", 0);
+			this.getPackageManager().getPackageInfo("com.ldy.study", 0);
 		} catch (PackageManager.NameNotFoundException e) {
 			e.printStackTrace();
 		}

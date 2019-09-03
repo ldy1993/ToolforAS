@@ -6,8 +6,8 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.View.R;
-import com.github.ldy.codeinputlib.CodeInput;
+import com.ldy.study.R;
+import com.ldy.View.CustomWidget.codeinput.CodeInput;
 
 public class JniTestActivity extends Activity {
     private static final String TAG = "JniTestActivity";

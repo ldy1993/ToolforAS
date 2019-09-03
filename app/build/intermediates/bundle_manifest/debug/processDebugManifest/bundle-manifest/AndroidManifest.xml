@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.multilistview"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="28" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 摄像头设备权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- socket套接字对外权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.function.study.day5.Day5_Activity" />
+        <activity
+            android:name="com.example.function.comm.FilesUpActivity"
+            android:label="@string/title_activity_files_up" />
+        <activity
+            android:name="com.ldy.study.StartActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.function.scan.idcard.one.IdCardMainActivity"
+            android:label="扫描银行卡获取卡号" />
+        <activity android:name="com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera" >
+            <intent-filter>
+                <action android:name="wintone.bankCard.scan_camera" />
+
+                <category android:name="android.intent.category.HOME" />
+                      
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.function.scan.idcard.one.ShowResult" />
+        <activity android:name="com.example.function.study.day4.A_activity" />
+        <activity android:name="com.example.function.study.day4.B_activity" />
+        <activity
+            android:name="com.example.function.jni.jniTest.JniTestActivity"
+            android:label="@string/title_jni_test" />
+        <activity
+            android:name="com.example.function.USB.USB_HOSTActivity"
+            android:label="@string/title_activity_usb__host" />
+    </application>
+
+</manifest>

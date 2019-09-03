@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.View.R;
+import com.ldy.study.R;
 
 /**
  * Created by wanglu on 2017/2/7.

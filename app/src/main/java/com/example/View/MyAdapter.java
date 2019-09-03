@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.ldy.study.R;
+
 public class MyAdapter extends BaseAdapter {
 
 	Context context;

@@ -38,7 +38,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.example.View.R;
+import com.ldy.study.R;
 import com.example.function.scan.idcard.one.view.ViewfinderView;
 import com.wintone.bankcard.BankCardAPI;
 

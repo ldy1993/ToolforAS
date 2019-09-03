@@ -9,7 +9,7 @@ import android.view.View;
         import android.widget.EditText;
         import android.widget.ImageView;
 
-import com.example.View.R;
+import com.ldy.study.R;
 import com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera;
 
 //import io.card.payment.CardIOActivity;

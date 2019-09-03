@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">SRnO工具类</string>
+  <string name="btn_cancel">取消</string>
+  <string name="btn_ok">确认</string>
+  <string name="btn_confirm">确认</string>
+  <string name="prompt_input_password">请输入密码</string>
+</resources>

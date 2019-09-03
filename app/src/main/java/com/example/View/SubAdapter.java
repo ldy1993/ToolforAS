@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.ldy.study.R;
+
 public class SubAdapter extends BaseAdapter {
 	
 	Context context;

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SRnOTool/SRnOTool.iml" filepath="$PROJECT_DIR$/SRnOTool/SRnOTool.iml" />
       <module fileurl="file://$PROJECT_DIR$/ToolforAS.iml" filepath="$PROJECT_DIR$/ToolforAS.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/codeinputlib/codeinputlib.iml" filepath="$PROJECT_DIR$/codeinputlib/codeinputlib.iml" />
     </modules>
   </component>
 </project>

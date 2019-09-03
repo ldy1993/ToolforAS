@@ -7,7 +7,8 @@ import com.example.function.comm.FilesUpActivity;
 import com.example.function.USB.USB_HOSTActivity;
 import com.example.function.jni.jniTest.JniTestActivity;
 import com.example.function.scan.idcard.one.IdCardMainActivity;
-import com.example.function.study.A_activity;
+import com.example.function.study.day4.A_activity;
+import com.example.function.study.day5.Day5_Activity;
 
 /**
  * ================================================
@@ -30,7 +31,8 @@ public class Method {
     private final static int COMM=4;   //通讯
     private final static int FILES_COMM=0; //文件上传
     private final static int STUDY=5;   //学习
-    private final static int ACTIVITY_VALUE=0; //文件上传
+    private final static int ACTIVITY_VALUE=0; //activity的传值
+    private final static int VIEW_CREATE=1; //activity的传值
     public static void implement_method(int location , int position, Context context)
     {
         switch (location)
@@ -82,6 +84,12 @@ public class Method {
                 {
                     case ACTIVITY_VALUE:
                         Intent intent = new Intent(context, A_activity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
+
+                    case VIEW_CREATE:
+                        intent = new Intent(context, Day5_Activity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.View.R;
+import com.ldy.study.R;
 import com.ldy.library.QR55.USB_HOST;
 
 public class USB_HOSTActivity extends Activity {
