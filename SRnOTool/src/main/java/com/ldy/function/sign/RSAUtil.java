@@ -2,6 +2,7 @@ package com.ldy.function.sign;
 
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.Signature;
@@ -36,20 +37,20 @@ public class RSAUtil {
 
     private static KeyFactory getKeyFactory() {
         try {
-            return KeyFactory.getInstance("RSA");
+            return KeyFactory.getInstance("RSA","BC");
         } catch (NoSuchAlgorithmException e) {
             // 应该不会出现
-            throw new RuntimeException("初始化RSA KeyFactory失败");
+            throw new RuntimeException("初始化RSA KeyFactory失败NoSuchAlgorithm");
+        } catch (NoSuchProviderException e) {
+            throw new RuntimeException("初始化RSA KeyFactory失败NoSuchProvider");
         }
     }
 
     public static byte[] sign(SignatureSuite suite, byte[] msgBuf, String privateKeyStr) {
         Signature signature = null;
-        KeyFactory keyFactory=null;
         try {
             signature = Signature.getInstance(suite.val());
-            keyFactory = KeyFactory.getInstance("RSA","BC");  //加上“BC”。 测试了一下也可以。
-        } catch (Exception e) {
+      } catch (Exception e) {
             // 上线运行时套件一定存在
             // 异常不往外抛
             e.printStackTrace();
@@ -58,7 +59,7 @@ public class RSAUtil {
         try {
             PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(Base64.decode(privateKeyStr,Base64.DEFAULT));
             Log.d(TAG, "sign: "+suite.val() );
-            PrivateKey privateKey = keyFactory.generatePrivate(keySpec);
+            PrivateKey privateKey = getKeyFactory().generatePrivate(keySpec);
             signature.initSign(privateKey);
         } catch(Exception e) {
             e.printStackTrace();
@@ -86,7 +87,7 @@ public class RSAUtil {
             // 上线运行时套件一定存在
             // 异常不往外抛
         }
-
+        Log.d(TAG, "sign: "+suite.val() );
         try {
             X509EncodedKeySpec keySpec = new X509EncodedKeySpec(Base64.decode(publicKeyStr,Base64.DEFAULT));
             PublicKey publicKey = getKeyFactory().generatePublic(keySpec);
@@ -97,6 +98,7 @@ public class RSAUtil {
         }
         try {
             signature.update(msgBuf);
+            Log.e(TAG, "verifySign: " );
             return signature.verify(sign);
         } catch (SignatureException e) {
             // 一般不会出现

@@ -3,6 +3,7 @@ package com.example.action;
 import android.content.Context;
 import android.content.Intent;
 
+import com.example.function.algorithm.RSA_Activity;
 import com.example.function.comm.FilesUpActivity;
 import com.example.function.USB.USB_HOSTActivity;
 import com.example.function.jni.jniTest.JniTestActivity;
@@ -35,10 +36,13 @@ public class Method {
     private final static int ACTIVITY_VALUE=0; //activity的传值
     private final static int VIEW_CREATE=1; //view的创建
     private final static int VIEW_CUSTOM=2; //自定义view
+    private final static int JAVA_ALGORITHM=6; //java算法
+    private final static int RSA=0; //RSA算法
     public static void implement_method(int location , int position, Context context)
     {
         switch (location)
         {
+
             case SCAN:
                 switch (position)
                 {
@@ -103,7 +107,16 @@ public class Method {
 
                 }
                 break;
-
+            case JAVA_ALGORITHM:
+                switch (position)
+                {
+                    case RSA:
+                        Intent intent = new Intent(context, RSA_Activity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
+                }
+                break;
         }
     }
 

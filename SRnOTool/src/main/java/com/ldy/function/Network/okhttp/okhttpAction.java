@@ -120,4 +120,80 @@ public class okhttpAction {
 
 
     }
+
+
+    /**
+     * 上送参数
+     * @param params
+     * @param url
+     * @param listener
+     */
+    public static void PostParam( Map<String, String> params, String url, final CommManager.NetComplateListener<String> listener) {
+        /*****************************************/
+//        //一种：参数请求体
+        FormBody.Builder formBody = new FormBody.Builder();
+        for (String s : params.keySet()) {
+            System.out.println("key:" + s);
+            System.out.println("values:" + params.get(s));
+            formBody.add(s,  params.get(s));
+        }
+
+        FormBody paramsBody = formBody.build();
+        //三种：混合参数和文件请求
+
+        RequestBody multipartBody = new MultipartBody.Builder()
+                .setType(MultipartBody.ALTERNATIVE)
+                //一样的效果
+                .addPart(Headers.of(
+                        "Content-Disposition",
+                        "form-data; name=\"params\"")
+                        , paramsBody) .build();
+
+
+        final Request request = new Request.Builder().url(url)
+                .addHeader("User-Agent", "android")
+                .header("Content-Type", "text/html; charset=utf-8;")
+                .post(multipartBody)//传参数、文件或者混合，改一下就行请求体就行
+                .build();
+
+        /****************************************************/
+//        //创建Request
+        final OkHttpClient mOkHttpClient = new OkHttpClient();
+//        final Request request = new Request.Builder().url(url).post(requestBody.build()).build();
+        final Call call = mOkHttpClient.newBuilder().readTimeout(50, TimeUnit.SECONDS).connectTimeout(50, TimeUnit.SECONDS).writeTimeout(50, TimeUnit.SECONDS).build().newCall(request);
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Log.e(TAG, e.toString());
+                listener.onNetError(-1, e.toString());
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (response.isSuccessful()) {
+                    String string = response.body().string();
+
+                    try {
+                        com.alibaba.fastjson.JSONObject returnData = JSON.parseObject(string);
+                        Log.e("ldy","resultCode="+returnData.get("resultCode"));
+
+                        if (returnData.get("resultCode").toString().equals("0")) {
+                            listener.onNetComplate(returnData.get("resultMsg")+"");
+                        } else {
+                            Log.e("ldy","json="+returnData.toString());
+                            listener.onWorkFlowError("-3",returnData.get("resultMsg")+"");
+                        }
+                    }catch (Exception e)
+                    {
+                        e.printStackTrace();
+                        listener.onWorkFlowError("-4","未知异常");
+                    }
+                } else {
+                    listener.onNetError(-2, response.message());
+                }
+            }
+        });
+
+
+    }
 }

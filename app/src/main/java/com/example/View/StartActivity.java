@@ -57,7 +57,7 @@ public class StartActivity extends Activity {
         setContentView(R.layout.activity_main);
 
 		try {
-			this.getPackageManager().getPackageInfo("SRnO.Tool.aar", 0);
+			this.getPackageManager().getPackageInfo("com.ldy.study", 0);
 		} catch (PackageManager.NameNotFoundException e) {
 			e.printStackTrace();
 		}

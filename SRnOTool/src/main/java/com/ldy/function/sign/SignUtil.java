@@ -3,7 +3,9 @@ package com.ldy.function.sign;
 
 
 import android.util.Base64;
+import android.util.Log;
 
+import com.ldy.Utils.conversion;
 import com.ldy.function.sign.config.SwiftpassConfig;
 
 import java.util.Map;
@@ -31,7 +33,20 @@ public class SignUtil {
         }
     	return null;
     }
-    
+	//请求时根据不同签名方式去生成不同的sign
+	public static String getSign(String signType,String preStr,String Key){
+		if("RSA_1_256".equals(signType)){
+			try {
+				return SignUtil.sign(preStr,"RSA_1_256", Key);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}else{
+			return MD5.sign(preStr, "&key=" + Key, "utf-8");
+		}
+		return null;
+	}
     //对返回参数的验证签名
     public static boolean verifySign(String sign,String signType,Map<String,String> resultMap) throws Exception{
     	if("RSA_1_256".equals(signType)){
@@ -48,6 +63,22 @@ public class SignUtil {
     		}
     	}
     	return false;
+    }
+    public static boolean verifySign(String sign,String signType,Map<String,String> resultMap,String key) throws Exception{
+        if("RSA_1_256".equals(signType)){
+            Map<String,String> Reparams = SignUtils.paraFilter(resultMap);
+            StringBuilder Rebuf = new StringBuilder((Reparams.size() +1) * 10);
+            SignUtils.buildPayParams(Rebuf,Reparams,false);
+            String RepreStr = Rebuf.toString();
+            if(SignUtil.verifySign(RepreStr,sign, "RSA_1_256", key)){
+                return true;
+            }
+        }else if("MD5".equals(signType)){
+            if(SignUtils.checkParam(resultMap, key)){
+                return true;
+            }
+        }
+        return false;
     }
 	public static boolean verifySign(String preStr,String sign,String signType, String platPublicKey) throws Exception {
 		// 调用这个函数前需要先判断是MD5还是RSA
@@ -79,6 +110,10 @@ public class SignUtil {
 		}
         byte[] signBuf = RSAUtil.sign(suite, preStr.getBytes("UTF8"),
                 mchPrivateKey);
-        return new String(Base64.encode(signBuf,Base64.DEFAULT), "UTF8");
+		byte[] signBase64=Base64.encode(signBuf,Base64.DEFAULT);
+		Log.e("ldy", "sign: "+ conversion.bytes2HexString(signBase64));
+		String sign= new String(signBase64, "UTF8");
+		Log.e("ldy", "sign: "+ sign);
+		return sign.replaceAll("[\\s*\t\n\r]", "");
     }
 }

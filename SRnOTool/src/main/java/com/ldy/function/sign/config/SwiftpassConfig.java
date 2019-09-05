@@ -12,7 +12,7 @@ import java.util.Properties;
 /**
  * <一句话功能简述>
  * <功能详细描述>配置信息
- * 
+ *  不用这里
  * @author  Administrator
  * @version  [版本号, 2014-8-29]
  * @see  [相关类/方法]
