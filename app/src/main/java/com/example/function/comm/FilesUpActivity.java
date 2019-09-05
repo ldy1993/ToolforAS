@@ -39,7 +39,7 @@ public class FilesUpActivity extends Activity {
                 NetProcessDialog.getInstance(FilesUpActivity.this).show();
                 CommManager.init(FilesUpActivity.this);
 //                CommManager.commVerificationFromJerry("0820202020");
-                CommManager.commVerification("0820641178", 300000,300000, listener);
+                CommManager.commVerification("0820641178",  listener);
             }
         });
         }
