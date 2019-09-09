@@ -1,4 +1,4 @@
-com.example.multilistview
+com.ldy.study
 anim pophidden_anim
 anim popshow_anim
 anim slide_in_bottom
@@ -111,6 +111,7 @@ drawable flash_camera_btn
 drawable form_choose_nor
 drawable form_choose_pre
 drawable ic_action_search
+drawable ic_application
 drawable ic_category_0
 drawable ic_category_10
 drawable ic_category_20
@@ -122,6 +123,15 @@ drawable ic_category_65
 drawable ic_category_70
 drawable ic_category_80
 drawable ic_launcher
+drawable icon_bq_1
+drawable icon_bq_2
+drawable icon_bq_3
+drawable icon_bq_4
+drawable icon_bq_5
+drawable icon_bq_6
+drawable icon_bq_7
+drawable icon_bq_8
+drawable icon_bq_9
 drawable icon_delete
 drawable icon_key
 drawable listitem_divide
@@ -143,6 +153,9 @@ id back_camera
 id bt
 id bt_cancel
 id bt_confirm
+id bt_decrypt
+id bt_encrypt
+id bt_new
 id bt_upcancel
 id bt_upconfirm
 id btn_neg
@@ -158,7 +171,9 @@ id edittxt_result
 id email
 id email_login_form
 id email_sign_in_button
+id et_data
 id et_name
+id et_sign
 id flash_camera
 id help_word
 id hour
@@ -170,6 +185,8 @@ id iv_process_flag
 id lLayout_bg
 id layout
 id listView
+id ll
+id ll_error
 id login_form
 id login_progress
 id menu_settings
@@ -192,9 +209,13 @@ id tv
 id tvResult
 id tv_address
 id tv_alert
+id tv_data
 id tv_heapsort
 id tv_id
+id tv_mchPrivateKey
 id tv_password
+id tv_platPublicKey
+id tv_sign
 id txt
 id txt_msg
 id txt_title
@@ -207,9 +228,11 @@ layout a_a_scan_idcard_activity_main
 layout activity_a_activity
 layout activity_b_activity
 layout activity_day5
-layout activity_files_up
+layout activity_day6
+layout activity_files_param_string_up
 layout activity_login
 layout activity_main
+layout activity_rsa
 layout activity_usb__host
 layout alert_dialog
 layout edit_dialog

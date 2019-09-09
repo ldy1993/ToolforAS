@@ -40,6 +40,10 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_category_0.png"
     },
     {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bq_6.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable\\icon_bq_6.png"
+    },
+    {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_button_background.xml.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable\\common_button_background.xml"
     },
@@ -58,6 +62,10 @@
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_icon_delete.png.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\icon_delete.png"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_files_param_string_up.xml.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\activity_files_param_string_up.xml"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_comm.png.flat",
@@ -92,8 +100,16 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\layout\\popup_password_keyboard.xml"
     },
     {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bq_9.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable\\icon_bq_9.png"
+    },
+    {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_process_dialog.xml.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable\\bg_process_dialog.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_application.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-xhdpi\\ic_application.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_category_50.png.flat",
@@ -124,6 +140,10 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\mylist_item.xml"
     },
     {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bq_7.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable\\icon_bq_7.png"
+    },
+    {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_id_dialog_button.xml.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable\\bg_id_dialog_button.xml"
     },
@@ -140,12 +160,20 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable\\timepicket_wheel_val.xml"
     },
     {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bq_3.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable\\icon_bq_3.png"
+    },
+    {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_search.png.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\ic_action_search.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_b_activity.xml.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\activity_b_activity.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_day6.xml.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\activity_day6.xml"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_category_70.png.flat",
@@ -168,6 +196,10 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\anim\\popshow_anim.xml"
     },
     {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bq_8.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable\\icon_bq_8.png"
+    },
+    {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\xml_keyboard_type_simple.xml.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\xml\\keyboard_type_simple.xml"
     },
@@ -184,16 +216,20 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable\\simple_key_bg.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_back_camera_btn.png.flat",
-        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-xhdpi\\back_camera_btn.png"
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rsa.xml.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\activity_rsa.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_dividing_line.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-xhdpi\\dividing_line.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_flash_camera_btn.png.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-xhdpi\\flash_camera_btn.png"
     },
     {
-        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_dividing_line.png.flat",
-        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-xhdpi\\dividing_line.png"
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_back_camera_btn.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-xhdpi\\back_camera_btn.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_category_60.png.flat",
@@ -206,6 +242,10 @@
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_a_a_scan_idcard_activity_main.xml.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\a_a_scan_idcard_activity_main.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bq_1.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable\\icon_bq_1.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_category_45.png.flat",
@@ -230,6 +270,10 @@
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_bottom.xml.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\anim\\slide_in_bottom.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bq_4.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable\\icon_bq_4.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_sublist_item.xml.flat",
@@ -260,6 +304,10 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable\\dialog_left_btn_select.xml"
     },
     {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bq_2.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable\\icon_bq_2.png"
+    },
+    {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_a_a_activity_result.xml.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\a_a_activity_result.xml"
     },
@@ -276,12 +324,12 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\listitem_divide.png"
     },
     {
-        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_frame.xml.flat",
-        "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable\\edit_frame.xml"
-    },
-    {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_spinner_popup.xml.flat",
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable\\bg_spinner_popup.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_frame.xml.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable\\edit_frame.xml"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_id_dialog.xml.flat",
@@ -292,12 +340,12 @@
         "source": "F:\\AndroidStudioProject\\ToolforAS\\SRnOTool\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\form_choose_nor.png"
     },
     {
-        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_a_a_camera.png.flat",
-        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\a_a_camera.png"
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bq_5.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable\\icon_bq_5.png"
     },
     {
-        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_files_up.xml.flat",
-        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\layout\\activity_files_up.xml"
+        "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_a_a_camera.png.flat",
+        "source": "F:\\AndroidStudioProject\\ToolforAS\\app\\src\\main\\res\\drawable-hdpi\\a_a_camera.png"
     },
     {
         "merged": "F:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dialog_bg.xml.flat",

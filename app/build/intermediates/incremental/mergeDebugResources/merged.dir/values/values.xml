@@ -79,7 +79,7 @@
     <integer name="animation_duration">200</integer>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="app_name">multiListView</string>
+    <string name="app_name">你这个activity竟然不自己定义主题</string>
     <string name="btn_cancel">取消</string>
     <string name="btn_confirm">确认</string>
     <string name="btn_ok">确认</string>

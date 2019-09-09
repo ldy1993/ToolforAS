@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.multilistview"
+    package="com.ldy.study"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -28,15 +28,20 @@
     <application
         android:allowBackup="false"
         android:debuggable="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ic_application"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.function.algorithm.RSA_Activity" />
+        <activity android:name="com.example.function.algorithm.CalcPWD_Activity" />
+        <activity android:name="com.example.function.study.day6.Day6_Activity" />
         <activity android:name="com.example.function.study.day5.Day5_Activity" />
         <activity
-            android:name="com.example.function.comm.FilesUpActivity"
+            android:name="com.example.function.comm.FilesOrParamOrStringUpActivity"
+            android:icon="@drawable/icon_bq_1"
             android:label="@string/title_activity_files_up" />
         <activity
-            android:name="com.ldy.study.StartActivity"
+            android:name="com.example.View.StartActivity"
+            android:icon="@drawable/icon_bq_3"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,6 +51,7 @@
         </activity>
         <activity
             android:name="com.example.function.scan.idcard.one.IdCardMainActivity"
+            android:icon="@drawable/icon_bq_2"
             android:label="扫描银行卡获取卡号" />
         <activity android:name="com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera" >
             <intent-filter>
@@ -56,14 +62,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.function.scan.idcard.one.ShowResult" />
-        <activity android:name="com.example.function.study.day4.A_activity" />
+        <activity
+            android:name="com.example.function.scan.idcard.one.ShowResult"
+            android:icon="@drawable/icon_bq_4" />
+        <activity
+            android:name="com.example.function.study.day4.A_activity"
+            android:icon="@drawable/icon_bq_5" />
         <activity android:name="com.example.function.study.day4.B_activity" />
         <activity
             android:name="com.example.function.jni.jniTest.JniTestActivity"
+            android:icon="@drawable/icon_bq_6"
             android:label="@string/title_jni_test" />
         <activity
             android:name="com.example.function.USB.USB_HOSTActivity"
+            android:icon="@drawable/icon_bq_7"
             android:label="@string/title_activity_usb__host" />
     </application>
 

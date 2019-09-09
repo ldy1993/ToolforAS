@@ -117,50 +117,50 @@ public final class R {
         public static final int edit_frame = 0x7f050015;
         public static final int form_choose_nor = 0x7f050017;
         public static final int form_choose_pre = 0x7f050018;
-        public static final int icon_delete = 0x7f050025;
-        public static final int icon_key = 0x7f050026;
-        public static final int simple_key_bg = 0x7f050028;
-        public static final int simple_key_bg_nor = 0x7f050029;
-        public static final int simple_key_bg_pre = 0x7f05002a;
-        public static final int timepicket_wheel_bg = 0x7f05002b;
-        public static final int timepicket_wheel_val = 0x7f05002c;
-        public static final int view_bg = 0x7f05002d;
+        public static final int icon_delete = 0x7f05002f;
+        public static final int icon_key = 0x7f050030;
+        public static final int simple_key_bg = 0x7f050032;
+        public static final int simple_key_bg_nor = 0x7f050033;
+        public static final int simple_key_bg_pre = 0x7f050034;
+        public static final int timepicket_wheel_bg = 0x7f050035;
+        public static final int timepicket_wheel_val = 0x7f050036;
+        public static final int view_bg = 0x7f050037;
     }
     public static final class id {
         private id() {}
 
         public static final int bt_cancel = 0x7f06000a;
         public static final int bt_confirm = 0x7f06000b;
-        public static final int bt_upcancel = 0x7f06000c;
-        public static final int bt_upconfirm = 0x7f06000d;
-        public static final int btn_neg = 0x7f06000e;
-        public static final int btn_pos = 0x7f06000f;
-        public static final int cancel_btn = 0x7f060010;
-        public static final int confirm_btn = 0x7f060012;
-        public static final int day = 0x7f060014;
-        public static final int dialog_Group = 0x7f060015;
-        public static final int dialog_marBottom = 0x7f060016;
-        public static final int edittxt_result = 0x7f060017;
-        public static final int et_name = 0x7f06001b;
-        public static final int hour = 0x7f06001e;
-        public static final int img_line = 0x7f060021;
-        public static final int iv_process_flag = 0x7f060023;
-        public static final int lLayout_bg = 0x7f060024;
-        public static final int layout = 0x7f060025;
-        public static final int min = 0x7f06002a;
-        public static final int month = 0x7f06002b;
-        public static final int process_tip = 0x7f06002e;
-        public static final int second = 0x7f060031;
-        public static final int timePicker1 = 0x7f060036;
-        public static final int timepicker_linear = 0x7f060037;
-        public static final int title = 0x7f060038;
-        public static final int tv_address = 0x7f06003b;
-        public static final int tv_alert = 0x7f06003c;
-        public static final int tv_id = 0x7f06003e;
-        public static final int tv_password = 0x7f06003f;
-        public static final int txt_msg = 0x7f060041;
-        public static final int txt_title = 0x7f060042;
-        public static final int year = 0x7f060043;
+        public static final int bt_upcancel = 0x7f06000f;
+        public static final int bt_upconfirm = 0x7f060010;
+        public static final int btn_neg = 0x7f060011;
+        public static final int btn_pos = 0x7f060012;
+        public static final int cancel_btn = 0x7f060013;
+        public static final int confirm_btn = 0x7f060015;
+        public static final int day = 0x7f060017;
+        public static final int dialog_Group = 0x7f060018;
+        public static final int dialog_marBottom = 0x7f060019;
+        public static final int edittxt_result = 0x7f06001a;
+        public static final int et_name = 0x7f06001f;
+        public static final int hour = 0x7f060023;
+        public static final int img_line = 0x7f060026;
+        public static final int iv_process_flag = 0x7f060028;
+        public static final int lLayout_bg = 0x7f060029;
+        public static final int layout = 0x7f06002a;
+        public static final int min = 0x7f060031;
+        public static final int month = 0x7f060032;
+        public static final int process_tip = 0x7f060035;
+        public static final int second = 0x7f060038;
+        public static final int timePicker1 = 0x7f06003d;
+        public static final int timepicker_linear = 0x7f06003e;
+        public static final int title = 0x7f06003f;
+        public static final int tv_address = 0x7f060042;
+        public static final int tv_alert = 0x7f060043;
+        public static final int tv_id = 0x7f060046;
+        public static final int tv_password = 0x7f060048;
+        public static final int txt_msg = 0x7f06004c;
+        public static final int txt_title = 0x7f06004d;
+        public static final int year = 0x7f06004e;
     }
     public static final class integer {
         private integer() {}
@@ -171,14 +171,14 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int alert_dialog = 0x7f08000a;
-        public static final int edit_dialog = 0x7f08000b;
-        public static final int id_dialog = 0x7f08000c;
-        public static final int ios_alertdialog = 0x7f08000d;
-        public static final int net_process_window = 0x7f080010;
-        public static final int popup_password_keyboard = 0x7f080011;
-        public static final int timepicker = 0x7f080013;
-        public static final int timepicker_customdialog = 0x7f080014;
+        public static final int alert_dialog = 0x7f08000c;
+        public static final int edit_dialog = 0x7f08000d;
+        public static final int id_dialog = 0x7f08000e;
+        public static final int ios_alertdialog = 0x7f08000f;
+        public static final int net_process_window = 0x7f080012;
+        public static final int popup_password_keyboard = 0x7f080013;
+        public static final int timepicker = 0x7f080015;
+        public static final int timepicker_customdialog = 0x7f080016;
     }
     public static final class string {
         private string() {}
