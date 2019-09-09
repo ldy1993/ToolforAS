@@ -3,8 +3,9 @@ package com.example.action;
 import android.content.Context;
 import android.content.Intent;
 
+import com.example.function.algorithm.CalcPWD_Activity;
 import com.example.function.algorithm.RSA_Activity;
-import com.example.function.comm.FilesUpActivity;
+import com.example.function.comm.FilesOrParamOrStringUpActivity;
 import com.example.function.USB.USB_HOSTActivity;
 import com.example.function.jni.jniTest.JniTestActivity;
 import com.example.function.scan.idcard.one.IdCardMainActivity;
@@ -38,8 +39,10 @@ public class Method {
     private final static int VIEW_CUSTOM=2; //自定义view
     private final static int JAVA_ALGORITHM=6; //java算法
     private final static int RSA=0; //RSA算法
+    private final static int pwd=1; //保险箱计算密码
     public static void implement_method(int location , int position, Context context)
     {
+        Intent intent;
         switch (location)
         {
 
@@ -47,7 +50,7 @@ public class Method {
                 switch (position)
                 {
                     case IDCARD:
-                        Intent intent = new Intent(context, IdCardMainActivity.class);
+                         intent = new Intent(context, IdCardMainActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
@@ -57,7 +60,7 @@ public class Method {
                 switch (position)
                 {
                     case JNITEST:
-                        Intent intent = new Intent(context, JniTestActivity.class);
+                         intent = new Intent(context, JniTestActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
@@ -68,7 +71,7 @@ public class Method {
                 switch (position)
                 {
                     case USB_HOST:
-                        Intent intent = new Intent(context, USB_HOSTActivity.class);
+                         intent = new Intent(context, USB_HOSTActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
@@ -79,7 +82,7 @@ public class Method {
                 switch (position)
                 {
                     case FILES_COMM:
-                        Intent intent = new Intent(context, FilesUpActivity.class);
+                         intent = new Intent(context, FilesOrParamOrStringUpActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
@@ -89,7 +92,7 @@ public class Method {
                 switch (position)
                 {
                     case ACTIVITY_VALUE:
-                        Intent intent = new Intent(context, A_activity.class);
+                         intent = new Intent(context, A_activity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
@@ -108,13 +111,20 @@ public class Method {
                 }
                 break;
             case JAVA_ALGORITHM:
+
                 switch (position)
                 {
                     case RSA:
-                        Intent intent = new Intent(context, RSA_Activity.class);
+                        intent = new Intent(context, RSA_Activity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
+                    case pwd:
+                         intent = new Intent(context, CalcPWD_Activity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
+
                 }
                 break;
         }

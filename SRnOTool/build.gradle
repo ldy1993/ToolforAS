@@ -8,7 +8,7 @@ android {
         minSdkVersion 22
         targetSdkVersion 28
         versionCode 11
-        versionName "2.0.0"
+        versionName "2.0.4"
         archivesBaseName = "SRnOTool_V" + defaultConfig.versionName + "_${releaseTime()}"
 
         packagingOptions {
@@ -18,6 +18,21 @@ android {
             exclude 'META-INF/LICENSE.txt'
             exclude 'META-INF/NOTICE.txt'
         }
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+        ndk{
+            //生成的so需要和外部的架构相同
+            abiFilters "armeabi"
+        }
+
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
     }
     buildTypes {
         release {
@@ -25,11 +40,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
 }
 
 static def releaseTime() {
-    return new Date().format("yyyyMMdd.HHmm")
+    return new Date().format("yyyyMMdd")
 }
 
 dependencies {

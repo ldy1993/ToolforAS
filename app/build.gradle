@@ -5,7 +5,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "com.example.multilistview"
+        applicationId "com.ldy.study"
         minSdkVersion 22
         targetSdkVersion 28
         versionCode 1
@@ -13,33 +13,12 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
 
-        //采用cmake方式后无法生产ndk文件目录
-//        ndk {
-//            moduleName "jniTestClass"         //生成的so名字
-//        }
-        externalNativeBuild {
-            cmake {
-                cppFlags ""
-            }
-        }
     }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-        }
-    }
-    externalNativeBuild {
-        cmake {
-            path "CMakeLists.txt"
-        }
-    }
-    sourceSets {
-        main {
-//            jni.srcDirs=['libs']
-//            jniLibs.srcDirs  'src/main/jni'
-            jniLibs.srcDirs = ['libs']
         }
     }
     lintOptions {
@@ -54,6 +33,13 @@ android {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
+    }
+    sourceSets {
+        main {
+//            jni.srcDirs=['libs']
+//            jniLibs.srcDirs  'src/main/jni'
+            jniLibs.srcDirs = ['libs']
+        }
     }
 }
 
