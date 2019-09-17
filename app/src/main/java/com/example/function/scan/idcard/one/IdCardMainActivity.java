@@ -1,14 +1,22 @@
 package com.example.function.scan.idcard.one;
 
 import android.app.Activity;
+import android.app.Instrumentation;
+import android.content.Context;
+import android.inputmethodservice.Keyboard;
+import android.inputmethodservice.KeyboardView;
 import android.util.Log;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 
         import android.content.Intent;
         import android.os.Bundle;
-        import android.widget.EditText;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
         import android.widget.ImageView;
 
+import com.ldy.View.CustomWidget.Keyboard.CustomKeyboard;
 import com.ldy.study.R;
 import com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera;
 
@@ -17,7 +25,8 @@ import com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera;
 
 public class IdCardMainActivity extends Activity implements View.OnClickListener{
 
-    private EditText txt;//显示银行卡的卡号
+    private EditText et_name;//显示银行卡姓名
+    private EditText et_cardno;//显示银行卡的卡号
     private int MY_SCAN_REQUEST_CODE = 100;//请求码
     private ImageView img;//开启银行卡扫描
 
@@ -28,11 +37,19 @@ public class IdCardMainActivity extends Activity implements View.OnClickListener
         //显示返回按钮
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //初始化控件
-        txt = (EditText) findViewById(R.id.txt);
+        et_name = (EditText) findViewById(R.id.et_name);
+        et_cardno=findViewById(R.id.et_cardno);
         img = (ImageView) findViewById(R.id.scanButton);
         img.setOnClickListener(this);//点击事件
+
     }
 
+    @Override
+    protected void onResume() {
+
+        super.onResume();
+//        et_cardno.requestFocus();
+    }
 //    /**
 //     * 按钮的点击事件
 //     */
@@ -67,7 +84,7 @@ public class IdCardMainActivity extends Activity implements View.OnClickListener
             {
             resultStr = "扫描已取消";
         }
-        txt.setText(String.valueOf(StringR));
+        et_cardno.setText(String.valueOf(StringR));
     }
 
     @Override

@@ -37,7 +37,7 @@ public class StartActivity extends Activity {
             		"DIY�ֹ���","�����","������Ϸ","������������"},
             new String[] {"RSA","保险箱计算密码","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
-            new String[] {"ȫ������","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
+            new String[] {"登录界面","菜单界面","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ","������������"},
             new String[] {"ȫ��������","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ"},
@@ -46,7 +46,7 @@ public class StartActivity extends Activity {
             new String[] {"ȫ������aaa","������","�ư�","���","KTV","��ӰԺ","��������","��԰","����/����","ϴԡ","��ԡ��Ħ","�Ļ�����",
             		"DIY�ֹ���","�����","������Ϸ"},
             };
-		String foods[] =new String []{"摄像头","JNI","銀行调用","USB","通讯","学习","java算法","待定","待定","待定","待定"};
+		String foods[] =new String []{"摄像头","JNI","銀行调用","USB","通讯","学习","java算法","好看界面","待定","待定","待定"};
 		int images[] = new int[]{R.drawable.ic_category_0, R.drawable.ic_category_10, R.drawable.ic_category_30, R.drawable.ic_category_20
 				, R.drawable.ic_category_60, R.drawable.ic_category_50, R.drawable.ic_category_45, R.drawable.ic_category_50, R.drawable.ic_category_70,
 				R.drawable.ic_category_65, R.drawable.ic_category_80};

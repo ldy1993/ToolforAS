@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.ldy.study"
     android:versionCode="10"
     android:versionName="V2.0.0_20190826">
@@ -15,27 +16,32 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:exported="false"
         android:icon="@drawable/ic_application"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.function.algorithm.RSA_Activity"></activity>
-        <activity android:name="com.example.function.algorithm.CalcPWD_Activity"></activity>
-
+        <activity android:name="com.example.function.View.Menu.View_Menu_Activity"/>
+        <activity android:name="com.example.function.View.Login.View_Login_Activity" />
+        <activity android:name="com.example.function.algorithm.RSA_Activity" />
+        <activity android:name="com.example.function.algorithm.CalcPWD_Activity" />
         <activity android:name="com.example.function.study.day6.Day6_Activity" />
         <activity android:name="com.example.function.study.day5.Day5_Activity" />
+        <activity android:name="com.example.function.study.day4.B_activity" />
         <activity
-            android:icon="@drawable/icon_bq_1"
             android:name="com.example.function.comm.FilesOrParamOrStringUpActivity"
+            android:icon="@drawable/icon_bq_1"
             android:label="@string/title_activity_files_up" />
         <activity
-            android:icon="@drawable/icon_bq_3"
             android:name="com.example.View.StartActivity"
+            android:icon="@drawable/icon_bq_3"
             android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,32 +50,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:icon="@drawable/icon_bq_2"
             android:name="com.example.function.scan.idcard.one.IdCardMainActivity"
-            android:label="扫描银行卡获取卡号" />
+            android:icon="@drawable/icon_bq_2"
+            android:label="扫描银行卡获取卡号"></activity>
         <activity android:name="com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera">
             <intent-filter>
                 <action android:name="wintone.bankCard.scan_camera" />
-
                 <category android:name="android.intent.category.HOME" />
-                      
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:icon="@drawable/icon_bq_4"
-            android:name="com.example.function.scan.idcard.one.ShowResult" />
+            android:name="com.example.function.scan.idcard.one.ShowResult"
+            android:icon="@drawable/icon_bq_4" />
         <activity
-            android:icon="@drawable/icon_bq_5"
-            android:name="com.example.function.study.day4.A_activity" />
-        <activity android:name="com.example.function.study.day4.B_activity" />
+            android:name="com.example.function.study.day4.A_activity"
+            android:icon="@drawable/icon_bq_5" />
+
         <activity
-            android:icon="@drawable/icon_bq_6"
             android:name="com.example.function.jni.jniTest.JniTestActivity"
+            android:icon="@drawable/icon_bq_6"
             android:label="@string/title_jni_test" />
         <activity
-            android:icon="@drawable/icon_bq_7"
             android:name="com.example.function.USB.USB_HOSTActivity"
+            android:icon="@drawable/icon_bq_7"
             android:label="@string/title_activity_usb__host" />
     </application>
 

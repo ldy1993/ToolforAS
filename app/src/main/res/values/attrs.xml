@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="StepGuider">
+        <attr name="steps" format="reference"></attr>
+    </declare-styleable>
+        <declare-styleable name="MyDialogPreference">
+        <attr name="maxLength" format="integer" />
+        <attr name="maxLines" format="integer" />
+        <attr name="singLine" format="boolean" />
+        <attr name="defaultValue" format="string|boolean|integer|reference|float" />
+        <attr name="digits" format="string|boolean|integer|reference|float" />
+        <attr name="ems" format="integer" min="0" />
+        <attr name="minEms" format="integer" min="0" />
+        <attr name="maxEms" format="integer" min="0" />
+        <attr name="inputType" format="string" />
+        <attr name="selectAllOnFocus" format="boolean" />
+        <attr name="hint" format="string" />
+    </declare-styleable>
+        <declare-styleable name="MySingleChoiceDialogPreference">
+        <attr name="entries" format="reference" />
+        <attr name="entryValues" format="reference" />
+        <attr name="summary" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="SXRadioButton">
+        <attr name="title1" format="reference|string" />
+        <attr name="checked" format="boolean" />
+        <attr name="radio" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="SingleRightViewItem">
+        <attr name="right_view_color" format="color" />
+        <attr name="right_view_text" format="string" />
+        <attr name="right_view_text_size" format="dimension" />
+        <attr name="right_view_text_color" format="color" />
+        <attr name="right_view_width" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="PopSpinner">
+        <attr name="values" format="reference" />
+    </declare-styleable>
+
+</resources>

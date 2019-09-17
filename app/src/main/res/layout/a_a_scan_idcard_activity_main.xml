@@ -32,6 +32,7 @@
                 android:textSize="16dp"
                 android:textColor="@android:color/black"/>
             <EditText
+                android:id="@+id/et_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:maxLength="10"
@@ -65,8 +66,8 @@
                 android:layout_gravity="center_vertical"
                 android:textSize="16dp"
                 android:textColor="@android:color/black"/>
-            <EditText
-                android:id="@+id/txt"
+            <com.ldy.View.CustomWidget.Keyboard.EdittextInput.EditTextInput
+                android:id="@+id/et_cardno"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"

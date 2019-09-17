@@ -3,6 +3,8 @@ package com.example.action;
 import android.content.Context;
 import android.content.Intent;
 
+import com.example.function.View.Login.View_Login_Activity;
+import com.example.function.View.Menu.View_Menu_Activity;
 import com.example.function.algorithm.CalcPWD_Activity;
 import com.example.function.algorithm.RSA_Activity;
 import com.example.function.comm.FilesOrParamOrStringUpActivity;
@@ -40,6 +42,9 @@ public class Method {
     private final static int JAVA_ALGORITHM=6; //java算法
     private final static int RSA=0; //RSA算法
     private final static int pwd=1; //保险箱计算密码
+    private final static int VIEW=7; //好看界面
+    private final static int LOGIN=0; //登录界面
+    private final static int MENU=1; //菜单界面
     public static void implement_method(int location , int position, Context context)
     {
         Intent intent;
@@ -121,6 +126,23 @@ public class Method {
                         break;
                     case pwd:
                          intent = new Intent(context, CalcPWD_Activity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
+
+                }
+                break;
+            case VIEW:
+
+                switch (position)
+                {
+                    case LOGIN:
+                        intent = new Intent(context, View_Login_Activity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
+                    case MENU:
+                        intent = new Intent(context, View_Menu_Activity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;

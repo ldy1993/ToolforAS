@@ -2,13 +2,13 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 28
         versionCode 11
-        versionName "2.0.4"
+        versionName "2.0.5"
         archivesBaseName = "SRnOTool_V" + defaultConfig.versionName + "_${releaseTime()}"
 
         packagingOptions {
@@ -47,7 +47,9 @@ static def releaseTime() {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:28.0.0'
+
+    compile files('libs/glide-3.6.0.jar')
     compile files('libs/frame-release-v1.1.jar')
     compile files('libs/okhttp-3.3.0.jar')
     compile files('libs/okio-1.4.0.jar')

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_logo"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:paddingBottom="75dp"
+        android:paddingTop="75dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/bg_login_block"
+        android:divider="@drawable/divider_login_block"
+        android:dividerPadding="25dp"
+        android:orientation="vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:showDividers="middle" >
+
+        <com.ldy.View.CustomWidget.Keyboard.EdittextInput.EditTextWithCustomKeyboard
+            android:id="@+id/et_operator_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/user_small"
+            android:gravity="center"
+            android:maxLength="2"
+            android:paddingRight="20dp"
+            android:textSize="25sp" />
+
+        <com.ldy.View.CustomWidget.Keyboard.EdittextInput.EditTextWithCustomKeyboard
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/pwd_small"
+            android:gravity="center"
+            android:inputType="number|numberPassword"
+            android:maxLength="4"
+            android:paddingRight="20dp"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/txt_error"
+        android:textSize="@dimen/txt_small" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_common_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_bg_login"
+        android:text="登录"
+        android:textColor="@color/txt_normal_white"
+        android:textSize="@dimen/txt_big" />
+
+</LinearLayout>

@@ -2,7 +2,6 @@ package com.example.function.jni.jniTest;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -10,7 +9,7 @@ import android.widget.Toast;
 
 import com.KeyTool.KEY;
 import com.ldy.study.R;
-import com.ldy.View.CustomWidget.codeinput.CodeInput;
+import com.ldy.View.CustomWidget.Keyboard.codeinput.CodeInput;
 
 public class JniTestActivity extends Activity {
     private static final String TAG = "JniTestActivity";
