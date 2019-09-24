@@ -18,7 +18,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 
-
 import com.ldy.Utils.UnitUtils;
 
 import java.util.List;

@@ -1,8 +1,9 @@
 package com.ldy.function.sign.Instantiation;
 
+import org.apache.commons.codec.digest.DigestUtils;
+
 import java.io.UnsupportedEncodingException;
 import java.security.SignatureException;
-import org.apache.commons.codec.digest.DigestUtils;
 
 /** 
 * 功能：MD5签名

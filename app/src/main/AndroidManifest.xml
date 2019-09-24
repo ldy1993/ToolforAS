@@ -28,7 +28,8 @@
         android:icon="@drawable/ic_application"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.function.View.Menu.View_Menu_Activity"/>
+        <activity android:name="com.example.function.View.Amount.View_InputAmount_Activity"></activity>
+        <activity android:name="com.example.function.View.Menu.View_Menu_Activity" />
         <activity android:name="com.example.function.View.Login.View_Login_Activity" />
         <activity android:name="com.example.function.algorithm.RSA_Activity" />
         <activity android:name="com.example.function.algorithm.CalcPWD_Activity" />
@@ -52,10 +53,11 @@
         <activity
             android:name="com.example.function.scan.idcard.one.IdCardMainActivity"
             android:icon="@drawable/icon_bq_2"
-            android:label="扫描银行卡获取卡号"></activity>
+            android:label="扫描银行卡获取卡号" />
         <activity android:name="com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera">
             <intent-filter>
                 <action android:name="wintone.bankCard.scan_camera" />
+
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -66,7 +68,6 @@
         <activity
             android:name="com.example.function.study.day4.A_activity"
             android:icon="@drawable/icon_bq_5" />
-
         <activity
             android:name="com.example.function.jni.jniTest.JniTestActivity"
             android:icon="@drawable/icon_bq_6"

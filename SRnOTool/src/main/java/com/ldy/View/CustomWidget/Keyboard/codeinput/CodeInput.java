@@ -10,7 +10,6 @@ import android.graphics.Rect;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -20,9 +19,10 @@ import com.ldy.View.CustomWidget.Keyboard.CustomKeyboard;
 import com.ldy.View.CustomWidget.Keyboard.codeinput.data.FixedStack;
 import com.ldy.View.CustomWidget.Keyboard.codeinput.model.Underline;
 
-import SRnO.Tool.aar.R;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import SRnO.Tool.aar.R;
 
 /**
  * @author Adrián García Lomas
@@ -107,7 +107,6 @@ public class CodeInput extends View {
     underlineReduction = getContext().getResources().getDimension(R.dimen.section_reduction);
     textSize = getContext().getResources().getDimension(R.dimen.text_size);
     textMarginBottom = getContext().getResources().getDimensionPixelSize(R.dimen.text_margin_bottom);
-    Log.e("ldy","drawCharactertextMarginBottom1="+textMarginBottom);
     underlineColor = getContext().getResources().getColor(R.color.underline_default_color);
     underlineSelectedColor = getContext().getResources().getColor(R.color.underline_selected_color);
     hintColor = getContext().getResources().getColor(R.color.hintColor);

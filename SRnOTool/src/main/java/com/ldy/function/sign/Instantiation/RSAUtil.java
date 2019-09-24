@@ -1,5 +1,8 @@
 package com.ldy.function.sign.Instantiation;
 
+import android.util.Base64;
+import android.util.Log;
+
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
@@ -9,8 +12,6 @@ import java.security.Signature;
 import java.security.SignatureException;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
-import android.util.Base64;
-import android.util.Log;
 
 
 /**

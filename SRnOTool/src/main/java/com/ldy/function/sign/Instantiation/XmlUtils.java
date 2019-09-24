@@ -8,6 +8,11 @@
 
 package com.ldy.function.sign.Instantiation;
 
+import org.dom4j.Document;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+import org.xml.sax.InputSource;
+
 import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,12 +22,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.SortedMap;
-
-
-import org.dom4j.Document;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
-import org.xml.sax.InputSource;
 
 /**
  * ClassName:Xml

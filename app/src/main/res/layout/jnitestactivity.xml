@@ -30,7 +30,6 @@
             android:layout_height="wrap_content"
             android:background="@drawable/defaul">
             <com.ldy.View.CustomWidget.Keyboard.codeinput.CodeInput
-                android:id="@+id/inputdata"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="30dp"
                 android:layout_width="wrap_content"
@@ -51,7 +50,6 @@
             android:gravity="center"
             android:layout_margin="5dp">
             <TextView
-                android:id="@+id/tv_heapsort"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="30dp"

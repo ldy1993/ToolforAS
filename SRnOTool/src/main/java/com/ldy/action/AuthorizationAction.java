@@ -1,12 +1,10 @@
 package com.ldy.action;
 
-import android.util.Log;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.ldy.function.Network.Instantiation.customHttp.jerry.commEntityServiceImpl;
 import com.ldy.function.Network.Instantiation.httpPost.httpPostServiceImpl;
 import com.ldy.function.Network.service.NetComplateListener;
-import com.ldy.function.Network.Instantiation.customHttp.jerry.commEntityServiceImpl;
 import com.ldy.function.sign.service.SignServiceImpl;
 
 import java.text.SimpleDateFormat;
