@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.ldy.Utils.UnitUtils;
+
 import java.util.Random;
 
 /**
@@ -23,7 +25,8 @@ import java.util.Random;
 public class SuspensionView extends View {
     private static final String TAG = "SuspensionView";
     private Paint mpaint;
-    private int l,t,r,b;
+    private int l=100,t=100,r,b;
+    private Canvas cv;
     public SuspensionView(Context context) {
         super(context);
         init();
@@ -39,10 +42,7 @@ public class SuspensionView extends View {
         init();
     }
 
-    public SuspensionView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        init();
-    }
+
 private void init()
 {
     mpaint=new Paint();
@@ -59,32 +59,38 @@ private void init()
         super.onDraw(canvas);
         mpaint.setColor(Color.RED);
         mpaint.setStyle(Paint.Style.FILL_AND_STROKE);
-
-        canvas.drawCircle(200,200,20,mpaint);
+//        canvas.drawLine(10,100,10,100,mpaint);
+        canvas.drawCircle(l,t,20,mpaint);
+        cv=canvas;
     }
 
-
+    //l, t, r, b分别表示子View相对于父View的左、上、右、下的坐标
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-        Log.e(TAG, "onLayout: " +left+";;"+top+";;"+right+";;"+bottom);
-        l=left;
-        t=top;
-        r=right;
-       b= bottom;
+        Log.e(TAG, "onLayout: " +changed+";;;"+left+";;"+top+";;"+right+";;"+bottom);
         super.onLayout(changed, left, top, right, bottom);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        switch (event.getAction())
-        {
-            case MotionEvent.ACTION_MOVE:
-                layout(l+1,t+1,r-1,b-1);
-                break;
-            case MotionEvent.ACTION_UP:
-                layout(0,38,600,638);
-                break;
-        }
+
+//if(!UnitUtils.is50msClick())
+//{
+    Log.e(TAG, "event: " +event.getX()+";;"+event.getY());
+    Log.e(TAG, "event: " +event.getX()+";;"+event.getY());
+     l=(int)event.getX();
+     t=(int)event.getY();
+    invalidate();
+//    int r=(int)event.getX()+100;
+//    int b=(int)event.getY()+100;
+//    switch (event.getAction()) {
+//        case MotionEvent.ACTION_MOVE:
+////            layout(l, t, r, b);
+//            invalidate();
+//            break;
+//
+//    }
+//}
         return true;
     }
 
