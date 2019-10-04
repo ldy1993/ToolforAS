@@ -37,6 +37,8 @@
         <activity android:name="com.example.function.study.day4.B_activity" />
         <activity android:name="com.example.function.study.day7.Day7_ArrayAdapter_listView_Activity" />
         <activity android:name="com.example.function.study.day7.Day7_LeftSlide_listView_Activity" />
+        <activity android:name="com.example.function.study.day8.Day8_Activity" />
+
         <activity
             android:name="com.example.function.comm.FilesOrParamOrStringUpActivity"
             android:icon="@drawable/icon_bq_1"

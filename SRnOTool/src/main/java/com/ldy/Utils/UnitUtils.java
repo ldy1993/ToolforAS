@@ -28,5 +28,13 @@ public class UnitUtils {
         lastClickTime = time;
         return false;
     }
+    public static boolean is500msClick() {
+        long time = System.currentTimeMillis();
+        if ( time - lastClickTime < 500) {
 
+            return true;
+        }
+        lastClickTime = time;
+        return false;
+    }
 }
