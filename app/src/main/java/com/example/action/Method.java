@@ -11,12 +11,14 @@ import com.example.function.comm.FilesOrParamOrStringUpActivity;
 import com.example.function.USB.USB_HOSTActivity;
 import com.example.function.jni.jniTest.JniTestActivity;
 import com.example.function.scan.idcard.one.IdCardMainActivity;
+import com.example.function.study.day10.Day10_Activity;
 import com.example.function.study.day4.A_activity;
 import com.example.function.study.day5.Day5_Activity;
 import com.example.function.study.day6.Day6_Activity;
 import com.example.function.study.day7.Day7_ArrayAdapter_listView_Activity;
 import com.example.function.study.day7.Day7_LeftSlide_listView_Activity;
 import com.example.function.study.day8.Day8_Activity;
+import com.example.function.study.day9.Day9_Activity;
 
 /**
  * ================================================
@@ -44,7 +46,9 @@ public class Method {
     private final static int VIEW_CUSTOM=2; //自定义view
     private final static int VIEW_ListView=3; //ListView
     private final static int VIEW_LeftSlide_ListView =4; //左滑listview
-    private final static int VIEW_PROGRESSBAR =5; //左滑listview
+    private final static int VIEW_PROGRESSBAR =5; //进度条
+    private final static int VIEW_DIALOG =6; //对话框
+    private final static int VIEW_POPUPWINDOW =7; //对话框
     private final static int JAVA_ALGORITHM=6; //java算法
     private final static int RSA=0; //RSA算法
     private final static int pwd=1; //保险箱计算密码
@@ -133,7 +137,16 @@ public class Method {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
-
+                    case VIEW_DIALOG:
+                        intent = new Intent(context, Day9_Activity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
+                    case VIEW_POPUPWINDOW:
+                        intent = new Intent(context, Day10_Activity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
 
                 }
                 break;
