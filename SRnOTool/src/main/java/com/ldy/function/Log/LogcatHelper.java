@@ -52,10 +52,10 @@ public class LogcatHelper {
     public void init(Context context) {
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             // 优先保存到SD卡中
-            pathLogcat = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "AllinPayLog";
+            pathLogcat = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "PayLog";
         } else {
             // 如果SD卡不存在，就保存到本应用的目录下
-            pathLogcat = context.getFilesDir().getAbsolutePath() + File.separator + "AllinPayLog";
+            pathLogcat = context.getFilesDir().getAbsolutePath() + File.separator + "PayLog";
         }
         File file = new File(pathLogcat);
         if (!file.exists()) {

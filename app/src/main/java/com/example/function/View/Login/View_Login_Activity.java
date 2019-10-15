@@ -21,8 +21,6 @@ import android.widget.RelativeLayout;
 import com.ldy.View.CustomWidget.Keyboard.CustomKeyboard;
 import com.ldy.study.R;
 
-import me.jerry.framework.annotation.AutoFindView;
-import me.jerry.framework.utils.ReflactUtils;
 
 public class View_Login_Activity extends Activity {
     private Button bt_login;
@@ -86,29 +84,29 @@ public class View_Login_Activity extends Activity {
                         // the LayoutParams type is not matched, so {@link
                         // ObjectAnimator.class} can not find it, we should
                         // handy define it.
-                        if (Build.VERSION.SDK_INT < 21) {
-                            ReflactUtils.setFieldValue(
-                                    Class.class,
-                                    ReflactUtils
-                                            .<PropertyValuesHolder[]> getFieldValue(
-                                                    ValueAnimator.class,
-                                                    animator, "mValues")[0],
-                                    "mValueType", ViewGroup.LayoutParams.class);
-                        } else {
-                            ReflactUtils
-                                    .<PropertyValuesHolder[]> getFieldValue(
-                                            ValueAnimator.class, animator,
-                                            "mValues")[0]
-                                    .setConverter(new TypeConverter<LinearLayout.LayoutParams, ViewGroup.LayoutParams>(
-                                            LinearLayout.LayoutParams.class,
-                                            ViewGroup.LayoutParams.class) {
-                                        @Override
-                                        public ViewGroup.LayoutParams convert(
-                                                android.widget.LinearLayout.LayoutParams value) {
-                                            return (ViewGroup.LayoutParams) value;
-                                        }
-                                    });
-                        }
+//                        if (Build.VERSION.SDK_INT < 21) {
+//                            ReflactUtils.setFieldValue(
+//                                    Class.class,
+//                                    ReflactUtils
+//                                            .<PropertyValuesHolder[]> getFieldValue(
+//                                                    ValueAnimator.class,
+//                                                    animator, "mValues")[0],
+//                                    "mValueType", ViewGroup.LayoutParams.class);
+//                        } else {
+//                            ReflactUtils
+//                                    .<PropertyValuesHolder[]> getFieldValue(
+//                                            ValueAnimator.class, animator,
+//                                            "mValues")[0]
+//                                    .setConverter(new TypeConverter<LinearLayout.LayoutParams, ViewGroup.LayoutParams>(
+//                                            LinearLayout.LayoutParams.class,
+//                                            ViewGroup.LayoutParams.class) {
+//                                        @Override
+//                                        public ViewGroup.LayoutParams convert(
+//                                                android.widget.LinearLayout.LayoutParams value) {
+//                                            return (ViewGroup.LayoutParams) value;
+//                                        }
+//                                    });
+//                        }
                         animator.start();
                     }
 
@@ -149,29 +147,29 @@ public class View_Login_Activity extends Activity {
                                 return params;
                             }
                         });
-                        if (Build.VERSION.SDK_INT < 21) {
-                            ReflactUtils.setFieldValue(
-                                    Class.class,
-                                    ReflactUtils
-                                            .<PropertyValuesHolder[]> getFieldValue(
-                                                    ValueAnimator.class,
-                                                    animator, "mValues")[0],
-                                    "mValueType", ViewGroup.LayoutParams.class);
-                        } else {
-                            ReflactUtils
-                                    .<PropertyValuesHolder[]> getFieldValue(
-                                            ValueAnimator.class, animator,
-                                            "mValues")[0]
-                                    .setConverter(new TypeConverter<LinearLayout.LayoutParams, ViewGroup.LayoutParams>(
-                                            LinearLayout.LayoutParams.class,
-                                            ViewGroup.LayoutParams.class) {
-                                        @Override
-                                        public ViewGroup.LayoutParams convert(
-                                                android.widget.LinearLayout.LayoutParams value) {
-                                            return (ViewGroup.LayoutParams) value;
-                                        }
-                                    });
-                        }
+//                        if (Build.VERSION.SDK_INT < 21) {
+//                            ReflactUtils.setFieldValue(
+//                                    Class.class,
+//                                    ReflactUtils
+//                                            .<PropertyValuesHolder[]> getFieldValue(
+//                                                    ValueAnimator.class,
+//                                                    animator, "mValues")[0],
+//                                    "mValueType", ViewGroup.LayoutParams.class);
+//                        } else {
+//                            ReflactUtils
+//                                    .<PropertyValuesHolder[]> getFieldValue(
+//                                            ValueAnimator.class, animator,
+//                                            "mValues")[0]
+//                                    .setConverter(new TypeConverter<LinearLayout.LayoutParams, ViewGroup.LayoutParams>(
+//                                            LinearLayout.LayoutParams.class,
+//                                            ViewGroup.LayoutParams.class) {
+//                                        @Override
+//                                        public ViewGroup.LayoutParams convert(
+//                                                android.widget.LinearLayout.LayoutParams value) {
+//                                            return (ViewGroup.LayoutParams) value;
+//                                        }
+//                                    });
+//                        }
                         animator.start();
                     }
                 });

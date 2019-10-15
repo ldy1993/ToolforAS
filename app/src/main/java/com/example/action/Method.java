@@ -8,7 +8,7 @@ import com.example.function.View.Menu.View_Menu_Activity;
 import com.example.function.algorithm.CalcPWD_Activity;
 import com.example.function.algorithm.RSA_Activity;
 import com.example.function.comm.FilesOrParamOrStringUpActivity;
-import com.example.function.USB.USB_HOSTActivity;
+import com.example.function.comprehensive.upLogActivity;
 import com.example.function.jni.jniTest.JniTestActivity;
 import com.example.function.scan.idcard.one.IdCardMainActivity;
 import com.example.function.study.day10.Day10_Activity;
@@ -55,6 +55,8 @@ public class Method {
     private final static int VIEW=7; //好看界面
     private final static int LOGIN=0; //登录界面
     private final static int MENU=1; //菜单界面
+    private final static int COMPREHENSIVE=8; //综合
+    private final static int UP_LOG=0; //日志上传
     public static void implement_method(int location , int position, Context context)
     {
         Intent intent;
@@ -86,9 +88,7 @@ public class Method {
                 switch (position)
                 {
                     case USB_HOST:
-                         intent = new Intent(context, USB_HOSTActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
-                        context.startActivity(intent);
+
                         break;
 
                 }
@@ -183,6 +183,18 @@ public class Method {
                         break;
                 }
                 break;
+            case COMPREHENSIVE:
+
+                switch (position)
+                {
+                    case UP_LOG:
+                        intent = new Intent(context, upLogActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
+                }
+                break;
+
         }
     }
 
