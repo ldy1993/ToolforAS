@@ -31,6 +31,7 @@
         <activity android:name="com.example.function.comprehensive.upLogActivity"></activity>
         <activity android:name="com.example.function.View.Menu.View_Menu_Activity" />
         <activity android:name="com.example.function.View.Login.View_Login_Activity" />
+        <activity android:name="com.example.function.View.Amount.View_InputAmount_Activity" />
         <activity android:name="com.example.function.algorithm.RSA_Activity" />
         <activity android:name="com.example.function.algorithm.CalcPWD_Activity" />
         <activity android:name="com.example.function.study.day6.Day6_Activity" />

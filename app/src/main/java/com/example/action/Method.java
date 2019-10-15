@@ -3,6 +3,7 @@ package com.example.action;
 import android.content.Context;
 import android.content.Intent;
 
+import com.example.function.View.Amount.View_InputAmount_Activity;
 import com.example.function.View.Login.View_Login_Activity;
 import com.example.function.View.Menu.View_Menu_Activity;
 import com.example.function.algorithm.CalcPWD_Activity;
@@ -55,6 +56,7 @@ public class Method {
     private final static int VIEW=7; //好看界面
     private final static int LOGIN=0; //登录界面
     private final static int MENU=1; //菜单界面
+    private final static int INPUTAMOUNT=2; //菜单界面
     private final static int COMPREHENSIVE=8; //综合
     private final static int UP_LOG=0; //日志上传
     public static void implement_method(int location , int position, Context context)
@@ -178,6 +180,11 @@ public class Method {
                         break;
                     case MENU:
                         intent = new Intent(context, View_Menu_Activity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
+                    case INPUTAMOUNT:
+                        intent = new Intent(context, View_InputAmount_Activity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
