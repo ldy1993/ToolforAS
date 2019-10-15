@@ -35,4 +35,8 @@
   <dimen name="font_size_small">17sp</dimen>
   <dimen name="activity_horizontal_margin">16dp</dimen>
   <dimen name="activity_vertical_margin">16dp</dimen>
+   <!-- 金额键盘相关属性 -->
+  <dimen name="btn_num_width">90dip</dimen>
+  <dimen name="btn_num_height">75dip</dimen>
+    <dimen name="height_amount_edit">66dip</dimen>
 </resources>

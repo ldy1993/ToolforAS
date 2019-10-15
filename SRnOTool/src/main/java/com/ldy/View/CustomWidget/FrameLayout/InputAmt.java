@@ -1,4 +1,4 @@
-package com.ldy.View.CustomWidget.Framelayout;
+package com.ldy.View.CustomWidget.FrameLayout;
 
 import android.content.Context;
 import android.util.AttributeSet;
