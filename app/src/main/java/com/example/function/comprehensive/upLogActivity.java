@@ -41,6 +41,7 @@ public class upLogActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_up_log);
         context=this;
+        //还需要申请权限。
         Log.e("ldy","开启日志服务");
         LogcatHelper.getInstance(upLogActivity.this).start();
     }
@@ -167,23 +168,5 @@ public class upLogActivity extends Activity {
             }
         }
     };
-    //申请读写权限
-    private static final int REQUEST_EXTERNAL_STORAGE = 1;
-    private static String[] PERMISSIONS_STORAGE = {
-            "android.permission.READ_EXTERNAL_STORAGE",
-            "android.permission.WRITE_EXTERNAL_STORAGE" };
-    public static void verifyStoragePermissions(Activity activity) {
 
-        try {
-            //检测是否有写的权限
-            int permission = ActivityCompat.checkSelfPermission(activity,
-                    "android.permission.WRITE_EXTERNAL_STORAGE");
-            if (permission != PackageManager.PERMISSION_GRANTED) {
-                // 没有写的权限，去申请写的权限，会弹出对话框
-                ActivityCompat.requestPermissions(activity, PERMISSIONS_STORAGE,REQUEST_EXTERNAL_STORAGE);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 }
