@@ -2,7 +2,7 @@ package com.ldy.action;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.ldy.function.Network.Instantiation.httpPost.httpPostServiceImpl;
+import com.ldy.function.Network.Instantiation.httpPost.HttpPostServiceImpl;
 import com.ldy.function.Network.service.NetComplateListener;
 import com.ldy.function.Network.Instantiation.customHttp.jerry.CommEntityServiceImpl;
 import com.ldy.function.sign.service.SignServiceImpl;
@@ -18,7 +18,7 @@ import java.util.Map;
  * 作    者：刘东阳
  * 版    本：
  * 创建日期：2019/9/5
- * 描    述：
+ * 描    述：该类为授权码通讯实现类，调用该类的方法，可以和后台SRnOWEB进行通讯
  * 修订历史：
  * ================================================
  */
@@ -28,7 +28,7 @@ public class AuthorizationAction {
     public final static String SRNO_SERVER_TEST = "http://192.168.3.211:8080/SRnOWeb";
     public final static String SRNO_AUTH_SERVLET = "/authorization_posAuth.action";
 
-    private static httpPostServiceImpl httpPostServiceImpl=new httpPostServiceImpl();
+    private static HttpPostServiceImpl httpPostServiceImpl=new HttpPostServiceImpl();
     private static CommEntityServiceImpl commEntityServiceImpl=new CommEntityServiceImpl();
     private static SignServiceImpl signServiceImpl=new SignServiceImpl();
 
@@ -47,7 +47,7 @@ public class AuthorizationAction {
                     String preStr = jsonObject.toString();
                     String sign = signServiceImpl.getSign("RSA_1_256", preStr);
                     jsonObject.put("sign",sign);
-                    httpPostServiceImpl.PostString(jsonObject.toString(),
+                    httpPostServiceImpl.postString(jsonObject.toString(),
                             SRNO_SERVER + SRNO_AUTH_SERVLET,
                             20000, 30000,
                             new NetComplateListener() {
@@ -133,7 +133,7 @@ public class AuthorizationAction {
                 System.out.println("key:" + s);
                 System.out.println("values:" + params.get(s));
             }
-            commEntityServiceImpl.PostParamsOrFile(null,params, SRNO_SERVER + SRNO_AUTH_SERVLET, listener);
+            commEntityServiceImpl.postParamsOrFile(null,params, SRNO_SERVER + SRNO_AUTH_SERVLET, listener);
         } catch (Exception e) {
             e.printStackTrace();
         }

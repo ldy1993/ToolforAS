@@ -4,32 +4,23 @@ import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.ldy.Utils.ConvUtil;
-import com.ldy.function.Network.service.CommunicationHttpService;
+import com.ldy.function.Network.service.ICommunicationManager;
 import com.ldy.function.Network.service.NetComplateListener;
 
-import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.conn.HttpHostConnectException;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.CoreConnectionPNames;
-import org.apache.http.util.EntityUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -42,10 +33,10 @@ import java.util.Map;
  * 修订历史：
  * ================================================
  */
-public class httpPostServiceImpl implements CommunicationHttpService {
+public class HttpPostServiceImpl implements ICommunicationManager {
 
     @Override
-    public void PostString(final String data, final String url, final int connecttimeout, final int requesttimeout, final NetComplateListener listener) {
+    public void postString(final String data, final String url, final int connectTimeout, final int requestTimeout, final NetComplateListener listener) {
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -74,9 +65,9 @@ public class httpPostServiceImpl implements CommunicationHttpService {
                         httpPost.setHeader("Content-Type", "text/html;charset=UTF-8");
                         httpclient = new DefaultHttpClient();
                         //请求超时
-                        httpclient.getParams().setParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, connecttimeout);
+                        httpclient.getParams().setParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, connectTimeout);
                         //读取超时
-                        httpclient.getParams().setParameter(CoreConnectionPNames.SO_TIMEOUT, requesttimeout);
+                        httpclient.getParams().setParameter(CoreConnectionPNames.SO_TIMEOUT, requestTimeout);
                         response = httpclient.execute(httpPost);
                         if (response != null && response.getEntity() != null) {
                          HttpEntity entity = response.getEntity();
@@ -118,7 +109,7 @@ public class httpPostServiceImpl implements CommunicationHttpService {
     }
 
     @Override
-    public void PostParamsOrFile(File file, Map<String, Object> params, String url, NetComplateListener listener) {
+    public void postParamsOrFile(File file, Map<String, Object> params, String url, NetComplateListener listener) {
 
     }
 

@@ -2,11 +2,8 @@ package com.ldy.function.Network.Instantiation.customHttp.jerry;
 
 import android.util.Log;
 
-import com.alibaba.fastjson.JSON;
-import com.ldy.function.Network.service.CommunicationHttpService;
+import com.ldy.function.Network.service.ICommunicationManager;
 import com.ldy.function.Network.service.NetComplateListener;
-
-import org.json.JSONObject;
 
 import java.io.File;
 import java.util.Map;
@@ -25,7 +22,7 @@ import me.jerry.framework.comm.NetException;
  * 修订历史：
  * ================================================
  */
-public class CommEntityServiceImpl implements CommunicationHttpService {
+public class CommEntityServiceImpl implements ICommunicationManager {
     /**
      * 耿浩框架，需要初始化一下通讯设备
      *
@@ -51,12 +48,12 @@ public class CommEntityServiceImpl implements CommunicationHttpService {
     }
 
     @Override
-    public void PostString(String data, String url, int connecttimeout, int requesttimeout, NetComplateListener listener) {
+    public void postString(String data, String url, int connectTimeout, int requestTimeout, NetComplateListener listener) {
 
     }
 
     @Override
-    public void PostParamsOrFile(File file, Map<String, Object> params, String url, final NetComplateListener listener) {
+    public void postParamsOrFile(File file, Map<String, Object> params, String url, final NetComplateListener listener) {
         me.jerry.framework.comm.CommEntity entity = new me.jerry.framework.comm.CommEntity();
         me.jerry.framework.comm.CommEntity.RequestBean requestBean = new me.jerry.framework.comm.CommEntity.RequestBean();
         try {

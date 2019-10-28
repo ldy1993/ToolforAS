@@ -17,9 +17,9 @@ import java.util.Map;
  * 修订历史：
  * ================================================
  */
-public interface CommunicationHttpService {
-    void PostString(String data, String url, int connecttimeout, int requesttimeout, final NetComplateListener listener) ;
+public interface ICommunicationManager {
+    void postString(String data, String url, int connectTimeout, int requestTimeout, final NetComplateListener listener) ;
 
-    void PostParamsOrFile(File file, Map<String, Object> params, String url, final NetComplateListener listener) ;
+    void postParamsOrFile(File file, Map<String, Object> params, String url, final NetComplateListener listener) ;
 
     }

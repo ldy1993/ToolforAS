@@ -1,9 +1,7 @@
 package com.example.function.comprehensive;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -15,7 +13,7 @@ import android.widget.Toast;
 import com.ldy.View.CustomWidget.TimePicker.TimeUtils;
 import com.ldy.View.dialog.NetProcessDialog;
 import com.ldy.function.Log.LogcatHelper;
-import com.ldy.function.Network.Instantiation.okhttp.okHttpServiceImpl;
+import com.ldy.function.Network.Instantiation.okhttp.OkHttpServiceImpl;
 import com.ldy.function.Network.service.NetComplateListener;
 import com.ldy.study.R;
 
@@ -35,7 +33,7 @@ public class upLogActivity extends Activity {
     public static final int PACK_ERROR = 1;
     public static final int WORKFLOW_ERROR = 2;
     public static final int NET_ERROR = 3;
-    private static okHttpServiceImpl okHttpServiceImpl=new okHttpServiceImpl();
+    private static OkHttpServiceImpl okHttpServiceImpl=new OkHttpServiceImpl();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
