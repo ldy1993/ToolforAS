@@ -706,7 +706,8 @@ public class WheelView extends View {
 	}
 
 	private SimpleOnGestureListener gestureListener = new SimpleOnGestureListener() {
-		public boolean onDown(MotionEvent e) {
+		@Override
+        public boolean onDown(MotionEvent e) {
 			if (isScrollingPerformed) {
 				scroller.forceFinished(true);
 				clearMessages();
@@ -715,13 +716,15 @@ public class WheelView extends View {
 			return false;
 		}
 
-		public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+		@Override
+        public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
 			startScrolling();
 			doScroll((int) -distanceY);
 			return true;
 		}
 
-		public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+		@Override
+        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
 			lastScrollY = currentItem * getItemHeight() + scrollingOffset;
 			int maxY = isCyclic ? 0x7FFFFFFF : adapter.getItemsCount() * getItemHeight();
 			int minY = isCyclic ? -maxY : 0;
@@ -746,7 +749,8 @@ public class WheelView extends View {
 
 	// animation handler
 	private Handler animationHandler = new Handler() {
-		public void handleMessage(Message msg) {
+		@Override
+        public void handleMessage(Message msg) {
 			scroller.computeScrollOffset();
 			int currY = scroller.getCurrY();
 			int delta = lastScrollY - currY;
@@ -780,10 +784,11 @@ public class WheelView extends View {
 		int itemHeight = getItemHeight();
 		boolean needToIncrease = offset > 0 ? currentItem < adapter.getItemsCount() : currentItem > 0;
 		if ((isCyclic || needToIncrease) && Math.abs((float) offset) > (float) itemHeight / 2) {
-			if (offset < 0)
-				offset += itemHeight + MIN_DELTA_FOR_SCROLLING;
-			else
-				offset -= itemHeight + MIN_DELTA_FOR_SCROLLING;
+			if (offset < 0) {
+                offset += itemHeight + MIN_DELTA_FOR_SCROLLING;
+            } else {
+                offset -= itemHeight + MIN_DELTA_FOR_SCROLLING;
+            }
 		}
 		if (Math.abs(offset) > MIN_DELTA_FOR_SCROLLING) {
 			scroller.startScroll(0, 0, 0, offset, SCROLLING_DURATION);

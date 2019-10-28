@@ -42,10 +42,16 @@ import com.ldy.study.R;
 import com.example.function.scan.idcard.one.view.ViewfinderView;
 import com.wintone.bankcard.BankCardAPI;
 
+import org.apache.commons.lang3.concurrent.BasicThreadFactory;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.TimeUnit;
 
 public class ScanCamera extends Activity implements Callback, PreviewCallback {
     private static final String PATH = new StringBuilder(String.valueOf(Environment.getExternalStorageDirectory().toString())).append("/DCIM/Camera/").toString();
@@ -79,10 +85,12 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
     private SurfaceView surfaceView;
     public int surfaceWidth;
     private byte[] tackData;
-    private Timer time;
+    //使用ScheduledExecuorService代替Timer；
+    ScheduledExecutorService executorService ;
     private TimerTask timer;
     private int width;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
@@ -94,6 +102,7 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
         findView();
     }
 
+    @Override
     protected void onRestart() {
         if (this.bitmap != null) {
             this.bitmap.recycle();
@@ -103,6 +112,7 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
         super.onRestart();
     }
 
+    @Override
     protected void onResume() {
         super.onResume();
         this.api = new BankCardAPI();
@@ -189,17 +199,19 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
         this.surfaceHolder.addCallback(this);
         this.surfaceHolder.setType(3);
         this.back.setOnClickListener(new OnClickListener() {
+            @Override
             public void onClick(View v) {
                 ScanCamera.this.finish();
             }
         });
         this.flash.setOnClickListener(new OnClickListener() {
+            @Override
             public void onClick(View v) {
                 if (!ScanCamera.this.getPackageManager().hasSystemFeature("android.hardware.camera.flash")) {
                     Toast.makeText(ScanCamera.this, ScanCamera.this.getResources().getString(ScanCamera.this.getResources().getIdentifier("toast_flash", "string", ScanCamera.this.getApplication().getPackageName())), Toast.LENGTH_SHORT).show();
                 } else if (ScanCamera.this.camera != null) {
                     Parameters parameters = ScanCamera.this.camera.getParameters();
-                    if (parameters.getFlashMode().equals("torch")) {
+                    if ("torch".equals(parameters.getFlashMode())) {
                         parameters.setFlashMode("off");
                         parameters.setExposureCompensation(0);
                     } else {
@@ -217,6 +229,7 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
         });
     }
 
+    @Override
     public void surfaceCreated(SurfaceHolder holder) {
         if (this.camera == null) {
             try {
@@ -229,13 +242,20 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
         }
         try {
             this.camera.setPreviewDisplay(holder);
-            this.time = new Timer();
+            /**
+             *    1是核心线程数量，后面参数是一个线程工厂，采用了建造者模式创建
+             *    可以通过线程工厂给每个创建出来的线程设置符合业务的名字。
+             */
+            executorService= new ScheduledThreadPoolExecutor(1,
+                    new BasicThreadFactory.Builder().namingPattern("example-schedule-pool-%d").daemon(true).build());
             if (this.timer == null) {
                 this.timer = new TimerTask() {
+                    @Override
                     public void run() {
                         if (ScanCamera.this.camera != null) {
                             try {
                                 ScanCamera.this.camera.autoFocus(new AutoFocusCallback() {
+                                    @Override
                                     public void onAutoFocus(boolean success, Camera camera) {
                                     }
                                 });
@@ -246,16 +266,20 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
                     }
                 };
             }
-            this.time.schedule(this.timer, 500, 2500);
+          long initialDelay=500;
+            long period=2500;
+            executorService.scheduleAtFixedRate(this.timer,initialDelay,period, TimeUnit.MILLISECONDS);
             initCamera(holder);
         } catch (IOException e2) {
             e2.printStackTrace();
         }
     }
 
+    @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
     }
 
+    @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
         try {
             if (this.camera != null) {
@@ -268,6 +292,7 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
         }
     }
 
+    @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             try {
@@ -321,9 +346,9 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
         parameters.setPictureFormat(ImageFormat.JPEG);
         parameters.setPreviewSize(this.preWidth, this.preHeight);
         if (parameters.getSupportedFocusModes().contains("continuous-picture")) {
-            if (this.time != null) {
-                this.time.cancel();
-                this.time = null;
+            if (this.executorService != null) {
+                this.executorService.shutdown();
+                this.executorService = null;
             }
             if (this.timer != null) {
                 this.timer.cancel();
@@ -344,6 +369,7 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
         this.camera.startPreview();
     }
 
+    @Override
     public void onPreviewFrame(byte[] data, Camera camera) {
         this.tackData = data;
         Parameters parameters = camera.getParameters();
@@ -414,6 +440,7 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
         }
     }
 
+    @Override
     protected void onStop() {
         super.onStop();
         if (this.timer != null) {

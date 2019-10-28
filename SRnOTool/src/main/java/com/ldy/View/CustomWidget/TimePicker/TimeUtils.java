@@ -88,7 +88,7 @@ public class TimeUtils {
         // int second = calendar.get(Calendar.SECOND);
         wheelMain.setEND_YEAR(year);
         // 若为空显示当前时间
-        if (date != null && !date.equals("")) {
+        if (date != null && !"".equals(date)) {
 //            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
             try {
 //                Date date = format.parse(dateStr);

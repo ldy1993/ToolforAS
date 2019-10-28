@@ -51,8 +51,9 @@ public class md5new {
         for (int i = 0; i < digest.length; i++) {
             int num = ((int) digest[i]) & 0xff;
             //如果不足16，加0填充
-            if (num < 16)
+            if (num < 16) {
                 buff.append("0");
+            }
             buff.append(Integer.toHexString(num));
         }
         return buff.toString();

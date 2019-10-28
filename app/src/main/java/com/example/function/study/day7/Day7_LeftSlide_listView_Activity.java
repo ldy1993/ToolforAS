@@ -20,6 +20,7 @@ public class Day7_LeftSlide_listView_Activity extends Activity {
      private final int LOADDATA=0;
     private  ListView listView;
     Handler handler=new Handler(){
+        @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case LOADDATA:
@@ -30,6 +31,7 @@ public class Day7_LeftSlide_listView_Activity extends Activity {
                 }
                 listView.setAdapter(new leftSlideAdapter(Day7_LeftSlide_listView_Activity.this, (ArrayList<leftSlideData>)msg.obj));
                 break;
+                default:
             }
             super.handleMessage(msg);
         }

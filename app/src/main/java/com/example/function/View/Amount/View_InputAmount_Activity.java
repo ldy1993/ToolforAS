@@ -26,6 +26,7 @@ public class View_InputAmount_Activity extends Activity {
                     case 1:
                         Toast.makeText(View_InputAmount_Activity.this, "确认", Toast.LENGTH_SHORT).show();
                         break;
+                    default:
                 }
             }
         });

@@ -4,23 +4,32 @@ import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.ldy.Utils.ConvUtil;
 import com.ldy.function.Network.service.CommunicationHttpService;
 import com.ldy.function.Network.service.NetComplateListener;
 
+import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.conn.HttpHostConnectException;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.CoreConnectionPNames;
+import org.apache.http.util.EntityUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -77,7 +86,7 @@ public class httpPostServiceImpl implements CommunicationHttpService {
                          try {
                                 JSONObject returnData = JSON.parseObject(result);
 
-                                if (returnData.get("rspCode").toString().equals("00")) {
+                                if ("00".equals(returnData.get("rspCode").toString())) {
 
                                     listener.onNetComplate(result);
                                 } else {
@@ -112,4 +121,6 @@ public class httpPostServiceImpl implements CommunicationHttpService {
     public void PostParamsOrFile(File file, Map<String, Object> params, String url, NetComplateListener listener) {
 
     }
+
+
 }

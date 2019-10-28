@@ -1,5 +1,6 @@
 package com.example.function.comprehensive;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -28,13 +29,12 @@ public class upLogActivity extends Activity {
     private Handler handler;
     private static Context context;
     private static double fileSize=0;
-    public final static String SRnO_SERVER = "http://180.141.91.144:6699/SRnOWeb_GX_Log";
-    public final static String SRnO_LOG_STRUTS2 = "/logger_dealFromPos.action";
+    public final static String SRNO_SERVER = "http://180.141.91.144:6699/SRnOWeb_GX_Log";
+    public final static String SRNO_LOG_STRUTS2 = "/logger_dealFromPos.action";
     public final static int SUCC =0;
-    public static final int PackError = 1;
-    public static final int WorkFlowError = 2;
-    public static final int NetError = 3;
-    private NetProcessDialog npw;
+    public static final int PACK_ERROR = 1;
+    public static final int WORKFLOW_ERROR = 2;
+    public static final int NET_ERROR = 3;
     private static okHttpServiceImpl okHttpServiceImpl=new okHttpServiceImpl();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +77,7 @@ public class upLogActivity extends Activity {
                         String sn="1234567890";
                         String posModel="A910";
 //                        String url=SRnO_SERVER+SRnO_LOG_SERVLET;
-                        String url=SRnO_SERVER+SRnO_LOG_STRUTS2;
+                        String url=SRNO_SERVER+SRNO_LOG_STRUTS2;
 
                         Log.e("ldy","通讯开始");
 //                        NetProcessWindow.getInstance(context).show();
@@ -89,14 +89,14 @@ public class upLogActivity extends Activity {
                         params.put("pid","12345678");
                         params.put("posModel",posModel);
                         params.put("fileSize",fileSize+"kb");
-                        npw= new NetProcessDialog(context,"上传日志，大小为："+fileSize+"kb");
-                        npw.getInstance(context).show();
+                        NetProcessDialog npw= new NetProcessDialog(context,"上传日志，大小为："+fileSize+"kb");
+                        NetProcessDialog.getInstance(context).show();
                         Log.e("ldy","统一资源定位器："+url);
                         okHttpServiceImpl.PostParamsOrFile(file, params, url, new NetComplateListener() {
 
                             @Override
                             public void onNetComplate(String data) {
-                                npw.getInstance(context).dismiss();
+                                NetProcessDialog.getInstance(context).dismiss();
                                 Log.e("ldy","通讯成功:"+data);
                                 Message msg = mHandler.obtainMessage();
                                 msg.obj = data;
@@ -108,30 +108,30 @@ public class upLogActivity extends Activity {
 
                             @Override
                             public void onNetError(int errorCode, String s) {
-                                npw.getInstance(context).dismiss();
+                                NetProcessDialog.getInstance(context).dismiss();
                                 Log.e("ldy","通讯失败"+errorCode);
                                 Message msg = mHandler.obtainMessage();
-                                msg.what = NetError;
+                                msg.what = NET_ERROR;
                                 mHandler.sendMessage(msg);
 
                             }
 
                             @Override
                             public void onWorkFlowError(String errorCode, String s1) {
-                                npw.getInstance(context).dismiss();
+                                NetProcessDialog.getInstance(context).dismiss();
                                 Log.e("ldy","通讯失败"+errorCode);
                                 Message msg = mHandler.obtainMessage();
-                                msg.what = WorkFlowError;
+                                msg.what = WORKFLOW_ERROR;
                                 mHandler.sendMessage(msg);
 
                             }
 
                             @Override
                             public void onPackError(int errorCode, String s) {
-                                npw.getInstance(context).dismiss();
+                                NetProcessDialog.getInstance(context).dismiss();
                                 Log.e("ldy","通讯失败"+errorCode);
                                 Message msg = mHandler.obtainMessage();
-                                msg.what = PackError;
+                                msg.what = PACK_ERROR;
                                 mHandler.sendMessage(msg);
 
                             }
@@ -151,20 +151,19 @@ public class upLogActivity extends Activity {
                 case SUCC:
                     Toast.makeText(context,"上传成功,日志大小为"+fileSize+"kb",Toast.LENGTH_LONG).show();
                     break;
-                case PackError:
+                case PACK_ERROR:
                     Toast.makeText(context,"上传失败:PackError",Toast.LENGTH_SHORT).show();
 
                     break;
-                case WorkFlowError:
+                case WORKFLOW_ERROR:
                     Toast.makeText(context,"上传失败:WorkFlowError",Toast.LENGTH_SHORT).show();
 
                     break;
-                case NetError:
+                case NET_ERROR:
                     Toast.makeText(context,"上传失败:NetError",Toast.LENGTH_SHORT).show();
 
                     break;
                 default:
-                    break;
             }
         }
     };

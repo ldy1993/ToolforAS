@@ -57,7 +57,8 @@ public class EditTextInput extends EditText {
 		return superResult;
 	}
 	
-	protected void onFocusChanged(boolean focused, int direction, android.graphics.Rect previouslyFocusedRect) {
+	@Override
+    protected void onFocusChanged(boolean focused, int direction, android.graphics.Rect previouslyFocusedRect) {
 
 		try {
 			if(focused) {
@@ -174,7 +175,9 @@ public class EditTextInput extends EditText {
         InputMethodManager imm = (InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
         boolean isOpen = imm.isActive();// is若返回true，则表示输入法打开
         if (isOpen) {
-            if (imm.hideSoftInputFromWindow(getWindowToken(), 0));
+            if (imm.hideSoftInputFromWindow(getWindowToken(), 0)) {
+				;
+			}
         }
         int currentVersion = android.os.Build.VERSION.SDK_INT;
         String methodName = null;

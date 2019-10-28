@@ -18,12 +18,14 @@ public class Day8_Activity extends Activity {
     public volatile boolean exit = false;
     private Thread thread;
 private Handler handler=new Handler(){
+    @Override
     public void handleMessage(Message msg) {
         switch (msg.what)
         {
             case progressBar:
                 pb.setProgress(msg.arg1);
                 break;
+            default:
         }
     }
 };
@@ -39,7 +41,7 @@ private Handler handler=new Handler(){
 
                 while (!exit) {
                     try {
-                        thread.sleep(200);
+                        Thread.sleep(200);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -80,7 +82,7 @@ public void begin(View view)
 
                     while (!exit) {
                         try {
-                            thread.sleep(200);
+                            Thread.sleep(200);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }

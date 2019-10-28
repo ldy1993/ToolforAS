@@ -38,9 +38,9 @@ public class NetProcessDialog extends Dialog {
 		super(context, R.style.NetProcessWindow);
 		init();
 	}
-	public NetProcessDialog(Context context, String content) {
+	public NetProcessDialog(Context context, String str) {
 		super(context, R.style.NetProcessWindow);
-		this.content=content;
+		content=str;
 		init();
 
 	}
@@ -141,7 +141,8 @@ public class NetProcessDialog extends Dialog {
 		animator.start();
 	}
 	
-	public void dismiss() {
+	@Override
+    public void dismiss() {
 		new Handler(Looper.getMainLooper()).post(new Runnable() {
 			@Override
 			public void run() {
@@ -161,6 +162,7 @@ public class NetProcessDialog extends Dialog {
 			case KeyEvent.KEYCODE_MENU:
 			case KeyEvent.KEYCODE_HOME:
 			return true;
+			default:
 		}
 		return super.dispatchKeyEvent(event);
 	}

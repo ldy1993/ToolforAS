@@ -27,6 +27,7 @@ public class View_Login_Activity extends Activity {
     private RelativeLayout rl_logo;
     private EditText et_operator_id;
     private EditText et_password;
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view__login);

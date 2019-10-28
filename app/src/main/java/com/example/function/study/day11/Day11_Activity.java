@@ -22,14 +22,19 @@ import android.widget.TextView;
 
 import com.ldy.study.R;
 
+import org.apache.commons.lang3.concurrent.BasicThreadFactory;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
 
 public class Day11_Activity extends Activity {
     public volatile boolean exit = false;
     private TextView tv;
     private Handler handler=new Handler(){
+        @Override
         public void handleMessage(Message msg) {
             tv.setText(msg.obj+"\n"+tv.getText());
         }
@@ -43,7 +48,10 @@ public class Day11_Activity extends Activity {
     public void beginBt(View view)
     {
         exit = false;
-        ExecutorService executorService= Executors.newCachedThreadPool();
+//        ExecutorService executorService= Executors.newCachedThreadPool();
+        ScheduledExecutorService executorService = new ScheduledThreadPoolExecutor(1,
+                new BasicThreadFactory.Builder().namingPattern("example-schedule-pool-%d").daemon(true).build());
+
         executorService.submit(new Runnable() {
             @Override
             public void run() {

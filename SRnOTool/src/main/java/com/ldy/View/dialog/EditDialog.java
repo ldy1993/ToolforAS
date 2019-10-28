@@ -44,7 +44,7 @@ public class EditDialog extends Dialog {
 				public CharSequence filter(CharSequence arg0, int arg1,
 						int arg2, Spanned arg3, int arg4, int arg5) {
 					// TODO Auto-generated method stub
-					 if (arg0.equals(" ") || arg0.toString().contentEquals("\n")) {
+					 if (" ".equals(arg0) || arg0.toString().contentEquals("\n")) {
 			                return "";
 			            } else {
 
@@ -84,7 +84,7 @@ public class EditDialog extends Dialog {
 		findViewById(R.id.bt_upconfirm).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				if(!((EditText) findViewById(R.id.et_name)).getText().toString().equals(""))
+				if(!"".equals(((EditText) findViewById(R.id.et_name)).getText().toString()))
 				{
 				dismiss();
 				if(mOnButtonListener != null) {
@@ -124,6 +124,7 @@ public class EditDialog extends Dialog {
 		case KeyEvent.KEYCODE_MENU:
 		case KeyEvent.KEYCODE_HOME:
 			return true;
+			default:
 		}
 		return super.dispatchKeyEvent(event);
 	}

@@ -53,6 +53,7 @@ public class IDDialog extends Dialog {
 			case KeyEvent.KEYCODE_MENU:
 			case KeyEvent.KEYCODE_HOME:
 			return true;
+			default:
 		}
 		return super.dispatchKeyEvent(event);
 	}

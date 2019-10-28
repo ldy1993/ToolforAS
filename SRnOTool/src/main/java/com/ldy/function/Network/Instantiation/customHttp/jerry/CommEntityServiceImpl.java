@@ -2,8 +2,11 @@ package com.ldy.function.Network.Instantiation.customHttp.jerry;
 
 import android.util.Log;
 
+import com.alibaba.fastjson.JSON;
 import com.ldy.function.Network.service.CommunicationHttpService;
 import com.ldy.function.Network.service.NetComplateListener;
+
+import org.json.JSONObject;
 
 import java.io.File;
 import java.util.Map;
@@ -22,7 +25,7 @@ import me.jerry.framework.comm.NetException;
  * 修订历史：
  * ================================================
  */
-public class commEntityServiceImpl implements CommunicationHttpService {
+public class CommEntityServiceImpl implements CommunicationHttpService {
     /**
      * 耿浩框架，需要初始化一下通讯设备
      *
@@ -86,5 +89,8 @@ public class commEntityServiceImpl implements CommunicationHttpService {
         });
         CommManager.getInstance().sendMessage(entity);
     }
+
+
+
 
 }

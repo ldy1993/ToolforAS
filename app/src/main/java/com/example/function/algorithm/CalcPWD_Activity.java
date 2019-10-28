@@ -93,8 +93,9 @@ public class CalcPWD_Activity extends Activity {
     public int[] delete(int[] a, int index) {
         int[] b = new int[a.length - 1];
         System.arraycopy(a, 0, b, 0, index);
-        if(index < a.length - 1)
+        if(index < a.length - 1) {
             System.arraycopy(a, index + 1, b, index, a.length - index - 1);
+        }
         return b;
     }
 }

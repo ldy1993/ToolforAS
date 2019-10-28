@@ -1,12 +1,10 @@
 package com.ldy.action;
 
-import android.util.Log;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.ldy.function.Network.Instantiation.httpPost.httpPostServiceImpl;
 import com.ldy.function.Network.service.NetComplateListener;
-import com.ldy.function.Network.Instantiation.customHttp.jerry.commEntityServiceImpl;
+import com.ldy.function.Network.Instantiation.customHttp.jerry.CommEntityServiceImpl;
 import com.ldy.function.sign.service.SignServiceImpl;
 
 import java.text.SimpleDateFormat;
@@ -26,12 +24,12 @@ import java.util.Map;
  */
 public class AuthorizationAction {
     private static final String TAG = "AuthorizationAction";
-    public final static String SRnO_SERVER = "http://121.199.47.32:8080/SRnOWeb";
-    public final static String SRnO_SERVER_TEST = "http://192.168.3.211:8080/SRnOWeb";
-    public final static String SRnO_AUTH_SERVLET = "/authorization_posAuth.action";
+    public final static String SRNO_SERVER = "http://121.199.47.32:8080/SRnOWeb";
+    public final static String SRNO_SERVER_TEST = "http://192.168.3.211:8080/SRnOWeb";
+    public final static String SRNO_AUTH_SERVLET = "/authorization_posAuth.action";
 
     private static httpPostServiceImpl httpPostServiceImpl=new httpPostServiceImpl();
-    private static commEntityServiceImpl commEntityServiceImpl=new commEntityServiceImpl();
+    private static CommEntityServiceImpl commEntityServiceImpl=new CommEntityServiceImpl();
     private static SignServiceImpl signServiceImpl=new SignServiceImpl();
 
     /**
@@ -50,7 +48,7 @@ public class AuthorizationAction {
                     String sign = signServiceImpl.getSign("RSA_1_256", preStr);
                     jsonObject.put("sign",sign);
                     httpPostServiceImpl.PostString(jsonObject.toString(),
-                            SRnO_SERVER + SRnO_AUTH_SERVLET,
+                            SRNO_SERVER + SRNO_AUTH_SERVLET,
                             20000, 30000,
                             new NetComplateListener() {
                                 @Override
@@ -59,7 +57,7 @@ public class AuthorizationAction {
                                         //这里处理返回业务逻辑
                                         JSONObject returnData = JSON.parseObject(data);
 
-                                        if (returnData.get("rspCode").toString().equals("00")) {
+                                        if ("00".equals(returnData.get("rspCode").toString())) {
                                             String sign=(String) returnData.get("sign");
                                             String time=(String) returnData.get("time");
                                             String rspCode=(String) returnData.get("rspCode");
@@ -118,7 +116,7 @@ public class AuthorizationAction {
      */
     public static void initJerryComm()
     {
-        commEntityServiceImpl.init();
+        CommEntityServiceImpl.init();
     }
     /**
      * 以鍵值對方式上送
@@ -135,7 +133,7 @@ public class AuthorizationAction {
                 System.out.println("key:" + s);
                 System.out.println("values:" + params.get(s));
             }
-            commEntityServiceImpl.PostParamsOrFile(null,params, SRnO_SERVER + SRnO_AUTH_SERVLET, listener);
+            commEntityServiceImpl.PostParamsOrFile(null,params, SRNO_SERVER + SRNO_AUTH_SERVLET, listener);
         } catch (Exception e) {
             e.printStackTrace();
         }

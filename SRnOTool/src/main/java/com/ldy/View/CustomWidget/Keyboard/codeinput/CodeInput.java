@@ -409,6 +409,7 @@ public class CodeInput extends View {
    */
   private class ReductionAnimatorListener implements ValueAnimator.AnimatorUpdateListener {
 
+    @Override
     public void onAnimationUpdate(ValueAnimator valueanimator) {
       float value = ((Float) valueanimator.getAnimatedValue()).floatValue();
       reduction = value;

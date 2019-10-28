@@ -1,4 +1,4 @@
-package com.example.View;
+package com.example.main.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -50,7 +50,7 @@ public class MyAdapter extends BaseAdapter {
 		// TODO Auto-generated method stub
 		ViewHolder  holder = null;
 	    if(convertView==null){
-	    convertView = inflater.inflate(R.layout.mylist_item, null);
+	    convertView = inflater.inflate(R.layout.listview_group, null);
 	    holder = new ViewHolder();
         holder.textView =(TextView)convertView.findViewById(R.id.textview);
         holder.imageView =(ImageView)convertView.findViewById(R.id.imageview);

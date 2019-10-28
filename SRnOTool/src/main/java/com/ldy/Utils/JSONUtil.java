@@ -53,7 +53,7 @@ public class JSONUtil {
                 fields[i].setAccessible(true);
                 String type = fields[i].getGenericType().toString();
                 String name = fields[i].getName();
-                if (type.equals("class java.lang.String")) {
+                if ("class java.lang.String".equals(type)) {
                     if (extendData != null) {
                         try {
                             String value = extendData.getString(name);
@@ -62,7 +62,7 @@ public class JSONUtil {
                             var13.printStackTrace();
                         }
                     }
-                } else if (type.equals("int") && extendData != null) {
+                } else if ("int".equals(type) && extendData != null) {
                     try {
                         int value = extendData.getInt(name);
                         fields[i].setInt(transData, value);

@@ -115,8 +115,9 @@ public class IOSAlertDialog {
 		showLayout = true;
 		if (view == null) {
 			showLayout = false;
-		} else
+		} else {
 			dialog_Group.addView(view, android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.MATCH_PARENT);
+		}
 		return this;
 	}
 

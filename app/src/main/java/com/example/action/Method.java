@@ -45,14 +45,14 @@ public class Method {
     private final static int ACTIVITY_VALUE=0; //activity的传值
     private final static int VIEW_CREATE=1; //view的创建
     private final static int VIEW_CUSTOM=2; //自定义view
-    private final static int VIEW_ListView=3; //ListView
-    private final static int VIEW_LeftSlide_ListView =4; //左滑listview
+    private final static int VIEW_LISTVIEW=3; //ListView
+    private final static int VIEW_LEFTSLIDE_LISTVIEW =4; //左滑listview
     private final static int VIEW_PROGRESSBAR =5; //进度条
     private final static int VIEW_DIALOG =6; //对话框
     private final static int VIEW_POPUPWINDOW =7; //对话框
     private final static int JAVA_ALGORITHM=6; //java算法
     private final static int RSA=0; //RSA算法
-    private final static int pwd=1; //保险箱计算密码
+    private final static int PWD=1; //保险箱计算密码
     private final static int VIEW=7; //好看界面
     private final static int LOGIN=0; //登录界面
     private final static int MENU=1; //菜单界面
@@ -73,6 +73,7 @@ public class Method {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
+                    default:
                 }
                 break;
             case JNI:
@@ -83,7 +84,7 @@ public class Method {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
-
+                    default:
                 }
                 break;
             case USB:
@@ -92,6 +93,7 @@ public class Method {
                     case USB_HOST:
 
                         break;
+                    default:
 
                 }
                 break;
@@ -103,6 +105,7 @@ public class Method {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
+                    default:
                 }
                 break;
             case STUDY:
@@ -124,12 +127,12 @@ public class Method {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
-                    case VIEW_ListView:
+                    case VIEW_LISTVIEW:
                         intent = new Intent(context, Day7_ArrayAdapter_listView_Activity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
-                    case VIEW_LeftSlide_ListView:
+                    case VIEW_LEFTSLIDE_LISTVIEW:
                         intent = new Intent(context, Day7_LeftSlide_listView_Activity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
@@ -149,7 +152,7 @@ public class Method {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
-
+                    default:
                 }
                 break;
             case JAVA_ALGORITHM:
@@ -161,12 +164,12 @@ public class Method {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
-                    case pwd:
+                    case PWD:
                          intent = new Intent(context, CalcPWD_Activity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
-
+                    default:
                 }
                 break;
             case VIEW:
@@ -188,6 +191,7 @@ public class Method {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
+                    default:
                 }
                 break;
             case COMPREHENSIVE:
@@ -199,9 +203,10 @@ public class Method {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
+                    default:
                 }
                 break;
-
+            default:
         }
     }
 

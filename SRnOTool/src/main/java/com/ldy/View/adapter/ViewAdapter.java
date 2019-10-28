@@ -31,6 +31,7 @@ public class ViewAdapter extends PagerAdapter {
         return arg0 == (arg1);
     }
 
+    @Override
     public Object instantiateItem(View view, int position) {
         try {
             // 解决View只能滑动两屏的方法

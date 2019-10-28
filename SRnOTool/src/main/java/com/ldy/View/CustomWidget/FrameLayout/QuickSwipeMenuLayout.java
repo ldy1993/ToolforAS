@@ -173,8 +173,12 @@ public class QuickSwipeMenuLayout extends FrameLayout {
 
                 getParent().requestDisallowInterceptTouchEvent(true);
 
-                if(layoutX > 0 && mMenuLeftView == null) break;
-                if(layoutX < 0 && mMenuRightView == null) break;
+                if(layoutX > 0 && mMenuLeftView == null) {
+                    break;
+                }
+                if(layoutX < 0 && mMenuRightView == null) {
+                    break;
+                }
 
                 if(layoutX > 0 && layoutX > mLeftMargin) {
                     layoutX = mLeftMargin;

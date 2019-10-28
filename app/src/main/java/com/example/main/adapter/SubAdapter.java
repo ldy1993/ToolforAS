@@ -1,4 +1,4 @@
-package com.example.View;
+package com.example.main.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -48,7 +48,7 @@ public class SubAdapter extends BaseAdapter {
 		ViewHolder viewHolder = null;
 		final int location=position;
 		if (convertView == null) {
-			convertView = layoutInflater.inflate(R.layout.sublist_item, null);
+			convertView = layoutInflater.inflate(R.layout.listview_child, null);
 			viewHolder = new ViewHolder();
 			viewHolder.textView = (TextView) convertView
 					.findViewById(R.id.textview1);

@@ -68,6 +68,9 @@ public class CustomKeyboard extends KeyboardView {
 	}
 	
 	public static enum KEYBOARD_TYPE {
+		/**
+		 * 简单键盘类型
+		 */
 		KEYBOARD_TYPE_SIMPLE,
 		;
 	}
@@ -110,28 +113,36 @@ public class CustomKeyboard extends KeyboardView {
 	public void setOnKeyboardActionListener(final OnKeyboardActionListener listener) {
 		OnKeyboardActionListener proxy = new OnKeyboardActionListener() {
 			private OnKeyboardActionListener l = listener;
-			public void swipeUp() {
+			@Override
+            public void swipeUp() {
 				l.swipeUp();
 			}
-			public void swipeRight() {
+			@Override
+            public void swipeRight() {
 				l.swipeRight();
 			}
-			public void swipeLeft() {
+			@Override
+            public void swipeLeft() {
 				l.swipeLeft();
 			}
-			public void swipeDown() {
+			@Override
+            public void swipeDown() {
 				l.swipeDown();
 			}
-			public void onText(CharSequence text) {
+			@Override
+            public void onText(CharSequence text) {
 				l.onText(text);
 			}
-			public void onRelease(int primaryCode) {
+			@Override
+            public void onRelease(int primaryCode) {
 				l.onRelease(primaryCode);
 			}
-			public void onPress(int primaryCode) {
+			@Override
+            public void onPress(int primaryCode) {
 				l.onPress(primaryCode);
 			}
-			public void onKey(int primaryCode, int[] keyCodes) {
+			@Override
+            public void onKey(int primaryCode, int[] keyCodes) {
 				if(willBeep) {
 //					Device.beepPromt(getContext());
 				}
@@ -254,7 +265,8 @@ public class CustomKeyboard extends KeyboardView {
 		}
 	}
 	
-	public boolean isShown() {
+	@Override
+    public boolean isShown() {
 		return isShown;
 	}
 	

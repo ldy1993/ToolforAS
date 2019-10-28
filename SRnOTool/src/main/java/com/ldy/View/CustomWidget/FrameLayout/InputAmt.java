@@ -16,7 +16,22 @@ import SRnO.Tool.aar.R;
 
 public class InputAmt extends FrameLayout implements OnClickListener {
     public enum Keyboard_Type {
-        PAY, REFUND, SCAN_VOID, FAST_AUTH
+        /**
+         * 支付密码键盘
+         */
+        PAY,
+        /**
+         * 退货密码键盘
+         */
+        REFUND,
+        /**
+         * 扫码密码键盘
+         */
+        SCAN_VOID,
+        /**
+         * 快速预授权密码键盘
+         */
+        FAST_AUTH
     }
     private final int bankcard=1;
     private final int scan=2;
@@ -258,7 +273,7 @@ public class InputAmt extends FrameLayout implements OnClickListener {
             }
         }
         //如果第一位为0，
-        if(!text.isEmpty()&&text.substring(0,1).equals("0"))
+        if(!text.isEmpty()&& "0".equals(text.substring(0, 1)))
         {
             //第二位不为.的话，把第一位的0去掉
             if(!text.contains(".")&&text.length()>1)

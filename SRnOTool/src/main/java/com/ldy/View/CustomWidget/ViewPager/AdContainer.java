@@ -28,7 +28,8 @@ import SRnO.Tool.aar.R;
 
 public class AdContainer extends ViewPager {
 	private boolean isCanceled = true;
-	private int ANIM_TIME = 4000;
+	//动画时间
+	private int animTime = 4000;
 	private List<Integer> drawableIds = Arrays.asList(R.drawable.ad1,
 			R.drawable.ad3);
 
@@ -169,7 +170,7 @@ public class AdContainer extends ViewPager {
 				while (!isCanceled) {
 //					Log.e("isCanceled", "-----------");
 					try {
-						Thread.sleep(ANIM_TIME);
+						Thread.sleep(animTime);
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
@@ -177,7 +178,7 @@ public class AdContainer extends ViewPager {
 						cv.close();
 						cv.block();
 						try {
-							Thread.sleep(ANIM_TIME);
+							Thread.sleep(animTime);
 						} catch (InterruptedException e) {
 							e.printStackTrace();
 						}

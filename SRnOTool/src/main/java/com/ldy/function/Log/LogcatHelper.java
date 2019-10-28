@@ -36,13 +36,32 @@ public class LogcatHelper {
 
     private int order = 0;
     private int mPId;
-    //    private String pathLogcat;
     private LogThread mLogThread = null;
-    private String mylogfilename = ".log";// 本类输出的日志文件名称
-    private int SDCARD_LOG_FILE_SAVE_DAYS = 90;// sd卡中日志文件的最多保存天数
-    private static SimpleDateFormat myLogSdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");// 日志的输出格式
-    private static SimpleDateFormat logfile = new SimpleDateFormat("yyyyMMdd");// 日志文件格式
-    private static SharedPreferences sharedPreferences; //私有数据
+    // 本类输出的日志文件名称
+    private String mylogfilename = ".log";
+    // sd卡中日志文件的最多保存天数
+    private int SDCARD_LOG_FILE_SAVE_DAYS = 90;
+    /**
+     *     日志的输出格式
+      */
+//    private static SimpleDateFormat myLogSdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    private static final String MYLOGSDF_FORMAT = "yyyy-MM-dd HH:mm:ss";
+    public static String getMyLogSdfFormat(Date date){
+        SimpleDateFormat dateFormat = new SimpleDateFormat(MYLOGSDF_FORMAT);
+        return dateFormat.format(date);
+    }
+
+    /**
+     *     日志文件格式
+     */
+    private static final String LOGFILE_FORMAT = "yyyyMMdd";
+    public static String getLogFileFormat(Date date){
+        SimpleDateFormat dateFormat = new SimpleDateFormat(LOGFILE_FORMAT);
+        return dateFormat.format(date);
+    }
+//    private static SimpleDateFormat logfile = new SimpleDateFormat("yyyyMMdd");
+    //私有数据
+    private static SharedPreferences sharedPreferences;
     private static String sn = "";
     ;
 
@@ -116,8 +135,9 @@ public class LogcatHelper {
     }
 
     public void start() {
-        if (mLogThread == null)
+        if (mLogThread == null) {
             mLogThread = new LogThread(String.valueOf(mPId), pathLogcat);
+        }
         mLogThread.start();
     }
 
@@ -221,24 +241,24 @@ public class LogcatHelper {
     public static class MyDate {
         public static String getFileName() {
             if (sharedPreferences == null) {
-                return logfile.format(new Date(System.currentTimeMillis()));
+                return getLogFileFormat(new Date(System.currentTimeMillis()));
             }
             String sameDate = sharedPreferences.getString("sameDate", "20190522");
-            if (!sameDate.equals("20190522")) {
+            if (!"20190522".equals(sameDate)) {
                 return sameDate;
             }
-            return logfile.format(new Date(System.currentTimeMillis()));
+            return getLogFileFormat(new Date(System.currentTimeMillis()));
         }
 
         public static String getDateEN() {
-            String date1 = myLogSdf.format(new Date(System.currentTimeMillis()));
+            String date1 =getMyLogSdfFormat(new Date(System.currentTimeMillis()));
             return date1;
         }
     }
 
     public void delFile(int order) {
         try {
-            String needDelFiel = logfile.format(getDateBefore(order));
+            String needDelFiel = getLogFileFormat(getDateBefore(order));
             needDelFiel = needDelFiel.substring(0, 8);
             int needDelTime = Integer.parseInt(needDelFiel);
 
@@ -280,7 +300,7 @@ public class LogcatHelper {
 //                pathLogcat = context.getFilesDir().getAbsolutePath() + File.separator + "AllinPayLog";
 //            }
             String needDelFiel = date;
-            String today = logfile.format(new Date(System.currentTimeMillis()));
+            String today = getLogFileFormat(new Date(System.currentTimeMillis()));
 
             needDelFiel = needDelFiel.substring(0, 8);
             int needDelTime = Integer.parseInt(needDelFiel);
@@ -436,7 +456,7 @@ public class LogcatHelper {
             return true;
         }
         String sameDate = sharedPreferences.getString("sameDate", "20190522");
-        String date = logfile.format(new Date(System.currentTimeMillis()));
+        String date = getLogFileFormat(new Date(System.currentTimeMillis()));
         if (sameDate.equals(date)) {
             return true;
         }

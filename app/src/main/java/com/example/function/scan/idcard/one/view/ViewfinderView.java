@@ -70,6 +70,7 @@ public final class ViewfinderView extends View {
         this.bottomLine = bottomLine;
     }
 
+    @Override
     public void onDraw(Canvas canvas) {
         int t;
         int b;
