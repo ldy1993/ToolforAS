@@ -90,7 +90,7 @@ public class upLogActivity extends Activity {
                         NetProcessDialog npw= new NetProcessDialog(context,"上传日志，大小为："+fileSize+"kb");
                         NetProcessDialog.getInstance(context).show();
                         Log.e("ldy","统一资源定位器："+url);
-                        okHttpServiceImpl.PostParamsOrFile(file, params, url, new NetComplateListener() {
+                        okHttpServiceImpl.postParamsOrFile(file, params, url, new NetComplateListener() {
 
                             @Override
                             public void onNetComplate(String data) {
