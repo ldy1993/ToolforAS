@@ -63,6 +63,7 @@ public class CGBAggregateCommImpl implements ICommunicationManager {
 //                    result = result.substring(result.indexOf(":OYANG:") + 7, result.indexOf(":OYANG:") + 23);
 //                    System.out.println("resul_key=" + result);
                     Log.e("result", result);
+                    listener.onNetComplate(result);
 //                    Log.e("token", token);
 //                    bb[0] = result;  // 握手成功之后的key
 //                    bb[1] = token;   //返回的session

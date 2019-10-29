@@ -28,6 +28,7 @@
         android:icon="@drawable/ic_application"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
+        <activity android:name="com.example.function.comm.PayActivity"></activity>
         <activity android:name="com.example.function.comprehensive.upLogActivity" />
         <activity android:name="com.example.function.View.Menu.View_Menu_Activity" />
         <activity android:name="com.example.function.View.Login.View_Login_Activity" />
@@ -46,8 +47,17 @@
             android:name="com.example.function.comm.FilesOrParamOrStringUpActivity"
             android:icon="@drawable/icon_bq_1"
             android:label="@string/title_activity_files_up" />
+         <activity
+         android:name="com.example.main.MainActivity"
+         android:icon="@drawable/icon_bq_3"
+         android:label="@string/title_activity_main">
+         <intent-filter>
+         <action android:name="android.intent.action.MAIN" />
+         <category android:name="android.intent.category.LAUNCHER" />
+         </intent-filter>
+         </activity>
         <!--<activity-->
-            <!--android:name="com.example.main.MainActivity"-->
+            <!--android:name="com.example.main.ExpandableMainActivity"-->
             <!--android:icon="@drawable/icon_bq_3"-->
             <!--android:label="@string/title_activity_main">-->
             <!--<intent-filter>-->
@@ -56,16 +66,6 @@
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         <!--</activity>-->
-        <activity
-            android:name="com.example.main.ExpandableMainActivity"
-            android:icon="@drawable/icon_bq_3"
-            android:label="@string/title_activity_main">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name="com.example.function.scan.idcard.one.IdCardMainActivity"
             android:icon="@drawable/icon_bq_2"

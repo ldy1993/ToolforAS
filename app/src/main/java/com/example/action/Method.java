@@ -2,13 +2,13 @@ package com.example.action;
 
 import android.content.Context;
 import android.content.Intent;
-
 import com.example.function.View.Amount.View_InputAmount_Activity;
 import com.example.function.View.Login.View_Login_Activity;
 import com.example.function.View.Menu.View_Menu_Activity;
 import com.example.function.algorithm.CalcPWD_Activity;
 import com.example.function.algorithm.RSA_Activity;
 import com.example.function.comm.FilesOrParamOrStringUpActivity;
+import com.example.function.comm.PayActivity;
 import com.example.function.comprehensive.upLogActivity;
 import com.example.function.jni.jniTest.JniTestActivity;
 import com.example.function.scan.idcard.one.IdCardMainActivity;
@@ -20,7 +20,6 @@ import com.example.function.study.day7.Day7_ArrayAdapter_listView_Activity;
 import com.example.function.study.day7.Day7_LeftSlide_listView_Activity;
 import com.example.function.study.day8.Day8_Activity;
 import com.example.function.study.day9.Day9_Activity;
-
 /**
  * ================================================
  * 作    者：刘东阳
@@ -41,6 +40,7 @@ public class Method {
     private final static int USB_HOST=0; //USB测试
     private final static int COMM=4;   //通讯
     private final static int FILES_COMM=0; //文件上传
+    private final static int PAY_COMM=1; //文件上传
     private final static int STUDY=5;   //学习
     private final static int ACTIVITY_VALUE=0; //activity的传值
     private final static int VIEW_CREATE=1; //view的创建
@@ -105,7 +105,13 @@ public class Method {
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
                         context.startActivity(intent);
                         break;
+                    case PAY_COMM:
+                        intent = new Intent(context, PayActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
+                        context.startActivity(intent);
+                        break;
                     default:
+
                 }
                 break;
             case STUDY:

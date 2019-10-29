@@ -22,12 +22,12 @@ public class FilesOrParamOrStringUpActivity extends Activity {
         setContentView(R.layout.activity_files_param_string_up);
         Button bt=findViewById(R.id.bt);
         Button bt_new=findViewById(R.id.bt_new);
-        AuthorizationAction.initJerryComm();
+
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 NetProcessDialog.getInstance(FilesOrParamOrStringUpActivity.this).show();
-                AuthorizationAction.commVerificationFromJerry("0821125962",listener);
+                AuthorizationAction.commVerification("0821125962",listener);
 //                CommManager.commVerification("0820202020", 300000,300000, listener);
             }
         });

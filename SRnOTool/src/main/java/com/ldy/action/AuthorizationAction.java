@@ -4,13 +4,10 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.ldy.function.Network.Instantiation.httpPost.HttpPostServiceImpl;
 import com.ldy.function.Network.service.NetComplateListener;
-import com.ldy.function.Network.Instantiation.customHttp.jerry.CommEntityServiceImpl;
 import com.ldy.function.sign.service.SignServiceImpl;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 
 /**
@@ -29,8 +26,7 @@ public class AuthorizationAction {
     public final static String SRNO_AUTH_SERVLET = "/authorization_posAuth.action";
 
     private static HttpPostServiceImpl httpPostServiceImpl=new HttpPostServiceImpl();
-    private static CommEntityServiceImpl commEntityServiceImpl=new CommEntityServiceImpl();
-    private static SignServiceImpl signServiceImpl=new SignServiceImpl();
+   private static SignServiceImpl signServiceImpl=new SignServiceImpl();
 
     /**
      * 以json方式上送sn号和RSA给后台，
@@ -111,31 +107,5 @@ public class AuthorizationAction {
                 }
     }
 
-    /**
-     * 耿浩的框架需要先初始化
-     */
-    public static void initJerryComm()
-    {
-        CommEntityServiceImpl.init();
-    }
-    /**
-     * 以鍵值對方式上送
-     * 以json方式上送sn号和key给后台
-     * @param sn
-     */
-    public  static void commVerificationFromJerry(final String sn,final NetComplateListener listener) {
 
-
-        try {
-            Map<String, Object> params = new HashMap<String, Object>();
-            params.put("value", "{\"sn\":\"" + sn + "\",\"key\":\"" + com.ldy.function.sign.Calcauthorization.md5new.MD5(sn) + "\"}");
-            for (String s : params.keySet()) {
-                System.out.println("key:" + s);
-                System.out.println("values:" + params.get(s));
-            }
-            commEntityServiceImpl.postParamsOrFile(null,params, SRNO_SERVER + SRNO_AUTH_SERVLET, listener);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 }

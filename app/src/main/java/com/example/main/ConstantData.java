@@ -27,8 +27,8 @@ public class ConstantData {
             new String[] {"USB_HOST_QR55","待定","待定","待定","KTV","待定",
                     "待定","待定","待定/待定","待定","待定","待定",
                     "待定","待定","待定","待定"},
-            new String[] {"上传sn到服务器","待定","待定","待定","待定","待定",
-                    "待定","待定/待定","ϴԡ","待定","待定",
+            new String[] {"上传sn到服务器","交易通讯","待定","待定","待定","待定",
+                    "待定","待定","待定","待定","待定",
                     "待定","待定","待定","待定"},
             new String[] {"Activity的传值和回传","创建控件view和布局ViewGroup",
                     "自定义控件","listView的简单展示","可以左滑的listview",
@@ -52,11 +52,13 @@ public class ConstantData {
     };
     public static final  String[] GROUP_NAMES =new String []{"摄像头","JNI",
             "銀行调用","USB","通讯","学习","java算法","好看界面","综合",
-            "待定","待定","待定"};
+            "待定","待定","待定","待定","待定","待定","待定"};
     public  static final int[] IMAGES = new int[]{R.drawable.ic_category_0,
             R.drawable.ic_category_10, R.drawable.ic_category_30, R.drawable.ic_category_20
             , R.drawable.ic_category_60, R.drawable.ic_category_50, R.drawable.ic_category_45,
             R.drawable.ic_category_50, R.drawable.ic_category_70,
+            R.drawable.ic_category_65, R.drawable.ic_category_80,R.drawable.ic_category_80,
+            R.drawable.ic_category_70,
             R.drawable.ic_category_65, R.drawable.ic_category_80,R.drawable.ic_category_80};
 
 }

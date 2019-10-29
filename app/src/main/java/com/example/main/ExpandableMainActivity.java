@@ -49,8 +49,8 @@ public class ExpandableMainActivity extends Activity {
         setContentView(R.layout.activity_main_expandable);
         expandableListView = findViewById(R.id.elv);
         expandableListView.setAdapter(new GroudAdapter(ExpandableMainActivity.this, ConstantData.GROUP_NAMES, ConstantData.CHILD_NAMES, ConstantData.IMAGES));
-        expandableListView.setOnChildClickListener(childClickListener);
         expandableListView.setOnGroupExpandListener(groupExpandListener);
+        expandableListView.setOnChildClickListener(childClickListener);
     }
 
 }
