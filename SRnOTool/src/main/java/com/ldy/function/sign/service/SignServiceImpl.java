@@ -1,6 +1,6 @@
 package com.ldy.function.sign.service;
 
-import com.ldy.function.sign.Instantiation.SignUtil;
+import com.ldy.function.sign.instantiation.SignUtil;
 
 /**
  * ================================================

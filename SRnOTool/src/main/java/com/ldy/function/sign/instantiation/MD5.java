@@ -1,4 +1,4 @@
-package com.ldy.function.sign.Instantiation;
+package com.ldy.function.sign.instantiation;
 
 import java.io.UnsupportedEncodingException;
 import java.security.SignatureException;

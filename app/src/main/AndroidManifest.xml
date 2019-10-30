@@ -25,10 +25,13 @@
 
     <application
         android:exported="false"
-        android:icon="@drawable/ic_application"
+        android:icon="@drawable/ic_application_logo"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
-        <activity android:name="com.example.function.comm.PayActivity"></activity>
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name="com.example.function.UndeterminedActivity"></activity>
+        <activity android:name="com.example.function.algorithm.SM2_Activity" />
+        <activity android:name="com.example.function.comm.PayActivity" />
         <activity android:name="com.example.function.comprehensive.upLogActivity" />
         <activity android:name="com.example.function.View.Menu.View_Menu_Activity" />
         <activity android:name="com.example.function.View.Login.View_Login_Activity" />
@@ -47,25 +50,24 @@
             android:name="com.example.function.comm.FilesOrParamOrStringUpActivity"
             android:icon="@drawable/icon_bq_1"
             android:label="@string/title_activity_files_up" />
-         <activity
-         android:name="com.example.main.MainActivity"
-         android:icon="@drawable/icon_bq_3"
-         android:label="@string/title_activity_main">
-         <intent-filter>
-         <action android:name="android.intent.action.MAIN" />
-         <category android:name="android.intent.category.LAUNCHER" />
-         </intent-filter>
-         </activity>
-        <!--<activity-->
-            <!--android:name="com.example.main.ExpandableMainActivity"-->
-            <!--android:icon="@drawable/icon_bq_3"-->
-            <!--android:label="@string/title_activity_main">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+        <activity
+            android:name="com.example.main.MainActivity"
+            android:icon="@drawable/icon_bq_3"
+            android:label="@string/title_activity_main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity -->
+        <!-- android:name="com.example.main.ExpandableMainActivity" -->
+        <!-- android:icon="@drawable/icon_bq_3" -->
+        <!-- android:label="@string/title_activity_main"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity
             android:name="com.example.function.scan.idcard.one.IdCardMainActivity"
             android:icon="@drawable/icon_bq_2"
@@ -74,7 +76,6 @@
             <intent-filter>
                 <action android:name="wintone.bankCard.scan_camera" />
 
-                <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

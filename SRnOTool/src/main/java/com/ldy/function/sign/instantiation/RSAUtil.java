@@ -1,4 +1,4 @@
-package com.ldy.function.sign.Instantiation;
+package com.ldy.function.sign.instantiation;
 
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;

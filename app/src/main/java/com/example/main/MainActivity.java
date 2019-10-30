@@ -16,7 +16,6 @@ import com.example.main.adapter.SubAdapter;
 import com.example.main.listview.MyListView;
 import com.ldy.study.R;
 
-
 public class MainActivity extends Activity {
     
 	private MyListView listView;
@@ -28,7 +27,6 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 		try {
 			this.getPackageManager().getPackageInfo("com.ldy.study", 0);
 		} catch (PackageManager.NameNotFoundException e) {
@@ -61,7 +59,7 @@ public class MainActivity extends Activity {
 						Toast.makeText(getApplicationContext(), ConstantData.CHILD_NAMES[location][position], Toast.LENGTH_SHORT).show();
 						Log.e("ldy","location="+location+";position="+position);
 						//调用实现方法
-						Method.implement_method(location,position,getApplicationContext());
+						Method.implementMethod(location,position,getApplicationContext());
 
 					}
 				});
@@ -88,7 +86,7 @@ public class MainActivity extends Activity {
 	 				// TODO Auto-generated method stub
 	 				Toast.makeText(getApplicationContext(), ConstantData.CHILD_NAMES[location][position], Toast.LENGTH_SHORT).show();
 					//调用实现方法
-	 				Method.implement_method(location,position,getApplicationContext());
+	 				Method.implementMethod(location,position,getApplicationContext());
 	 				}
 	 		});
    }

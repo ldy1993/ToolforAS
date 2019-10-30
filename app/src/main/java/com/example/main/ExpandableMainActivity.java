@@ -26,7 +26,7 @@ public class ExpandableMainActivity extends Activity {
             Toast.makeText(getApplicationContext(), ConstantData.CHILD_NAMES[groupPosition][childPosition], Toast.LENGTH_SHORT).show();
             Log.e("ldy", "groupPosition=" + groupPosition + ";childPosition=" + childPosition);
             //调用实现方法
-            Method.implement_method(groupPosition, childPosition, getApplicationContext());
+            Method.implementMethod(groupPosition, childPosition, getApplicationContext());
 
             return true;
         }

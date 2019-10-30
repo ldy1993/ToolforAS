@@ -6,7 +6,7 @@
  *
 */
 
-package com.ldy.function.sign.Instantiation;
+package com.ldy.function.sign.instantiation;
 
 import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
