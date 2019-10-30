@@ -4,7 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.ldy.study.R;
-
+/**
+ * 待定的界面
+ *
+ * @author ldy
+ * @date 20191030
+ */
 public class UndeterminedActivity extends Activity {
 
     @Override

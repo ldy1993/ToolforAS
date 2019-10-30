@@ -37,7 +37,7 @@
         <activity android:name="com.example.function.View.Login.View_Login_Activity" />
         <activity android:name="com.example.function.View.Amount.View_InputAmount_Activity" />
         <activity android:name="com.example.function.algorithm.RSA_Activity" />
-        <activity android:name="com.example.function.algorithm.CalcPWD_Activity" />
+        <activity android:name="com.example.function.comprehensive.CalcPWD_Activity" />
         <activity android:name="com.example.function.study.day6.Day6_Activity" />
         <activity android:name="com.example.function.study.day5.Day5_Activity" />
         <activity android:name="com.example.function.study.day4.B_activity" />
