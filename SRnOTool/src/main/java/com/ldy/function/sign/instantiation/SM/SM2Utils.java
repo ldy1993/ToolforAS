@@ -94,7 +94,19 @@ public class SM2Utils{
 		//返回解密结果
 		return c2;
 	}
-	
+
+	/**
+	 * 获取sm2加密后数据
+	 * @throws Exception
+	 */
+	public static String getCipherText(String plainText,String pubk) throws IOException {
+		byte[] sourceData = plainText.getBytes();
+		System.out.println("加密: ");
+		String cipherText = SM2Utils.encrypt(Util.hexToByte(pubk), sourceData);
+		System.out.println(cipherText);
+		return cipherText;
+	}
+
 	public static void Sm2Test() throws Exception
 	{
 		//生成密钥对

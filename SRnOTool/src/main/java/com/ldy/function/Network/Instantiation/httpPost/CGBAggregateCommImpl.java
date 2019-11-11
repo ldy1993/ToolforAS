@@ -70,6 +70,7 @@ public class CGBAggregateCommImpl implements ICommunicationManager {
                 } catch (Exception e) {
                     //响应超时
                     e.printStackTrace();
+                    listener.onNetError(-1,e.getMessage());
                 } finally {
 
                 }

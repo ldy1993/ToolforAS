@@ -7,10 +7,14 @@ import com.ldy.View.dialog.NetProcessDialog;
 import com.ldy.function.Network.Instantiation.httpPost.CGBAggregateCommImpl;
 import com.ldy.function.Network.Instantiation.httpPost.HttpPostServiceImpl;
 import com.ldy.function.Network.service.NetComplateListener;
+import com.ldy.function.sign.instantiation.SM.SM2Utils;
+import com.ldy.function.sign.instantiation.SM.Util;
 
 import org.apache.http.client.HttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.IOException;
 
 /**
  * ================================================
@@ -27,48 +31,28 @@ public class CGBAggregatePayAction {
             requestTimeout = 30000;
     private static Context context;
 
-    public static void handshake(Context ct) {
+    public static void handshake(Context ct,NetComplateListener listener) {
         context = ct;
         try {
             String url = "http://218.13.4.200:10194/app-front/position/save-biz-address/handMerchAll";
 //                    url="http://218.13.4.200:10194/app-front/position/save-biz-address/SaveBusinessAddressReqVo/handMerchAll";
-            //公钥
-            String privateKey = "";
-            //商户自定义私钥
-            String sikey = "";
-            byte[] data = sikey.getBytes();
-//            byte[] public_key = Util.hexToByte(privateKey);
-//            String context_value = SM2Utils.encrypt(public_key, data);
+         /*******************************************************/
+            String sikey = "woyebuzhidaoxiesm";
+            // 随便生成的公钥
+            String pubk = "04F6E0C3345AE42B51E06BF50B98834988D54EBC7460FE135A48171BC0629EAE205EEDE253A530608178A98F1E19BB737302813BA39ED3FA3C51639D7A20C7391A";
+            String context_value =  SM2Utils.getCipherText(sikey ,pubk);
+         /********************************************************/
             JSONObject json = new JSONObject();
-            json.put("cr", "11111");
+            json.put("cr", context_value);
             //type+分配的序号
             //1为分配给商户是序号
             json.put("type", "type1");
             String jsonString = json.toString();
             NetProcessDialog.getInstance(context).show();
-            cgbAggregateCommImpl.postString(jsonString, url, connectTimeout, requestTimeout, new NetComplateListener() {
-                @Override
-                public void onNetComplate(String data) {
-                    NetProcessDialog.getInstance(context).dismiss();
-//                    Toast.makeText(context, "data=" + data, Toast.LENGTH_SHORT).show();
-                }
-
-                @Override
-                public void onNetError(int errorCode, String errorMessage) {
-                    NetProcessDialog.getInstance(context).dismiss();
-                }
-
-                @Override
-                public void onWorkFlowError(String errorCode, String errorMessage) {
-                    NetProcessDialog.getInstance(context).dismiss();
-                }
-
-                @Override
-                public void onPackError(int errorCode, String errorMessage) {
-                    NetProcessDialog.getInstance(context).dismiss();
-                }
-            });
+            cgbAggregateCommImpl.postString(jsonString, url, connectTimeout, requestTimeout, listener);
         } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

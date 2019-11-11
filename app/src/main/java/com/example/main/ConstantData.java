@@ -1,5 +1,6 @@
 package com.example.main;
 
+import com.example.function.algorithm.SM4_Activity;
 import com.ldy.study.R;
 
 import java.util.HashMap;
@@ -38,9 +39,11 @@ public class ConstantData {
     private final static String STUDY_VIEW_PROGRESSBAR = "进度条";
     private final static String STUDY_VIEW_DIALOG = "对话框";
     private final static String STUDY_VIEW_POPUPWINDOW = "POPUPWINDOW";
+    private final static String STUDY_VIEW_STATIC_FRAGMENT = "静态fragment";
     private final static String FUNCTION_ALGORITHM = "算法功能";
     private final static String ALGORITHM_RSA = "RSA算法";
     private final static String ALGORITHM_SM2 = "sm2对称加密";
+    private final static String ALGORITHM_SM4 = "sm4对称加密";
     private final static String FUNCTION_NICE_VIEW = "好看界面功能";
     private final static String NICE_VIEW_LOGIN = "登录界面";
     private final static String NICE_VIEW_MENU = "菜单界面";
@@ -73,6 +76,8 @@ public class ConstantData {
         put(STUDY_TRANSMIT_ACTIVITY_VALUE, "com.example.function.study.day4.A_activity");
         put(JNI_TEST, "com.example.function.jni.jniTest.JniTestActivity");
         put(FUNCTIO_UNNDETERMINED, "com.example.function.UndeterminedActivity");
+        put(ALGORITHM_SM4, "com.example.function.algorithm.SM4_Activity");
+        put(STUDY_VIEW_STATIC_FRAGMENT, "com.example.function.study.day12.Day12_Activity");
     }};
 
     public static final String[][] CHILD_NAMES = new String[][]{
@@ -99,10 +104,10 @@ public class ConstantData {
             new String[]{STUDY_TRANSMIT_ACTIVITY_VALUE, STUDY_VIEW_CREATE,
                     STUDY_VIEW_CUSTOM, STUDY_VIEW_LISTVIEW, STUDY_VIEW_LEFT_SLIDE_LISTVIEW,
                     STUDY_VIEW_PROGRESSBAR, STUDY_VIEW_DIALOG, STUDY_VIEW_POPUPWINDOW,
-                    FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
+                    STUDY_VIEW_STATIC_FRAGMENT, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
             new String[]{ALGORITHM_RSA, ALGORITHM_SM2,
-                    FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
+                    ALGORITHM_SM4, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
             new String[]{NICE_VIEW_LOGIN, NICE_VIEW_MENU, NICE_VIEW_INPUT_AMOUNT, FUNCTIO_UNNDETERMINED,

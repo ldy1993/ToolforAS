@@ -136,7 +136,7 @@ public class SM4Utils {
     }
 
 
-	public static void test(String[] args) throws IOException, NoSuchAlgorithmException{
+	public static void sm4Test() throws IOException, NoSuchAlgorithmException{
 		String plainText = "ererfeiisgod";
         SM4Utils.secretKey = "JeF8U9wHFOMfs2Y8";
         SM4Utils.hexString = false;
@@ -166,8 +166,10 @@ public class SM4Utils {
 		
 		String b = "1234567890abcdef";
 		String test = "testttttttaaee";
+        System.out.println("加密");
 		String mi = SM4Utils.encryptData_ECB(b,test);
 		System.out.println(mi);
+        System.out.println("解密");
 		String ming = SM4Utils.decryptData_ECB(b, mi);
 		System.out.println(ming);
 		

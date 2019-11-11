@@ -257,7 +257,12 @@ public class CustomKeyboard extends KeyboardView {
 				mKeyboardEvent.onShow();
 			}
 			if(getParent() == null) {
-				mWindowManager.addView(this, lp);
+				try {
+					mWindowManager.addView(this, lp);
+				}catch (Exception e)
+				{
+					e.printStackTrace();
+				}
 				setVisibility(View.VISIBLE);
 			} else {
 				setVisibility(View.VISIBLE);
