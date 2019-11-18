@@ -1,6 +1,28 @@
 package com.example.main;
 
+import com.example.function.UndeterminedActivity;
+import com.example.function.View.Amount.View_InputAmount_Activity;
+import com.example.function.View.Login.View_Login_Activity;
+import com.example.function.View.Menu.View_Menu_Activity;
+import com.example.function.algorithm.RSA_Activity;
+import com.example.function.algorithm.SM2_Activity;
 import com.example.function.algorithm.SM4_Activity;
+import com.example.function.comm.FilesOrParamOrStringUpActivity;
+import com.example.function.comm.PayActivity;
+import com.example.function.comprehensive.CalcPWD_Activity;
+import com.example.function.comprehensive.upLogActivity;
+import com.example.function.jni.jniTest.JniTestActivity;
+import com.example.function.scan.idcard.one.IdCardMainActivity;
+import com.example.function.study.designMode.day13.Day13_Activity;
+import com.example.function.study.view.day10.Day10_Activity;
+import com.example.function.study.view.day12.Day12_Activity;
+import com.example.function.study.view.day4.A_activity;
+import com.example.function.study.view.day5.Day5_Activity;
+import com.example.function.study.view.day6.Day6_Activity;
+import com.example.function.study.view.day7.Day7_ArrayAdapter_listView_Activity;
+import com.example.function.study.view.day7.Day7_LeftSlide_listView_Activity;
+import com.example.function.study.view.day8.Day8_Activity;
+import com.example.function.study.view.day9.Day9_Activity;
 import com.ldy.study.R;
 
 import java.util.HashMap;
@@ -39,6 +61,7 @@ public class ConstantData {
     private final static String STUDY_VIEW_PROGRESSBAR = "进度条";
     private final static String STUDY_VIEW_DIALOG = "对话框";
     private final static String STUDY_VIEW_POPUPWINDOW = "POPUPWINDOW";
+    private final static String STUDY_DESIGN_MODE_SINGLE_ASYNCTASK = "基于线程池的异步任务";
     private final static String STUDY_VIEW_STATIC_FRAGMENT = "静态fragment";
     private final static String FUNCTION_ALGORITHM = "算法功能";
     private final static String ALGORITHM_RSA = "RSA算法";
@@ -56,28 +79,31 @@ public class ConstantData {
     private final static String FUNCTIO_UNNDETERMINED = "待定";
     @SuppressWarnings("unchecked")
     public final static HashMap<String, String> FUNCTION_MAP = new HashMap() {{
-        put(SCAN_IDCARD, "com.example.function.scan.idcard.one.IdCardMainActivity");
-        put(ALGORITHM_SM2, "com.example.function.algorithm.SM2_Activity");
-        put(COMM_TRANS, "com.example.function.comm.PayActivity");
-        put(COMPREHENSIVE_UP_LOG, "com.example.function.comprehensive.upLogActivity");
-        put(NICE_VIEW_MENU, "com.example.function.View.Menu.View_Menu_Activity");
-        put(NICE_VIEW_LOGIN, "com.example.function.View.Login.View_Login_Activity");
-        put(NICE_VIEW_INPUT_AMOUNT, "com.example.function.View.Amount.View_InputAmount_Activity");
-        put(ALGORITHM_RSA, "com.example.function.algorithm.RSA_Activity");
-        put(COMPREHENSIVE_ALGORITHM_CALC_PWD, "com.example.function.comprehensive.CalcPWD_Activity");
-        put(STUDY_VIEW_CUSTOM, "com.example.function.study.day6.Day6_Activity");
-        put(STUDY_VIEW_CREATE, "com.example.function.study.day5.Day5_Activity");
-        put(STUDY_VIEW_LISTVIEW, "com.example.function.study.day7.Day7_ArrayAdapter_listView_Activity");
-        put(STUDY_VIEW_LEFT_SLIDE_LISTVIEW, "com.example.function.study.day7.Day7_LeftSlide_listView_Activity");
-        put(STUDY_VIEW_PROGRESSBAR, "com.example.function.study.day8.Day8_Activity");
-        put(STUDY_VIEW_DIALOG, "com.example.function.study.day9.Day9_Activity");
-        put(STUDY_VIEW_POPUPWINDOW, "com.example.function.study.day10.Day10_Activity");
-        put(COMM_UP_SN, "com.example.function.comm.FilesOrParamOrStringUpActivity");
-        put(STUDY_TRANSMIT_ACTIVITY_VALUE, "com.example.function.study.day4.A_activity");
-        put(JNI_TEST, "com.example.function.jni.jniTest.JniTestActivity");
-        put(FUNCTIO_UNNDETERMINED, "com.example.function.UndeterminedActivity");
-        put(ALGORITHM_SM4, "com.example.function.algorithm.SM4_Activity");
-        put(STUDY_VIEW_STATIC_FRAGMENT, "com.example.function.study.day12.Day12_Activity");
+        put(SCAN_IDCARD, IdCardMainActivity.class.getName());
+        put(ALGORITHM_SM2, SM2_Activity.class.getName());
+        put(COMM_TRANS, PayActivity.class.getName());
+        put(COMPREHENSIVE_UP_LOG, upLogActivity.class.getName());
+        put(NICE_VIEW_MENU, View_Menu_Activity.class.getName());
+        put(NICE_VIEW_LOGIN, View_Login_Activity.class.getName());
+        put(NICE_VIEW_INPUT_AMOUNT, View_InputAmount_Activity.class.getName());
+        put(ALGORITHM_RSA, RSA_Activity.class.getName());
+        put(COMPREHENSIVE_ALGORITHM_CALC_PWD, CalcPWD_Activity.class.getName());
+        put(STUDY_VIEW_CUSTOM, Day6_Activity.class.getName());
+        put(STUDY_VIEW_CREATE, Day5_Activity.class.getName());
+        put(STUDY_VIEW_LISTVIEW, Day7_ArrayAdapter_listView_Activity.class.getName());
+        put(STUDY_VIEW_LEFT_SLIDE_LISTVIEW, Day7_LeftSlide_listView_Activity.class.getName());
+        put(STUDY_VIEW_PROGRESSBAR, Day8_Activity.class.getName());
+        put(STUDY_VIEW_DIALOG, Day9_Activity.class.getName());
+        put(STUDY_VIEW_POPUPWINDOW, Day10_Activity.class.getName());
+        put(COMM_UP_SN, FilesOrParamOrStringUpActivity.class.getName());
+        put(STUDY_TRANSMIT_ACTIVITY_VALUE, A_activity.class.getName());
+        put(JNI_TEST, JniTestActivity.class.getName());
+        put(FUNCTIO_UNNDETERMINED, UndeterminedActivity.class.getName());
+        put(ALGORITHM_SM4, SM4_Activity.class.getName());
+        put(STUDY_VIEW_STATIC_FRAGMENT, Day12_Activity.class.getName());
+        put(STUDY_DESIGN_MODE_SINGLE_ASYNCTASK, Day13_Activity.class.getName());
+
+
     }};
 
     public static final String[][] CHILD_NAMES = new String[][]{
@@ -104,7 +130,7 @@ public class ConstantData {
             new String[]{STUDY_TRANSMIT_ACTIVITY_VALUE, STUDY_VIEW_CREATE,
                     STUDY_VIEW_CUSTOM, STUDY_VIEW_LISTVIEW, STUDY_VIEW_LEFT_SLIDE_LISTVIEW,
                     STUDY_VIEW_PROGRESSBAR, STUDY_VIEW_DIALOG, STUDY_VIEW_POPUPWINDOW,
-                    STUDY_VIEW_STATIC_FRAGMENT, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
+                    STUDY_VIEW_STATIC_FRAGMENT, STUDY_DESIGN_MODE_SINGLE_ASYNCTASK, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
             new String[]{ALGORITHM_RSA, ALGORITHM_SM2,
                     ALGORITHM_SM4, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
