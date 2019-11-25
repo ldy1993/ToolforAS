@@ -11,6 +11,7 @@ import com.example.function.comm.FilesOrParamOrStringUpActivity;
 import com.example.function.comm.PayActivity;
 import com.example.function.comprehensive.CalcPWD_Activity;
 import com.example.function.comprehensive.upLogActivity;
+import com.example.function.doubleScreenDisplay.AdvertisingActivity;
 import com.example.function.jni.jniTest.JniTestActivity;
 import com.example.function.scan.idcard.one.IdCardMainActivity;
 import com.example.function.study.designMode.day13.Day13_Activity;
@@ -74,7 +75,8 @@ public class ConstantData {
     private final static String FUNCTION_COMPREHENSIVE = "综合功能";
     private final static String COMPREHENSIVE_UP_LOG = "日志上传";
     private final static String COMPREHENSIVE_ALGORITHM_CALC_PWD = "保险箱计算密码";
-
+    private final static String DOUBLE_SCREEN_DISPLAY = "异屏双显";
+    private final static String FUNCTION_DOUBLE_SCREEN_DISPLAY_ADCERTISING= "播放广告";
     //待定
     private final static String FUNCTIO_UNNDETERMINED = "待定";
     @SuppressWarnings("unchecked")
@@ -102,7 +104,7 @@ public class ConstantData {
         put(ALGORITHM_SM4, SM4_Activity.class.getName());
         put(STUDY_VIEW_STATIC_FRAGMENT, Day12_Activity.class.getName());
         put(STUDY_DESIGN_MODE_SINGLE_ASYNCTASK, Day13_Activity.class.getName());
-
+        put(FUNCTION_DOUBLE_SCREEN_DISPLAY_ADCERTISING, AdvertisingActivity.class.getName());
 
     }};
 
@@ -145,7 +147,7 @@ public class ConstantData {
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
 
-            new String[]{FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
+            new String[]{FUNCTION_DOUBLE_SCREEN_DISPLAY_ADCERTISING, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
             new String[]{FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
@@ -154,7 +156,7 @@ public class ConstantData {
     };
     public static final String[] GROUP_NAMES = new String[]{FUNCTION_SCAN, FUNCTION_JNI,
             FUNCTION_CALL_OTHER_APP, FUNCTION_USB, FUNCTION_COMM, FUNCTION_STUDY, FUNCTION_ALGORITHM, FUNCTION_NICE_VIEW, FUNCTION_COMPREHENSIVE,
-            FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED};
+            DOUBLE_SCREEN_DISPLAY, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED};
     public static final int[] IMAGES = new int[]{R.drawable.ic_category_0,
             R.drawable.ic_category_10, R.drawable.ic_category_30, R.drawable.ic_category_20
             , R.drawable.ic_category_60, R.drawable.ic_category_50, R.drawable.ic_category_45,

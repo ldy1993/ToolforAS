@@ -2,6 +2,9 @@ package com.ldy.function.designMode;
 
 import android.os.Handler;
 import android.os.Message;
+import android.renderscript.ScriptGroup;
+
+import com.ldy.function.Log.Log;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.RejectedExecutionHandler;
@@ -25,31 +28,35 @@ public abstract class BaseAsyncTask<T> {
         public void handleMessage(Message msg) {
             if (msg.what == SON_THREAD) {
                 //主线程处理来自子线程数据
-                T t=(T)msg.obj;
+                T t = (T) msg.obj;
                 endDeal(t);
             }
         }
     };
+    private ThreadPoolExecutor threadPoolExecutor;
 
+    public void init() {
+        if (threadPoolExecutor == null) {
+            Log.e("ldy","线程池构造方法实例");
+            //threadPoolExecutor构造方法实例
+            ThreadFactory threadFactory = setthreadFactory();
+            RejectedExecutionHandler rejectedExecutionHandler = sethandler();
+            if (threadFactory != null && rejectedExecutionHandler != null) {
+                threadPoolExecutor = new ThreadPoolExecutor(
+                        setCorePoolSize(), setMaximumPoolSize(), setkeepAliveTime(),
+                        setunit(), setworkQueue(), threadFactory, rejectedExecutionHandler);
+            } else {
+                threadPoolExecutor = new ThreadPoolExecutor(
+                        setCorePoolSize(), setMaximumPoolSize(), setkeepAliveTime(),
+                        setunit(), setworkQueue());
+            }
+        }
+    }
 
     public <T> void excute() {
         //主线程预处理
         predeal();
-        //threadPoolExecutor构造方法实例
-        ThreadPoolExecutor threadPoolExecutor;
-        ThreadFactory threadFactory=  setthreadFactory();
-        RejectedExecutionHandler rejectedExecutionHandler=sethandler();
-        if(threadFactory!=null&&rejectedExecutionHandler!=null) {
-            threadPoolExecutor = new ThreadPoolExecutor(
-                    setCorePoolSize(), setMaximumPoolSize(), setkeepAliveTime(),
-                    setunit(), setworkQueue(),threadFactory ,rejectedExecutionHandler );
-        }
-        else
-        {
-            threadPoolExecutor = new ThreadPoolExecutor(
-                    setCorePoolSize(), setMaximumPoolSize(), setkeepAliveTime(),
-                    setunit(), setworkQueue());
-        }
+        init();
 
         threadPoolExecutor.execute(new Runnable() {
             @Override
@@ -59,14 +66,17 @@ public abstract class BaseAsyncTask<T> {
             }
         });
     }
+
     /**
      * 主线程中预处理
      */
     protected abstract void predeal();
+
     /**
      * 子线程中处理
      */
     protected abstract <T> T doInBackgroud();
+
     /**
      * 主线程中结束处理
      */
