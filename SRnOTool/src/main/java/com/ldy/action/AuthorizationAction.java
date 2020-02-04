@@ -43,7 +43,7 @@ public class AuthorizationAction {
                     String preStr = jsonObject.toString();
                     String sign = signServiceImpl.getSign("RSA_1_256", preStr);
                     jsonObject.put("sign",sign);
-                    httpPostServiceImpl.postString(jsonObject.toString(),
+                    httpPostServiceImpl.execute(jsonObject.toString(),
                             SRNO_SERVER + SRNO_AUTH_SERVLET,
                             20000, 30000,
                             new NetComplateListener() {

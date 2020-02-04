@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.ldy.View.CustomWidget.TimePicker.TimeUtils;
 import com.ldy.View.dialog.NetProcessDialog;
 import com.ldy.function.Log.LogcatHelper;
-import com.ldy.function.Network.Instantiation.okhttp.OkHttpServiceImpl;
+import com.ldy.function.Network.Instantiation.okhttp.OkHttpMultipartBodyImpl;
 import com.ldy.function.Network.service.NetComplateListener;
 import com.ldy.study.R;
 
@@ -33,7 +33,7 @@ public class upLogActivity extends Activity {
     public static final int PACK_ERROR = 1;
     public static final int WORKFLOW_ERROR = 2;
     public static final int NET_ERROR = 3;
-    private static OkHttpServiceImpl okHttpServiceImpl=new OkHttpServiceImpl();
+    private static OkHttpMultipartBodyImpl okHttpMultipartBodyImpl =new OkHttpMultipartBodyImpl();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,7 +90,7 @@ public class upLogActivity extends Activity {
                         NetProcessDialog npw= new NetProcessDialog(context,"上传日志，大小为："+fileSize+"kb");
                         NetProcessDialog.getInstance(context).show();
                         Log.e("ldy","统一资源定位器："+url);
-                        okHttpServiceImpl.postParamsOrFile(file, params, url, new NetComplateListener() {
+                        okHttpMultipartBodyImpl.execute(file, params, url, new NetComplateListener() {
 
                             @Override
                             public void onNetComplate(String data) {

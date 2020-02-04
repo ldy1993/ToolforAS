@@ -1,0 +1,377 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:2:1-108:12
+MERGED from [:SRnOTool] F:\AndroidStudioProject\ToolforAS\SRnOTool\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-18:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\344aab2326e24f824854ec931a446aad\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3aadb8e115f5b748b7380bebf6a99613\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\1c6680239fd75570159ef653a839cac4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ae459ebfda7e5399ca0fb42c7c688d66\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\5a4b79318f34e9da03c1ecfad548a295\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\68d33c37af19fe5746ec8ba491da8b4e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6a6eebde05f7d485128dab4136759571\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\6e8e7d9907c37cbc02b38ea9b9c6ff82\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\8969656dd0f9dce1ce4e9eb3d87c277d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\10bbf2b982e1db3066730debf02607a0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\29d587d6598458c2e5519a89599cc91c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\887f16d4875cbbc467966da8398955a0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\b3f79435076630e411d65a698e84ae64\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\1b7ffaa66b97fcfdc240d85fe94e2490\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a2812609054b59a2bc6eee1e9616a46c\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\45b855c6f995034936cb70532c443b04\AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\c72cc6ef178bbbb70f42218bcfded49a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\80e7061a5fb14683a8b7ab78e9b73bf0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\02021212c64f566c0da24eb9efb14ced\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\97bde2bef154ee68e6ee2f3067dc9a61\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\20b69fa22ac57a6b7010414422868805\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\64e31af6464fe707ef6cffb624de2f06\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\1e038279e896dfaee740075632fbbf07\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\64534d15f72bf14dcbfe4f7a20fc16b2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\8e583b9b9796e98561854a662d15b142\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b5c4bd676a892d5c7e81580b2e890712\AndroidManifest.xml:17:1-22:12
+MERGED from [:framework:] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\framework.aar\1c9a0d2da0b1782bd23501b3fb1bcd78\AndroidManifest.xml:2:1-18:12
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:2:1-108:12
+	package
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:6:5-42
+		INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:5:5-29
+		INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:9:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:10:5-71
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:10:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:11:5-72
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:11:22-69
+uses-permission#android.permission.CAMERA
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:13:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:14:5-66
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:14:22-63
+uses-permission#android.permission.INTERNET
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:15:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:16:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:17:5-80
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:17:22-77
+uses-feature#android.hardware.camera
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:19:5-60
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:19:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:20:5-70
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:20:19-67
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:22:5-78
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:22:22-75
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:23:5-25:47
+	tools:ignore
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:25:9-44
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:24:9-68
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:27:5-75
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:27:22-72
+application
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:30:5-106:19
+MERGED from [:SRnOTool] F:\AndroidStudioProject\ToolforAS\SRnOTool\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-16:19
+MERGED from [:SRnOTool] F:\AndroidStudioProject\ToolforAS\SRnOTool\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-16:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3aadb8e115f5b748b7380bebf6a99613\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3aadb8e115f5b748b7380bebf6a99613\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a2812609054b59a2bc6eee1e9616a46c\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a2812609054b59a2bc6eee1e9616a46c\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\45b855c6f995034936cb70532c443b04\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\45b855c6f995034936cb70532c443b04\AndroidManifest.xml:22:5-23:19
+MERGED from [:framework:] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\framework.aar\1c9a0d2da0b1782bd23501b3fb1bcd78\AndroidManifest.xml:11:5-16:43
+MERGED from [:framework:] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\framework.aar\1c9a0d2da0b1782bd23501b3fb1bcd78\AndroidManifest.xml:11:5-16:43
+	android:supportsRtl
+		ADDED from [:framework:] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\framework.aar\1c9a0d2da0b1782bd23501b3fb1bcd78\AndroidManifest.xml:15:9-35
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a2812609054b59a2bc6eee1e9616a46c\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:33:9-41
+	android:exported
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:31:9-33
+	android:allowBackup
+		ADDED from [:SRnOTool] F:\AndroidStudioProject\ToolforAS\SRnOTool\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-36
+		REJECTED from [:framework:] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\framework.aar\1c9a0d2da0b1782bd23501b3fb1bcd78\AndroidManifest.xml:12:9-35
+	android:icon
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:32:9-53
+		REJECTED from [:framework:] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\framework.aar\1c9a0d2da0b1782bd23501b3fb1bcd78\AndroidManifest.xml:13:9-43
+	android:theme
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:34:9-40
+	tools:replace
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:35:9-37
+activity#com.ldy.study.LoginActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:36:9-38:69
+	android:label
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:38:13-57
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:37:13-42
+activity#com.example.function.study.了解JAVA.TestActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:39:9-83
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:39:19-80
+activity#com.example.function.doubleScreenDisplay.AdvertisingActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:40:9-97
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:40:19-94
+activity#com.example.function.study.designMode.day13.Day13_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:41:9-95
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:41:19-92
+activity#com.example.function.study.view.day12.Day12_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:42:9-89
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:42:19-86
+activity#com.example.function.algorithm.Md5Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:43:9-79
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:43:19-76
+activity#com.example.function.algorithm.SM4_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:44:9-80
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:44:19-77
+activity#com.example.function.UndeterminedActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:45:9-78
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:45:19-75
+activity#com.example.function.algorithm.SM2_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:46:9-80
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:46:19-77
+activity#com.example.function.comm.PayActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:47:9-74
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:47:19-71
+activity#com.example.function.comprehensive.upLogActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:48:9-85
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:48:19-82
+activity#com.example.function.View.Menu.View_Menu_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:49:9-86
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:49:19-83
+activity#com.example.function.View.Login.View_Login_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:50:9-88
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:50:19-85
+activity#com.example.function.View.Amount.View_InputAmount_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:51:9-95
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:51:19-92
+activity#com.example.function.algorithm.RSA_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:52:9-80
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:52:19-77
+activity#com.example.function.comprehensive.CalcPWD_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:53:9-88
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:53:19-85
+activity#com.example.function.study.view.day6.Day6_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:54:9-87
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:54:19-84
+activity#com.example.function.study.view.day5.Day5_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:55:9-87
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:55:19-84
+activity#com.example.function.study.view.day4.B_activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:56:9-84
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:56:19-81
+activity#com.example.function.study.view.day7.Day7_ArrayAdapter_listView_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:57:9-109
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:57:19-106
+activity#com.example.function.study.view.day7.Day7_LeftSlide_listView_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:58:9-106
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:58:19-103
+activity#com.example.function.study.view.day8.Day8_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:59:9-87
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:59:19-84
+activity#com.example.function.study.view.day9.Day9_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:60:9-87
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:60:19-84
+activity#com.example.function.study.view.day10.Day10_Activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:61:9-89
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:61:19-86
+activity#com.example.function.algorithm.SokobanActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:62:9-83
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:62:19-80
+activity#com.example.function.comm.FilesOrParamOrStringUpActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:63:9-66:63
+	android:label
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:66:13-60
+	android:icon
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:65:13-47
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:64:13-84
+activity#com.example.main.ExpandableMainActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:75:9-84:20
+	android:label
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:78:13-56
+	android:icon
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:77:13-47
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:76:13-67
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:79:13-83:29
+action#android.intent.action.MAIN
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:80:17-69
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:80:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:82:17-77
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:82:27-74
+activity#com.example.function.scan.idcard.one.IdCardMainActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:85:9-88:41
+	android:label
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:88:13-38
+	android:icon
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:87:13-47
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:86:13-83
+activity#com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:89:9-95:20
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:89:19-102
+intent-filter#action:name:wintone.bankCard.scan_camera+category:name:android.intent.category.DEFAULT
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:90:13-94:29
+action#wintone.bankCard.scan_camera
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:91:17-71
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:91:25-68
+category#android.intent.category.DEFAULT
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:93:17-76
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:93:27-73
+activity#com.example.function.scan.idcard.one.ShowResult
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:96:9-98:50
+	android:icon
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:98:13-47
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:97:13-75
+activity#com.example.function.study.view.day4.A_activity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:99:9-101:50
+	android:icon
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:101:13-47
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:100:13-75
+activity#com.example.function.jni.jniTest.JniTestActivity
+ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:102:9-105:54
+	android:label
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:105:13-51
+	android:icon
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:104:13-47
+	android:name
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml:103:13-76
+uses-sdk
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+MERGED from [:SRnOTool] F:\AndroidStudioProject\ToolforAS\SRnOTool\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:SRnOTool] F:\AndroidStudioProject\ToolforAS\SRnOTool\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\344aab2326e24f824854ec931a446aad\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\344aab2326e24f824854ec931a446aad\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3aadb8e115f5b748b7380bebf6a99613\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3aadb8e115f5b748b7380bebf6a99613\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\1c6680239fd75570159ef653a839cac4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\1c6680239fd75570159ef653a839cac4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ae459ebfda7e5399ca0fb42c7c688d66\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ae459ebfda7e5399ca0fb42c7c688d66\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\5a4b79318f34e9da03c1ecfad548a295\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\5a4b79318f34e9da03c1ecfad548a295\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\68d33c37af19fe5746ec8ba491da8b4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\68d33c37af19fe5746ec8ba491da8b4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6a6eebde05f7d485128dab4136759571\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6a6eebde05f7d485128dab4136759571\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\6e8e7d9907c37cbc02b38ea9b9c6ff82\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\6e8e7d9907c37cbc02b38ea9b9c6ff82\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\8969656dd0f9dce1ce4e9eb3d87c277d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\8969656dd0f9dce1ce4e9eb3d87c277d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\10bbf2b982e1db3066730debf02607a0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\10bbf2b982e1db3066730debf02607a0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\29d587d6598458c2e5519a89599cc91c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\29d587d6598458c2e5519a89599cc91c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\887f16d4875cbbc467966da8398955a0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\887f16d4875cbbc467966da8398955a0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\b3f79435076630e411d65a698e84ae64\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\b3f79435076630e411d65a698e84ae64\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\1b7ffaa66b97fcfdc240d85fe94e2490\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\1b7ffaa66b97fcfdc240d85fe94e2490\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a2812609054b59a2bc6eee1e9616a46c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a2812609054b59a2bc6eee1e9616a46c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\45b855c6f995034936cb70532c443b04\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\45b855c6f995034936cb70532c443b04\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\c72cc6ef178bbbb70f42218bcfded49a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\c72cc6ef178bbbb70f42218bcfded49a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\80e7061a5fb14683a8b7ab78e9b73bf0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\80e7061a5fb14683a8b7ab78e9b73bf0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\02021212c64f566c0da24eb9efb14ced\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\02021212c64f566c0da24eb9efb14ced\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\97bde2bef154ee68e6ee2f3067dc9a61\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\97bde2bef154ee68e6ee2f3067dc9a61\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\20b69fa22ac57a6b7010414422868805\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\20b69fa22ac57a6b7010414422868805\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\64e31af6464fe707ef6cffb624de2f06\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\64e31af6464fe707ef6cffb624de2f06\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\1e038279e896dfaee740075632fbbf07\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\1e038279e896dfaee740075632fbbf07\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\64534d15f72bf14dcbfe4f7a20fc16b2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\64534d15f72bf14dcbfe4f7a20fc16b2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\8e583b9b9796e98561854a662d15b142\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\8e583b9b9796e98561854a662d15b142\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b5c4bd676a892d5c7e81580b2e890712\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b5c4bd676a892d5c7e81580b2e890712\AndroidManifest.xml:20:5-44
+MERGED from [:framework:] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\framework.aar\1c9a0d2da0b1782bd23501b3fb1bcd78\AndroidManifest.xml:7:5-9:41
+MERGED from [:framework:] C:\Users\东阳\.gradle\caches\transforms-1\files-1.1\framework.aar\1c9a0d2da0b1782bd23501b3fb1bcd78\AndroidManifest.xml:7:5-9:41
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidStudioProject\ToolforAS\app\src\main\AndroidManifest.xml

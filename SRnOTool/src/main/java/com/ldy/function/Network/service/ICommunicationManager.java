@@ -18,8 +18,7 @@ import java.util.Map;
  * ================================================
  */
 public interface ICommunicationManager {
-    void postString(String data, String url, int connectTimeout, int requestTimeout, final NetComplateListener listener) ;
-
-    void postParamsOrFile(File file, Map<String, Object> params, String url, final NetComplateListener listener) ;
-
+    void initData(File file, Map<String, Object> params,String data);
+    void initComManager(String url, int connectTimeout, int requestTimeout);
+    void post( final NetComplateListener listener) ;
     }

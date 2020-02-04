@@ -1,0 +1,35 @@
+#Internal package file, do not edit.
+#Tue Feb 04 11:50:07 CST 2020
+7.path=classes.dex
+2.base=F\:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out
+5.set=NATIVE_RESOURCE
+0.path=lib/armeabi/libjniTestClass.so
+2.baseType=DIRECTORY
+3.base=F\:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+7.baseType=DIRECTORY
+2.set=DEX
+1.path=lib/armeabi-v7a/libAndroidBankCard.so
+4.base=F\:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+7.set=DEX
+count=8
+5.baseType=DIRECTORY
+2.path=classes_0.dex
+5.base=F\:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+4.set=DEX
+3.path=lib/armeabi-v7a/libjniTestClass.so
+6.base=F\:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+3.baseType=DIRECTORY
+1.set=NATIVE_RESOURCE
+4.path=classes.dex
+7.base=F\:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+6.set=NATIVE_RESOURCE
+1.baseType=DIRECTORY
+6.baseType=DIRECTORY
+5.path=lib/armeabi/libAndroidBankCard.so
+0.base=F\:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+0.baseType=DIRECTORY
+3.set=NATIVE_RESOURCE
+6.path=lib/armeabi/libnative-lib.so
+1.base=F\:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+4.baseType=DIRECTORY
+0.set=NATIVE_RESOURCE

@@ -1,0 +1,5 @@
+# ninja log v5
+1	202	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	76db2f1a63e0dbda
+203	357	0	F:/AndroidStudioProject/ToolforAS/SRnOTool/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	fe8ba3a4fcd76a5
+6	251	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	76db2f1a63e0dbda
+251	1083	0	F:/AndroidStudioProject/ToolforAS/SRnOTool/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	fe8ba3a4fcd76a5

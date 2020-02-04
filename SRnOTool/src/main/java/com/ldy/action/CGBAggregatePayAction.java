@@ -49,7 +49,7 @@ public class CGBAggregatePayAction {
             json.put("type", "type1");
             String jsonString = json.toString();
             NetProcessDialog.getInstance(context).show();
-            cgbAggregateCommImpl.postString(jsonString, url, connectTimeout, requestTimeout, listener);
+            cgbAggregateCommImpl.execute(jsonString, url, listener);
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (IOException e) {

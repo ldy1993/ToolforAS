@@ -12,5 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="新版本联机授权"/>
-
+    <Button
+        android:id="@+id/bt_get_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="以get方式上送文件"/>
 </LinearLayout>

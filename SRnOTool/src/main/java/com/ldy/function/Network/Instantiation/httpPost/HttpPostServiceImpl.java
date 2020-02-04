@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.ldy.function.Network.service.ICommunicationManager;
 import com.ldy.function.Network.service.NetComplateListener;
+import com.ldy.function.ThreadPool.ThreadPoolManager;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -23,6 +24,7 @@ import java.io.File;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
 
 /**
  * ================================================
@@ -34,12 +36,35 @@ import java.util.Map;
  * ================================================
  */
 public class HttpPostServiceImpl implements ICommunicationManager {
-
-    @Override
-    public void postString(final String data, final String url, final int connectTimeout, final int requestTimeout, final NetComplateListener listener) {
-        new Thread(new Runnable() {
+    private String url;
+    private String data;
+    private int connectTimeout;
+    private int requestTimeout;
+    public void execute(String data, String url, int connectTimeout, int requestTimeout, final NetComplateListener listener)
+    {
+        initData(null,null,data);
+        initComManager(url,connectTimeout,requestTimeout);
+        ExecutorService executorService = ThreadPoolManager.newSingleThreadPool();
+        executorService.execute(new Runnable() {
             @Override
             public void run() {
+                post(listener);
+            }
+        });
+    }
+    @Override
+    public void initData(File file, Map<String, Object> params, String data) {
+        this.data=data;
+    }
+
+    @Override
+    public void initComManager(String url, int connectTimeout, int requestTimeout) {
+        this.url=url;
+        this.connectTimeout=connectTimeout;
+        this.requestTimeout=requestTimeout;
+    }
+    @Override
+    public void post(final NetComplateListener listener) {
                 try {
 
                     Log.e("ldy", "reqUrl:" + url);
@@ -104,14 +129,9 @@ public class HttpPostServiceImpl implements ICommunicationManager {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-        }).start();
-    }
-
-    @Override
-    public void postParamsOrFile(File file, Map<String, Object> params, String url, NetComplateListener listener) {
 
     }
+
 
 
 }

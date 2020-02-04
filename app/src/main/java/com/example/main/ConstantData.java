@@ -7,14 +7,14 @@ import com.example.function.View.Menu.View_Menu_Activity;
 import com.example.function.algorithm.RSA_Activity;
 import com.example.function.algorithm.SM2_Activity;
 import com.example.function.algorithm.SM4_Activity;
-import com.example.function.comm.FilesOrParamOrStringUpActivity;
-import com.example.function.comm.PayActivity;
+import com.example.function.algorithm.SokobanActivity;
 import com.example.function.comprehensive.CalcPWD_Activity;
 import com.example.function.comprehensive.upLogActivity;
 import com.example.function.doubleScreenDisplay.AdvertisingActivity;
 import com.example.function.jni.jniTest.JniTestActivity;
 import com.example.function.scan.idcard.one.IdCardMainActivity;
 import com.example.function.study.designMode.day13.Day13_Activity;
+import com.example.function.study.了解JAVA.TestActivity;
 import com.example.function.study.view.day10.Day10_Activity;
 import com.example.function.study.view.day12.Day12_Activity;
 import com.example.function.study.view.day4.A_activity;
@@ -41,8 +41,6 @@ import java.util.HashMap;
  */
 public class ConstantData {
     private final static String FUNCTION_CALL_OTHER_APP = "调用其它app";
-    private final static String CALL_OTHER_APP_CCB = "调用建行app，版权关系，分支为私有库";
-    private final static String CALL_OTHER_APP_CGB = "调用广发app，版权关系，分支为私有库";
     private final static String CALL_OTHER_APP_APPT = "调用APPT";
     private final static String FUNCTION_SCAN = "调用摄像头功能";
     private final static String SCAN_IDCARD = "银行卡识别";
@@ -54,7 +52,8 @@ public class ConstantData {
     private final static String COMM_UP_SN = "上传sn，取得授权";
     private final static String COMM_TRANS = "交易通讯";
     private final static String FUNCTION_STUDY = "学习功能";
-    private final static String STUDY_TRANSMIT_ACTIVITY_VALUE = "activity的传值";
+    private final static String STUDY_TRANSMIT_ACTIVITY_VALUE = "学习功能";
+    private final static String STUDY_UNDERSTAND_JAVA_ABSTRACTION = "了解JAVA之抽象类";
     private final static String STUDY_VIEW_CREATE = "创建控件view和布局ViewGroup";
     private final static String STUDY_VIEW_CUSTOM = "自定义view";
     private final static String STUDY_VIEW_LISTVIEW = "基础ListView";
@@ -68,6 +67,7 @@ public class ConstantData {
     private final static String ALGORITHM_RSA = "RSA算法";
     private final static String ALGORITHM_SM2 = "sm2对称加密";
     private final static String ALGORITHM_SM4 = "sm4对称加密";
+    private final static String ALGORITHM_SOKOBAN = "推箱子";
     private final static String FUNCTION_NICE_VIEW = "好看界面功能";
     private final static String NICE_VIEW_LOGIN = "登录界面";
     private final static String NICE_VIEW_MENU = "菜单界面";
@@ -83,7 +83,6 @@ public class ConstantData {
     public final static HashMap<String, String> FUNCTION_MAP = new HashMap() {{
         put(SCAN_IDCARD, IdCardMainActivity.class.getName());
         put(ALGORITHM_SM2, SM2_Activity.class.getName());
-        put(COMM_TRANS, PayActivity.class.getName());
         put(COMPREHENSIVE_UP_LOG, upLogActivity.class.getName());
         put(NICE_VIEW_MENU, View_Menu_Activity.class.getName());
         put(NICE_VIEW_LOGIN, View_Login_Activity.class.getName());
@@ -97,14 +96,16 @@ public class ConstantData {
         put(STUDY_VIEW_PROGRESSBAR, Day8_Activity.class.getName());
         put(STUDY_VIEW_DIALOG, Day9_Activity.class.getName());
         put(STUDY_VIEW_POPUPWINDOW, Day10_Activity.class.getName());
-        put(COMM_UP_SN, FilesOrParamOrStringUpActivity.class.getName());
         put(STUDY_TRANSMIT_ACTIVITY_VALUE, A_activity.class.getName());
         put(JNI_TEST, JniTestActivity.class.getName());
         put(FUNCTIO_UNNDETERMINED, UndeterminedActivity.class.getName());
         put(ALGORITHM_SM4, SM4_Activity.class.getName());
+        put(ALGORITHM_SOKOBAN, SokobanActivity.class.getName());
+
         put(STUDY_VIEW_STATIC_FRAGMENT, Day12_Activity.class.getName());
         put(STUDY_DESIGN_MODE_SINGLE_ASYNCTASK, Day13_Activity.class.getName());
         put(FUNCTION_DOUBLE_SCREEN_DISPLAY_ADCERTISING, AdvertisingActivity.class.getName());
+        put(STUDY_UNDERSTAND_JAVA_ABSTRACTION, TestActivity.class.getName());
 
     }};
 
@@ -117,7 +118,7 @@ public class ConstantData {
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED},
-            new String[]{CALL_OTHER_APP_CCB, CALL_OTHER_APP_CGB, CALL_OTHER_APP_APPT,
+            new String[]{ CALL_OTHER_APP_APPT,FUNCTIO_UNNDETERMINED,FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
@@ -129,13 +130,13 @@ public class ConstantData {
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
-            new String[]{STUDY_TRANSMIT_ACTIVITY_VALUE, STUDY_VIEW_CREATE,
+            new String[]{STUDY_UNDERSTAND_JAVA_ABSTRACTION,STUDY_TRANSMIT_ACTIVITY_VALUE, STUDY_VIEW_CREATE,
                     STUDY_VIEW_CUSTOM, STUDY_VIEW_LISTVIEW, STUDY_VIEW_LEFT_SLIDE_LISTVIEW,
                     STUDY_VIEW_PROGRESSBAR, STUDY_VIEW_DIALOG, STUDY_VIEW_POPUPWINDOW,
                     STUDY_VIEW_STATIC_FRAGMENT, STUDY_DESIGN_MODE_SINGLE_ASYNCTASK, FUNCTIO_UNNDETERMINED,
-                    FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
+                    FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
             new String[]{ALGORITHM_RSA, ALGORITHM_SM2,
-                    ALGORITHM_SM4, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
+                    ALGORITHM_SM4, ALGORITHM_SOKOBAN, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
             new String[]{NICE_VIEW_LOGIN, NICE_VIEW_MENU, NICE_VIEW_INPUT_AMOUNT, FUNCTIO_UNNDETERMINED,
