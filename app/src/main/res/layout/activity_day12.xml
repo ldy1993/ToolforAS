@@ -6,5 +6,5 @@
     android:id="@+id/static_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:name="com.example.function.study.view.day12.ComposMenuFragment"></fragment>
+    android:name="com.example.function.study.B_界面视图.I_Fragment的加载与传值.ComposMenuFragment"></fragment>
 </LinearLayout>

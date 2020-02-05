@@ -1,4 +1,0 @@
-#Fri Jan 24 11:55:39 CST 2020
-base.0=F\:\\AndroidStudioProject\\ToolforAS\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
-path.0=classes.dex
-renamed.0=classes.dex

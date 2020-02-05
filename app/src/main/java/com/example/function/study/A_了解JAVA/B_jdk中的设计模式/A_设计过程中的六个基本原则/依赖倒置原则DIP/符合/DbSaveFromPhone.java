@@ -1,0 +1,22 @@
+package com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.依赖倒置原则DIP.符合;
+
+import com.ldy.function.Log.Log;
+
+/**
+ * ================================================
+ * 作    者：刘东阳
+ * 版    本：
+ * 创建日期：2020/2/3
+ * 描    述：
+ * 修订历史：
+ * ================================================
+ */
+public class DbSaveFromPhone extends DbSave{
+
+    @Override
+    public void saveMsg(String Name, String Pwd)
+    {
+        Log.e("ldy","用户名:"+Name+";密码"+Pwd+";注册类型：手机"+"保存成功，符合DIP");
+    }
+
+}

@@ -36,10 +36,10 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"></activity>
-        <activity android:name="com.example.function.study.了解JAVA.TestActivity" />
+        <activity android:name="com.example.function.study.A_了解JAVA.TestActivity" />
         <activity android:name="com.example.function.doubleScreenDisplay.AdvertisingActivity" />
-        <activity android:name="com.example.function.study.designMode.day13.Day13_Activity" />
-        <activity android:name="com.example.function.study.view.day12.Day12_Activity" />
+        <activity android:name="com.example.function.study.C_业务代码.异步任务栈.Day13_Activity" />
+        <activity android:name="com.example.function.study.B_界面视图.I_Fragment的加载与传值.Day12_Activity" />
         <activity android:name="com.example.function.algorithm.Md5Activity" />
         <activity android:name="com.example.function.algorithm.SM4_Activity" />
         <activity android:name="com.example.function.UndeterminedActivity" />
@@ -51,14 +51,14 @@
         <activity android:name="com.example.function.View.Amount.View_InputAmount_Activity" />
         <activity android:name="com.example.function.algorithm.RSA_Activity" />
         <activity android:name="com.example.function.comprehensive.CalcPWD_Activity" />
-        <activity android:name="com.example.function.study.view.day6.Day6_Activity" />
-        <activity android:name="com.example.function.study.view.day5.Day5_Activity" />
-        <activity android:name="com.example.function.study.view.day4.B_activity" />
-        <activity android:name="com.example.function.study.view.day7.Day7_ArrayAdapter_listView_Activity" />
-        <activity android:name="com.example.function.study.view.day7.Day7_LeftSlide_listView_Activity" />
-        <activity android:name="com.example.function.study.view.day8.Day8_Activity" />
-        <activity android:name="com.example.function.study.view.day9.Day9_Activity" />
-        <activity android:name="com.example.function.study.view.day10.Day10_Activity" />
+        <activity android:name="com.example.function.study.B_界面视图.C_视图view_自定义控件.Day6_Activity" />
+        <activity android:name="com.example.function.study.B_界面视图.B_视图view_创建控件view和布局ViewGroup.Day5_Activity" />
+        <activity android:name="com.example.function.study.B_界面视图.A_组件activity_调用传值和回传.B_activity" />
+        <activity android:name="com.example.function.study.B_界面视图.D_创建listview并通过Adapter注入数据.Day7_ArrayAdapter_listView_Activity" />
+        <activity android:name="com.example.function.study.B_界面视图.D_创建listview并通过Adapter注入数据.Day7_LeftSlide_listView_Activity" />
+        <activity android:name="com.example.function.study.B_界面视图.E_进度条ProgressBar.Day8_Activity" />
+        <activity android:name="com.example.function.study.B_界面视图.F_对话框Dialog.Day9_Activity" />
+        <activity android:name="com.example.function.study.B_界面视图.G_popupWindow和contextMenu.Day10_Activity" />
         <activity android:name="com.example.function.algorithm.SokobanActivity" />
         <activity
             android:name="com.example.function.comm.FilesOrParamOrStringUpActivity"
@@ -97,7 +97,7 @@
             android:name="com.example.function.scan.idcard.one.ShowResult"
             android:icon="@drawable/icon_bq_4" />
         <activity
-            android:name="com.example.function.study.view.day4.A_activity"
+            android:name="com.example.function.study.B_界面视图.A_组件activity_调用传值和回传.A_activity"
             android:icon="@drawable/icon_bq_5" />
         <activity
             android:name="com.example.function.jni.jniTest.JniTestActivity"

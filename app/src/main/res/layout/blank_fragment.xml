@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.function.study.view.day12.BlankFragment">
+    tools:context="com.example.function.study.B_界面视图.I_Fragment的加载与传值.BlankFragment">
 
     <TextView
         android:layout_width="match_parent"
