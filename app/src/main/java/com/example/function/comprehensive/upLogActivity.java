@@ -67,8 +67,8 @@ public class upLogActivity extends Activity {
                             return;
                         }
 //                        String data=LogcatHelper.readConfigFile(file);
-//                        CommManager.init();
-                        Map<String, Object> params = new HashMap<String, Object>();
+//                        CommManager.initView();
+                        Map<String, String> params = new HashMap<String, String>();
 //                        SysParam sysParam = FinancialApplication.sysParam;
 //                        String sn= FinancialApplication.dal.getSys().getTermInfo().get(ETermInfoKey.SN);
 //                        String posModel= FinancialApplication.dal.getSys().getTermInfo().get(ETermInfoKey.MODEL);

@@ -18,10 +18,10 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.ldy.Utils.ReflactUtils;
 import com.ldy.View.CustomWidget.Keyboard.CustomKeyboard;
 import com.ldy.study.R;
 
-import me.jerry.framework.utils.ReflactUtils;
 
 
 public class View_Login_Activity extends Activity {

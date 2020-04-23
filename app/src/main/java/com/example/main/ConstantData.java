@@ -4,6 +4,7 @@ import com.example.function.UndeterminedActivity;
 import com.example.function.View.Amount.View_InputAmount_Activity;
 import com.example.function.View.Login.View_Login_Activity;
 import com.example.function.View.Menu.View_Menu_Activity;
+import com.example.function.View.compos.ComposSettingActivity;
 import com.example.function.algorithm.RSA_Activity;
 import com.example.function.algorithm.SM2_Activity;
 import com.example.function.algorithm.SM4_Activity;
@@ -72,11 +73,13 @@ public class ConstantData {
     private final static String NICE_VIEW_LOGIN = "登录界面";
     private final static String NICE_VIEW_MENU = "菜单界面";
     private final static String NICE_VIEW_INPUT_AMOUNT = "输入金额界面";
+    private final static String NICE_VIEW_COMPOS_SETTING = "COMPOS设置界面";
     private final static String FUNCTION_COMPREHENSIVE = "综合功能";
     private final static String COMPREHENSIVE_UP_LOG = "日志上传";
     private final static String COMPREHENSIVE_ALGORITHM_CALC_PWD = "保险箱计算密码";
     private final static String DOUBLE_SCREEN_DISPLAY = "异屏双显";
     private final static String FUNCTION_DOUBLE_SCREEN_DISPLAY_ADCERTISING= "播放广告";
+
     //待定
     private final static String FUNCTIO_UNNDETERMINED = "待定";
     @SuppressWarnings("unchecked")
@@ -106,6 +109,7 @@ public class ConstantData {
         put(STUDY_DESIGN_MODE_SINGLE_ASYNCTASK, Day13_Activity.class.getName());
         put(FUNCTION_DOUBLE_SCREEN_DISPLAY_ADCERTISING, AdvertisingActivity.class.getName());
         put(STUDY_UNDERSTAND_JAVA_ABSTRACTION, TestActivity.class.getName());
+        put(NICE_VIEW_COMPOS_SETTING, ComposSettingActivity.class.getName());
 
     }};
 
@@ -139,7 +143,7 @@ public class ConstantData {
                     ALGORITHM_SM4, ALGORITHM_SOKOBAN, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
-            new String[]{NICE_VIEW_LOGIN, NICE_VIEW_MENU, NICE_VIEW_INPUT_AMOUNT, FUNCTIO_UNNDETERMINED,
+            new String[]{NICE_VIEW_LOGIN, NICE_VIEW_MENU, NICE_VIEW_INPUT_AMOUNT, NICE_VIEW_COMPOS_SETTING,
                     FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},

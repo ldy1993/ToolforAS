@@ -4,12 +4,10 @@
     package="com.ldy.study"
     android:versionCode="10"
     android:versionName="V2.0.0_20190826">
-
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <!-- 摄像头设备权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 摄像头设备权限 -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" /> <!-- socket套接字对外权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -33,9 +31,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+        <activity android:name="com.example.function.View.compos.ComposSettingActivity"></activity>
+        <activity android:name="com.example.function.View.compos.ComposShowActivity"></activity>
         <activity android:name="com.example.function.study.A_了解JAVA.TestActivity" />
         <activity android:name="com.example.function.doubleScreenDisplay.AdvertisingActivity" />
         <activity android:name="com.example.function.study.C_业务代码.异步任务栈.Day13_Activity" />
@@ -44,7 +41,6 @@
         <activity android:name="com.example.function.algorithm.SM4_Activity" />
         <activity android:name="com.example.function.UndeterminedActivity" />
         <activity android:name="com.example.function.algorithm.SM2_Activity" />
-        <activity android:name="com.example.function.comm.PayActivity" />
         <activity android:name="com.example.function.comprehensive.upLogActivity" />
         <activity android:name="com.example.function.View.Menu.View_Menu_Activity" />
         <activity android:name="com.example.function.View.Login.View_Login_Activity" />
@@ -60,10 +56,7 @@
         <activity android:name="com.example.function.study.B_界面视图.F_对话框Dialog.Day9_Activity" />
         <activity android:name="com.example.function.study.B_界面视图.G_popupWindow和contextMenu.Day10_Activity" />
         <activity android:name="com.example.function.algorithm.SokobanActivity" />
-        <activity
-            android:name="com.example.function.comm.FilesOrParamOrStringUpActivity"
-            android:icon="@drawable/icon_bq_1"
-            android:label="@string/title_activity_files_up" /> <!-- <activity -->
+         <!-- <activity -->
         <!-- android:name="com.example.main.MainActivity" -->
         <!-- android:icon="@drawable/icon_bq_3" -->
         <!-- android:label="@string/title_activity_main"> -->

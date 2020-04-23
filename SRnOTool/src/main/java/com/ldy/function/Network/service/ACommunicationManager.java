@@ -1,7 +1,4 @@
 package com.ldy.function.Network.service;
-import com.alibaba.fastjson.JSON;
-
-import org.json.JSONObject;
 
 import java.io.File;
 import java.util.Map;
@@ -17,8 +14,4 @@ import java.util.Map;
  * 修订历史：
  * ================================================
  */
-public interface ICommunicationManager {
-    void initData(File file, Map<String, String> params);
-    void initComManager(String url, int connectTimeout, int requestTimeout);
-    void post( final NetComplateListener listener) ;
-    }
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item type="id" name="content" />
+    <item type="id" name="animator"/>
+    <item type="id" name="move_status"/>
+    <item type="id" name="field"/>
+    <item type="id" name="confirm_button_layout" />
+    <item type="id" name="mult_confirm_button_layout" />
+</resources>

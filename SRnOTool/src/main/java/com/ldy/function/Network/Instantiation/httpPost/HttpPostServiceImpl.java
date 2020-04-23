@@ -37,12 +37,14 @@ import java.util.concurrent.ExecutorService;
  */
 public class HttpPostServiceImpl implements ICommunicationManager {
     private String url;
-    private String data;
     private int connectTimeout;
     private int requestTimeout;
-    public void execute(String data, String url, int connectTimeout, int requestTimeout, final NetComplateListener listener)
+    private File file;
+    private Map<String, String> params;
+
+    public void execute(final Map<String, String> params, String url, int connectTimeout, int requestTimeout, final NetComplateListener listener)
     {
-        initData(null,null,data);
+        initData(null,params);
         initComManager(url,connectTimeout,requestTimeout);
         ExecutorService executorService = ThreadPoolManager.newSingleThreadPool();
         executorService.execute(new Runnable() {
@@ -53,8 +55,9 @@ public class HttpPostServiceImpl implements ICommunicationManager {
         });
     }
     @Override
-    public void initData(File file, Map<String, Object> params, String data) {
-        this.data=data;
+    public void initData(File file, Map<String, String> params ) {
+        this.file=file;
+        this.params=params;
     }
 
     @Override
@@ -75,10 +78,13 @@ public class HttpPostServiceImpl implements ICommunicationManager {
                     try {
                         HttpPost httpPost = new HttpPost(url);
                         //NameValuePair对象代表了一个需要发往服务器的键值对
-                        NameValuePair pair1 = new BasicNameValuePair("value", data);
                         //将准备好的键值对对象放置在一个List当中
                         ArrayList<NameValuePair> pairs = new ArrayList<NameValuePair>();
-                        pairs.add(pair1);
+                        for (String key : params.keySet()) {
+                            System.out.println("key= "+ key + " and value= " + params.get(key));
+                            NameValuePair pair1 = new BasicNameValuePair(key, params.get(key));
+                                 pairs.add(pair1);
+                        }
                         //创建代表请求体的对象（注意，是请求体）
                         HttpEntity requestEntity = new UrlEncodedFormEntity(pairs);
 //                        HttpEntity requestEntity = new UrlEncodedFormEntity(requestEntity);

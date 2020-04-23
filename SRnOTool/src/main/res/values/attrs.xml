@@ -22,4 +22,21 @@
     <attr name="swipe_menu_right_id"    format="reference"/>
     <attr name="swipe_context_id"       format="reference"/>
   </declare-styleable>
+  <declare-styleable name="SingleRightViewItem">
+    <attr name="right_view_color" format="color" />
+    <attr name="right_view_text" format="string" />
+    <attr name="right_view_text_size" format="dimension" />
+    <attr name="right_view_text_color" format="color" />
+    <attr name="right_view_width" format="dimension" />
+  </declare-styleable>
+  <declare-styleable name="AdContainerViewPager">
+    <attr name="banner_1" format="reference" />
+    <attr name="banner_2" format="reference" />
+    <attr name="banner_3" format="reference" />
+    <attr name="banner_4" format="reference" />
+    <attr name="banner_5" format="reference" />
+  </declare-styleable>
+  <declare-styleable name="PopSpinner">
+    <attr name="values" format="reference" />
+  </declare-styleable>
 </resources>

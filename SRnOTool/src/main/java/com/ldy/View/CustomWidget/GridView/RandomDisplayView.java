@@ -33,22 +33,22 @@
 //	@SuppressLint("NewApi")
 //	public RandomDisplayView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
 //		super(context, attrs, defStyleAttr, defStyleRes);
-//		init();
+//		initView();
 //	}
 //	public RandomDisplayView(Context context, AttributeSet attrs, int defStyleAttr) {
 //		super(context, attrs, defStyleAttr);
-//		init();
+//		initView();
 //	}
 //	public RandomDisplayView(Context context, AttributeSet attrs) {
 //		super(context, attrs);
-//		init();
+//		initView();
 //	}
 //	public RandomDisplayView(Context context) {
 //		super(context);
-//		init();
+//		initView();
 //	}
 //
-//	public void init() {
+//	public void initView() {
 //		setSelector(new ColorDrawable(Color.TRANSPARENT));
 //	}
 //

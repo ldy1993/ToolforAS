@@ -21,7 +21,7 @@ public class Day7_ArrayAdapter_listView_Activity extends Activity {
         String[] objects =new String[]{"这是第一条", "这是第二条"};
         //去展示listView
          //可以直接ArrayAdapter也可以ArrayAdapter<T>，安卓后面的版本加了范型，可以检测数据类型
-         //ArrayAdapter录入参数如右(@NonNull Context context, @LayoutRes int resource,@IdRes int textViewResourceId, @NonNull List<T> objects)
+         //ArrayAdapter录入参数如右(@NonNull Context context, @LayoutRes int resource,Res int textViewResourceId, @NonNull List<T> objects)
          //resource：填资源文件id，为layout布局文件。里面放置条目的布局和控件
          //textViewResourceId，填写条目控件，对于arrayAdapter只能是textView。其他的adapter可以使用其他控件。
          //objects数据源

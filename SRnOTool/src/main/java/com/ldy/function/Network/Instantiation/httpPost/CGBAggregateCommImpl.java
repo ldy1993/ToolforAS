@@ -43,9 +43,12 @@ public class CGBAggregateCommImpl implements ICommunicationManager {
 
     private String url;
     private String data;
+    private File file;
+    private Map<String, String> params;
+
     public void execute(String data, String url, final NetComplateListener listener)
     {
-        initData(null,null,data);
+        initData(null,params);
         initComManager(url,0,0);
         ExecutorService executorService = ThreadPoolManager.newSingleThreadPool();
         executorService.execute(new Runnable() {
@@ -56,8 +59,9 @@ public class CGBAggregateCommImpl implements ICommunicationManager {
         });
     }
     @Override
-    public void initData(File file, Map<String, Object> params, String data) {
-        this.data=data;
+    public void initData(File file, Map<String, String> params ) {
+        this.file=file;
+        this.params=params;
     }
 
     @Override

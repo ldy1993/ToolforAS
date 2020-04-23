@@ -41,12 +41,12 @@ public class OkHttpMultipartBodyImpl implements ICommunicationManager {
 
 
     private File file;
-    private Map<String, Object> params;
+    private Map<String, String> params;
     private String url;
 
-    public void execute(File file, final Map<String, Object> params, final String url, final NetComplateListener listener)
+    public void execute(File file, final Map<String, String> params, final String url, final NetComplateListener listener)
     {
-        initData(file,params,null);
+        initData(file,params);
         initComManager(url,0,0);
         ExecutorService executorService = ThreadPoolManager.newSingleThreadPool();
         executorService.execute(new Runnable() {
@@ -57,7 +57,7 @@ public class OkHttpMultipartBodyImpl implements ICommunicationManager {
         });
     }
     @Override
-    public void initData(File file, Map<String, Object> params, String data) {
+    public void initData(File file, Map<String, String> params) {
         this.file=file;
         this.params=params;
     }
