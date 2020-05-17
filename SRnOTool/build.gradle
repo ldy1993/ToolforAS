@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 28
-        versionCode 11
-        versionName "4.0.7"
+        versionCode 12
+        versionName "4.0.8"
         archivesBaseName = "SRnOTool_V" + defaultConfig.versionName + "_${releaseTime()}"
 
         packagingOptions {
@@ -50,13 +50,14 @@ dependencies {
     implementation 'com.android.support:support-v4:28.0.0'
     implementation files('libs/glide-3.6.0.jar')
 //    compile files('libs/frame-release-v1.1.jar')
-    implementation files('libs/okhttp-3.3.0.jar')
-    implementation files('libs/okio-1.4.0.jar')
+//    implementation files('libs/okhttp-3.3.0.jar')
+//    implementation files('libs/okio-1.4.0.jar')
     implementation files('libs/fastjson-1.2.2.jar')
     implementation files('libs/httpclient-4.3.4.jar')
     implementation files('libs/httpcore-4.3.2.jar')
     implementation files('libs/dom4j-1.6.1.jar')
     implementation files('libs/commons-codec-1.6.jar')
-implementation 'org.bouncycastle:bcprov-jdk15on:1.54'
-
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.54'
+    implementation 'org.bouncycastle:bcpkix-jdk15on:1.54'
+//    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
 }
