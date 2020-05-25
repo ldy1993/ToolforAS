@@ -18,6 +18,7 @@ import org.apache.http.conn.scheme.SchemeRegistry;
 import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.FileEntity;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
 import org.apache.http.message.BasicNameValuePair;
@@ -176,8 +177,13 @@ public class HttpClientTool {
 	public static String doPOST(String url, Map<String, String> headerMap, File file) {
 		HttpPost req = new HttpPost(url);
 		addHeader(req, headerMap);
-
 		addEntity(req, file);
+		return request(req);
+	}
+	public static String doPOST(String url, Map<String, String> headerMap,String body) {
+		HttpPost req = new HttpPost(url);
+		addHeader(req, headerMap);
+		addEntity(req, body);
 		return request(req);
 	}
 	public static String doPOST(String url, Map<String, String> urlMap, Map<String, String> headerMap, Map<String, String> bodyMap) {
@@ -187,7 +193,6 @@ public class HttpClientTool {
 		addEntity(req, bodyMap);
 		return request(req);
 	}
-
 	private static void addEntity(HttpPost req, Map<String, String> bodyMap) {
 		if (bodyMap != null && !bodyMap.isEmpty()) {
 			try {
@@ -205,6 +210,15 @@ public class HttpClientTool {
 		if (file != null) {
 			try {
 				req.setEntity(new FileEntity(file, ContentType.MULTIPART_FORM_DATA));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	private static void addEntity(HttpPost req,String body) {
+		if (body != null&&!body.isEmpty()) {
+			try {
+				req.setEntity(new StringEntity(body));
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
