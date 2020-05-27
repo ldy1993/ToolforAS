@@ -28,7 +28,7 @@ public class upLogActivity extends Activity {
     private Handler handler;
     private static Context context;
     private static double fileSize = 0;
-    public final static String SRNO_SERVER = "http://180.141.91.144:6699/SRnOWeb_GX_Log";
+    public final static String SRNO_SERVER = "http://121.199.47.32:8080/SRnOWeb";
     public final static String SRNO_LOG_STRUTS2 = "/logger_dealFromPos.action";
     public final static int SUCC = 0;
     public static final int PACK_ERROR = 1;

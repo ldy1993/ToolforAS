@@ -14,7 +14,7 @@ import com.example.function.comprehensive.upLogActivity;
 import com.example.function.doubleScreenDisplay.AdvertisingActivity;
 import com.example.function.jni.jniTest.JniTestActivity;
 import com.example.function.scan.idcard.one.IdCardMainActivity;
-import com.example.function.study.C_业务代码.异步任务栈.Day13_Activity;
+import com.example.function.study.C_业务代码.A_异步任务栈.Day13_Activity;
 import com.example.function.study.A_了解JAVA.TestActivity;
 import com.example.function.study.B_界面视图.G_popupWindow和contextMenu.Day10_Activity;
 import com.example.function.study.B_界面视图.I_Fragment的加载与传值.Day12_Activity;
@@ -25,6 +25,7 @@ import com.example.function.study.B_界面视图.D_创建listview并通过Adapte
 import com.example.function.study.B_界面视图.D_创建listview并通过Adapter注入数据.Day7_LeftSlide_listView_Activity;
 import com.example.function.study.B_界面视图.E_进度条ProgressBar.Day8_Activity;
 import com.example.function.study.B_界面视图.F_对话框Dialog.Day9_Activity;
+import com.example.function.study.C_业务代码.E_网络请求.Day14_Activity;
 import com.ldy.study.R;
 
 import java.util.HashMap;
@@ -62,7 +63,8 @@ public class ConstantData {
     private final static String STUDY_VIEW_PROGRESSBAR = "进度条";
     private final static String STUDY_VIEW_DIALOG = "对话框";
     private final static String STUDY_VIEW_POPUPWINDOW = "POPUPWINDOW";
-    private final static String STUDY_DESIGN_MODE_SINGLE_ASYNCTASK = "基于线程池的异步任务";
+    private final static String STUDY_BUSINESS_SINGLE_ASYNCTASK = "基于线程池的异步任务";
+    private final static String STUDY_BUSINESS_NETWORK= "异步任务下的网络请求";
     private final static String STUDY_VIEW_STATIC_FRAGMENT = "静态fragment";
     private final static String FUNCTION_ALGORITHM = "算法功能";
     private final static String ALGORITHM_RSA = "RSA算法";
@@ -106,7 +108,8 @@ public class ConstantData {
         put(ALGORITHM_SOKOBAN, SokobanActivity.class.getName());
 
         put(STUDY_VIEW_STATIC_FRAGMENT, Day12_Activity.class.getName());
-        put(STUDY_DESIGN_MODE_SINGLE_ASYNCTASK, Day13_Activity.class.getName());
+        put(STUDY_BUSINESS_SINGLE_ASYNCTASK, Day13_Activity.class.getName());
+        put(STUDY_BUSINESS_NETWORK, Day14_Activity.class.getName());
         put(FUNCTION_DOUBLE_SCREEN_DISPLAY_ADCERTISING, AdvertisingActivity.class.getName());
         put(STUDY_UNDERSTAND_JAVA_ABSTRACTION, TestActivity.class.getName());
         put(NICE_VIEW_COMPOS_SETTING, ComposSettingActivity.class.getName());
@@ -137,7 +140,7 @@ public class ConstantData {
             new String[]{STUDY_UNDERSTAND_JAVA_ABSTRACTION,STUDY_TRANSMIT_ACTIVITY_VALUE, STUDY_VIEW_CREATE,
                     STUDY_VIEW_CUSTOM, STUDY_VIEW_LISTVIEW, STUDY_VIEW_LEFT_SLIDE_LISTVIEW,
                     STUDY_VIEW_PROGRESSBAR, STUDY_VIEW_DIALOG, STUDY_VIEW_POPUPWINDOW,
-                    STUDY_VIEW_STATIC_FRAGMENT, STUDY_DESIGN_MODE_SINGLE_ASYNCTASK, FUNCTIO_UNNDETERMINED,
+                    STUDY_VIEW_STATIC_FRAGMENT, STUDY_BUSINESS_SINGLE_ASYNCTASK, STUDY_BUSINESS_NETWORK,
                     FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED},
             new String[]{ALGORITHM_RSA, ALGORITHM_SM2,
                     ALGORITHM_SM4, ALGORITHM_SOKOBAN, FUNCTIO_UNNDETERMINED, FUNCTIO_UNNDETERMINED,

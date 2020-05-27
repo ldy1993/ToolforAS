@@ -35,7 +35,8 @@
         <activity android:name="com.example.function.View.compos.ComposShowActivity"></activity>
         <activity android:name="com.example.function.study.A_了解JAVA.TestActivity" />
         <activity android:name="com.example.function.doubleScreenDisplay.AdvertisingActivity" />
-        <activity android:name="com.example.function.study.C_业务代码.异步任务栈.Day13_Activity" />
+        <activity android:name="com.example.function.study.C_业务代码.A_异步任务栈.Day13_Activity" />
+        <activity android:name="com.example.function.study.C_业务代码.E_网络请求.Day14_Activity" />
         <activity android:name="com.example.function.study.B_界面视图.I_Fragment的加载与传值.Day12_Activity" />
         <activity android:name="com.example.function.algorithm.Md5Activity" />
         <activity android:name="com.example.function.algorithm.SM4_Activity" />
