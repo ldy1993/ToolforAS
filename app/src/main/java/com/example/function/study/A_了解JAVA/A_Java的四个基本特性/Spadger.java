@@ -1,6 +1,6 @@
 package com.example.function.study.A_了解JAVA.A_Java的四个基本特性;
 
-import com.ldy.function.Log.Log;
+import com.ldy.log.Log;
 
 /**
  * ================================================

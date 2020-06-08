@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SRnOTool/SRnOTool.iml" filepath="$PROJECT_DIR$/SRnOTool/SRnOTool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRnOTool_Annotation_Lib/SRnOTool_Annotation_Lib.iml" filepath="$PROJECT_DIR$/SRnOTool_Annotation_Lib/SRnOTool_Annotation_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRnOTool_ApacheHttpClient_Lib/SRnOTool_ApacheHttpClient_Lib.iml" filepath="$PROJECT_DIR$/SRnOTool_ApacheHttpClient_Lib/SRnOTool_ApacheHttpClient_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRnOTool_CustomView_Lib/SRnOTool_CustomView_Lib.iml" filepath="$PROJECT_DIR$/SRnOTool_CustomView_Lib/SRnOTool_CustomView_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRnOTool_Encryption_Lib/SRnOTool_Encryption_Lib.iml" filepath="$PROJECT_DIR$/SRnOTool_Encryption_Lib/SRnOTool_Encryption_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRnOTool_Log/SRnOTool_Log.iml" filepath="$PROJECT_DIR$/SRnOTool_Log/SRnOTool_Log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRnOTool_Log_Lib/SRnOTool_Log_Lib.iml" filepath="$PROJECT_DIR$/SRnOTool_Log_Lib/SRnOTool_Log_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRnOTool_OkHttp3_Lib/SRnOTool_OkHttp3_Lib.iml" filepath="$PROJECT_DIR$/SRnOTool_OkHttp3_Lib/SRnOTool_OkHttp3_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRnOTool_ThreadTask_Lib/SRnOTool_ThreadTask_Lib.iml" filepath="$PROJECT_DIR$/SRnOTool_ThreadTask_Lib/SRnOTool_ThreadTask_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRnOTool_Utils_Lib/SRnOTool_Utils_Lib.iml" filepath="$PROJECT_DIR$/SRnOTool_Utils_Lib/SRnOTool_Utils_Lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/ToolforAS.iml" filepath="$PROJECT_DIR$/ToolforAS.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app1/app1.iml" filepath="$PROJECT_DIR$/app1/app1.iml" />
     </modules>
   </component>
 </project>

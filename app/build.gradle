@@ -64,6 +64,12 @@ dependencies {
     compile files('libs/sun.misc.BASE64Decoder.jar')
     compile files('libs/GLComm_V1.01.00_20171222.jar')
     testCompile 'junit:junit:4.12'
-    implementation project(':SRnOTool')
-    implementation 'org.apache.commons:commons-lang3:3.3.2'
+    implementation project(':SRnOTool_CustomView_Lib')
+    implementation project(':SRnOTool_Log_Lib')
+    implementation project(':SRnOTool_Encryption_Lib')
+    implementation project(':SRnOTool_OkHttp3_Lib')
+    implementation project(':SRnOTool_Annotation_Lib')
+    implementation project(':SRnOTool_ApacheHttpClient_Lib')
+    compile project(path: ':SRnOTool_ThreadTask_Lib')
+//    implementation 'org.apache.commons:commons-lang3:3.3.2'
 }

@@ -1,1 +1,10 @@
-include ':app', ':SRnOTool'
+include ':app',
+        ':SRnOTool_CustomView_Lib',
+        ':SRnOTool_Annotation_Lib',
+        ':SRnOTool_Log_Lib',
+        ':SRnOTool_Encryption_Lib',
+        ':SRnOTool_OkHttp3_Lib',
+        ':SRnOTool_ApacheHttpClient_Lib',
+        ':SRnOTool_Utils_Lib',
+        ':SRnOTool_ThreadTask_Lib',
+        ':app1'

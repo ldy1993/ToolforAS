@@ -7,7 +7,7 @@
         android:layout_height="fill_parent"
         android:orientation="vertical" >
 
-        <com.ldy.View.CustomWidget.ListView.MenuListView
+        <com.ldy.view.CustomWidget.ListView.MenuListView
             android:id="@+id/menu_list_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

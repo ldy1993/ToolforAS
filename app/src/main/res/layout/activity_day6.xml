@@ -8,7 +8,7 @@
     android:layout_width="350dp"
     android:layout_height="400dp"
     android:background="#ff00ff">
-<com.ldy.View.CustomWidget.Suspension.SuspensionView
+<com.ldy.view.CustomWidget.Suspension.SuspensionView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="#000000"/>

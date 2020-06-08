@@ -1,0 +1,11 @@
+# ninja log v5
+1	643	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	2796dc10ec38ed9d
+644	807	0	F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/build/intermediates/cmake/debug/obj/armeabi/libnative-lib.so	fa06f4eef4e38d5c
+8	303	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	2796dc10ec38ed9d
+303	462	0	F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/build/intermediates/cmake/debug/obj/armeabi/libnative-lib.so	fa06f4eef4e38d5c
+2	205	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	2796dc10ec38ed9d
+205	336	0	F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/build/intermediates/cmake/debug/obj/armeabi/libnative-lib.so	fa06f4eef4e38d5c
+3	266	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	2796dc10ec38ed9d
+266	412	0	F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/build/intermediates/cmake/debug/obj/armeabi/libnative-lib.so	fa06f4eef4e38d5c
+4	2459	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	2796dc10ec38ed9d
+2459	4888	0	F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/build/intermediates/cmake/debug/obj/armeabi/libnative-lib.so	fa06f4eef4e38d5c

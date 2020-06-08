@@ -22,7 +22,7 @@ import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计�
 import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.接口隔离原则ISP.符合.Bird;
 import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.接口隔离原则ISP.符合.Person;
 import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.里氏替换原则LSP.Ostrich;
-import com.ldy.function.Log.Log;
+import com.ldy.log.Log;
 import com.ldy.study.R;
 
 public class TestActivity extends Activity {

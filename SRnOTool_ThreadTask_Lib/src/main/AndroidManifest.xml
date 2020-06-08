@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ldy.ThreadTask.lib"
+    >
+
+  <application
+      android:allowBackup="false"
+      android:label="@string/app_name"
+      tools:replace="android:allowBackup">
+
+  </application>
+
+</manifest>

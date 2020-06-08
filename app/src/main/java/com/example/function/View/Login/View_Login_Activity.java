@@ -7,7 +7,6 @@ import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.ViewGroup;
@@ -18,8 +17,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.ldy.Utils.ReflactUtils;
-import com.ldy.View.CustomWidget.Keyboard.CustomKeyboard;
+import com.ldy.utils.ReflactUtils;
+import com.ldy.view.CustomWidget.Keyboard.CustomKeyboard;
 import com.ldy.study.R;
 
 

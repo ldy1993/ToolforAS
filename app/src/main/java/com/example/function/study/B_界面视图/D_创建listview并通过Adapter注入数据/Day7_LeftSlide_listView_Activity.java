@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.ldy.View.dialog.NetProcessDialog;
+import com.ldy.view.dialog.NetProcessDialog;
 import com.ldy.study.R;
 
 import java.util.ArrayList;

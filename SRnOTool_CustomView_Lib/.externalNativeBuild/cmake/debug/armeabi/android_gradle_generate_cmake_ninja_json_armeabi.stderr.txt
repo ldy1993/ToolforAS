@@ -1,0 +1,85 @@
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  F:\AndroidStudio\NDK\android-ndk-r16b-windows-x86_64\android-ndk-r16b
+Call Stack (most recent call first):
+  C:/JAVA/adt-bundle-windows-x86_64-20140702/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  C:/JAVA/adt-bundle-windows-x86_64-20140702/sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/AndroidStudioProject/ToolforAS/SRnOTool_CustomView_Lib/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+

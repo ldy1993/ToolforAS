@@ -6,17 +6,17 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.ldy.View.CustomWidget.ListView.DirectiveMenu;
-import com.ldy.View.CustomWidget.ListView.MenuListView;
-import com.ldy.View.CustomWidget.ViewGroup.SingleRightViewItem;
-import com.ldy.View.adapter.FrameAdapter;
-import com.ldy.annotation.AutoFindView;
+import com.ldy.annotation.auto.AutoFindView;
+import com.ldy.view.CustomWidget.ListView.DirectiveMenu;
+import com.ldy.view.CustomWidget.ListView.MenuListView;
+import com.ldy.view.CustomWidget.ViewGroup.SingleRightViewItem;
+import com.ldy.view.adapter.FrameAdapter;
 
 import java.util.List;
 
-import SRnO.Tool.aar.R;
-import com.ldy.View.CustomWidget.ViewGroup.LeftDragItem.*;
-import com.ldy.function.Log.Log;
+import com.ldy.custom.view.lib.R;
+import com.ldy.view.CustomWidget.ViewGroup.LeftDragItem.*;
+import com.ldy.log.Log;
 
 /**
  * ================================================

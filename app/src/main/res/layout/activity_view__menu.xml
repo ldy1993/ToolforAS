@@ -16,7 +16,7 @@
         android:paddingRight="15dp"
         android:paddingTop="14.5dp" >
 
-        <com.ldy.View.CustomWidget.TextView.RollingTextView
+        <com.ldy.view.CustomWidget.TextView.RollingTextView
             android:id="@+id/tv_merchant_name"
             android:layout_width="0px"
             android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="187dp">
 
-        <com.ldy.View.CustomWidget.ViewPager.AdContainerViewPager
+        <com.ldy.view.CustomWidget.ViewPager.AdContainerViewPager
             android:id="@+id/adContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

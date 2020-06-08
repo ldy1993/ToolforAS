@@ -3,7 +3,7 @@ package com.example.function.algorithm;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.ldy.function.sign.instantiation.SM.SM2Utils;
+import com.ldy.sign.instantiation.SM.SM2Utils;
 import com.ldy.study.R;
 
 public class SM2_Activity extends Activity {

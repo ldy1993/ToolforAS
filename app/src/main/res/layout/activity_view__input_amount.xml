@@ -5,7 +5,7 @@
     android:background="#E6E6E6"
     android:orientation="vertical" >
 
-    <com.ldy.View.CustomWidget.FrameLayout.InputAmt
+    <com.ldy.view.CustomWidget.FrameLayout.InputAmt
         android:id="@+id/edit_amount"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

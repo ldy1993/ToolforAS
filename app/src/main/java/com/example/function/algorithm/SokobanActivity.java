@@ -10,7 +10,7 @@ import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.ldy.function.Log.Log;
+import com.ldy.log.Log;
 import com.ldy.study.R;
 
 import java.util.ArrayList;

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-        <com.ldy.View.CustomWidget.ViewPager.AdContainerViewPager
+        <com.ldy.view.CustomWidget.ViewPager.AdContainerViewPager
             android:id="@+id/adContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>

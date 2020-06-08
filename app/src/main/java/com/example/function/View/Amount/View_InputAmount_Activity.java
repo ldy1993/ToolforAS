@@ -2,12 +2,9 @@ package com.example.function.View.Amount;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ldy.View.CustomWidget.FrameLayout.InputAmt;
+import com.ldy.view.CustomWidget.FrameLayout.InputAmt;
 import com.ldy.study.R;
 
 public class View_InputAmount_Activity extends Activity {

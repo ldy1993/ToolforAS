@@ -9,7 +9,6 @@ import android.widget.Toast;
 
 import com.KeyTool.KEY;
 import com.ldy.study.R;
-import com.ldy.View.CustomWidget.Keyboard.codeinput.CodeInput;
 
 public class JniTestActivity extends Activity {
     private static final String TAG = "JniTestActivity";

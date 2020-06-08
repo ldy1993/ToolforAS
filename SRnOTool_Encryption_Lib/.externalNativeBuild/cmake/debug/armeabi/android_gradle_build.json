@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/src/main/cpp/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"C:\\JAVA\\adt-bundle-windows-x86_64-20140702\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\AndroidStudioProject\\ToolforAS\\SRnOTool_Encryption_Lib\\.externalNativeBuild\\cmake\\debug\\armeabi --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Debug-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "native-lib",
+			"buildCommand" : "C:\\JAVA\\adt-bundle-windows-x86_64-20140702\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\AndroidStudioProject\\ToolforAS\\SRnOTool_Encryption_Lib\\.externalNativeBuild\\cmake\\debug\\armeabi --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sysroot  -Dnative_lib_EXPORTS -isystem F:\\AndroidStudio\\NDK\\android-ndk-r16b-windows-x86_64\\android-ndk-r16b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem F:\\AndroidStudio\\NDK\\android-ndk-r16b-windows-x86_64\\android-ndk-r16b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\armeabi\\include -isystem F:\\AndroidStudio\\NDK\\android-ndk-r16b-windows-x86_64\\android-ndk-r16b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=22 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/.externalNativeBuild/cmake/debug/armeabi"
+				}
+			],
+			"output" : "F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/build/intermediates/cmake/debug/obj/armeabi/libnative-lib.so",
+			"toolchain" : "756175373"
+		}
+	},
+	"toolchains" : 
+	{
+		"756175373" : 
+		{
+			"cCompilerExecutable" : "F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "F:/AndroidStudio/NDK/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

@@ -38,11 +38,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.ldy.ThreadPool.ThreadPoolManager;
 import com.ldy.study.R;
 import com.example.function.scan.idcard.one.view.ViewfinderView;
 import com.wintone.bankcard.BankCardAPI;
 
-import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 
 import java.io.IOException;
 import java.util.List;
@@ -242,12 +242,7 @@ public class ScanCamera extends Activity implements Callback, PreviewCallback {
         }
         try {
             this.camera.setPreviewDisplay(holder);
-            /**
-             *    1是核心线程数量，后面参数是一个线程工厂，采用了建造者模式创建
-             *    可以通过线程工厂给每个创建出来的线程设置符合业务的名字。
-             */
-            executorService= new ScheduledThreadPoolExecutor(1,
-                    new BasicThreadFactory.Builder().namingPattern("example-schedule-pool-%d").daemon(true).build());
+            executorService=ThreadPoolManager.newScheduledThreadPool(10);
             if (this.timer == null) {
                 this.timer = new TimerTask() {
                     @Override

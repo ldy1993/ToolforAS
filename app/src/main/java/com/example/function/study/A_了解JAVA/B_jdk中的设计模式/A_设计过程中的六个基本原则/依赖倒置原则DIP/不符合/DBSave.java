@@ -1,6 +1,6 @@
 package com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.依赖倒置原则DIP.不符合;
 
-import com.ldy.function.Log.Log;
+import com.ldy.log.Log;
 
 /**
  * ================================================

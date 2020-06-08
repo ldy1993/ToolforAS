@@ -7,9 +7,9 @@ import android.os.Message;
 import android.view.View;
 import android.widget.TextView;
 
+import com.ldy.ThreadPool.ThreadPoolManager;
 import com.ldy.study.R;
 
-import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
@@ -33,9 +33,7 @@ public class Day11_Activity extends Activity {
     {
         exit = false;
 //        ExecutorService executorService= Executors.newCachedThreadPool();
-        ScheduledExecutorService executorService = new ScheduledThreadPoolExecutor(1,
-                new BasicThreadFactory.Builder().namingPattern("example-schedule-pool-%d").daemon(true).build());
-
+        ScheduledExecutorService executorService = ThreadPoolManager.newScheduledThreadPool(10);
         executorService.submit(new Runnable() {
             @Override
             public void run() {
