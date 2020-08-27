@@ -31,8 +31,9 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name="com.example.function.View.compos.ComposSettingActivity"></activity>
-        <activity android:name="com.example.function.View.compos.ComposShowActivity"></activity>
+        <activity android:name="com.example.function.scan.face.faceCheckActivity"></activity>
+        <activity android:name="com.example.function.View.compos.ComposSettingActivity" />
+        <activity android:name="com.example.function.View.compos.ComposShowActivity" />
         <activity android:name="com.example.function.study.A_了解JAVA.TestActivity" />
         <activity android:name="com.example.function.doubleScreenDisplay.AdvertisingActivity" />
         <activity android:name="com.example.function.study.C_业务代码.A_异步任务栈.Day13_Activity" />
@@ -56,8 +57,7 @@
         <activity android:name="com.example.function.study.B_界面视图.E_进度条ProgressBar.Day8_Activity" />
         <activity android:name="com.example.function.study.B_界面视图.F_对话框Dialog.Day9_Activity" />
         <activity android:name="com.example.function.study.B_界面视图.G_popupWindow和contextMenu.Day10_Activity" />
-        <activity android:name="com.example.function.algorithm.SokobanActivity" />
-         <!-- <activity -->
+        <activity android:name="com.example.function.algorithm.SokobanActivity" /> <!-- <activity -->
         <!-- android:name="com.example.main.MainActivity" -->
         <!-- android:icon="@drawable/icon_bq_3" -->
         <!-- android:label="@string/title_activity_main"> -->
