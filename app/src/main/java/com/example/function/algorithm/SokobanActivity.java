@@ -10,16 +10,18 @@ import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
 import com.ldy.log.Log;
 import com.ldy.study.R;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
-
+@MenuActivity(menu= MenuEnum.有趣功能主菜单 ,sonMenu = SonMenuEnum.推箱子)
 public class SokobanActivity extends Activity {
     private short[][] rootMap;
     private int[] manCoordinates;

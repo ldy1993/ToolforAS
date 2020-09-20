@@ -11,6 +11,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.function.comprehensive.FilesSizeUtils;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
 import com.ldy.apache.http.HttpClientTool;
 import com.ldy.log.Log;
 import com.ldy.log.LogcatHelper;
@@ -22,7 +25,7 @@ import com.ldy.study.R;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
-
+@MenuActivity(menu= MenuEnum.学习功能主菜单 ,sonMenu = SonMenuEnum.异步任务下的网络请求)
 public class Day14_Activity extends Activity {
     private NetProcessDialog npd;;
     private TextView tv1;

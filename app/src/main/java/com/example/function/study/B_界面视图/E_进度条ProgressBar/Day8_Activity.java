@@ -7,8 +7,11 @@ import android.os.Message;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
 import com.ldy.study.R;
-
+@MenuActivity(menu= MenuEnum.学习功能主菜单,sonMenu = SonMenuEnum.进度条)
 public class Day8_Activity extends Activity {
     private ProgressBar pb;
     int i = 0;

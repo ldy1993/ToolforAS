@@ -3,12 +3,15 @@ package com.example.function.algorithm;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
 import com.ldy.sign.instantiation.SM4.SM4Utils;
 import com.ldy.study.R;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
-
+@MenuActivity(menu= MenuEnum.实例算法主菜单,sonMenu = SonMenuEnum.sm4对称加密)
 public class SM4_Activity extends Activity {
 
     @Override

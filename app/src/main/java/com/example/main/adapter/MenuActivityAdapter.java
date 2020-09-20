@@ -7,7 +7,10 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuModel;
 import com.ldy.study.R;
+
+import java.util.List;
 
 /**
  * ================================================
@@ -18,38 +21,38 @@ import com.ldy.study.R;
  * 修订历史：
  * ================================================
  */
-public class GroudAdapter extends BaseExpandableListAdapter {
-    private  int[] images;
-    private  String[][] childData;
-    private  String[] groupData;
-    private Context context;
-
-    public GroudAdapter(Context context, String[] groupData, String[][] childData, int[] images)
+public class MenuActivityAdapter extends BaseExpandableListAdapter {
+    private  Context context;
+    private  List<MenuModel> menuModelList;
+    public MenuActivityAdapter(Context context, List<MenuModel> list)
     {
         this.context=context;
-        this.groupData=groupData;
-        this.childData=childData;
-        this.images=images;
+        this.menuModelList=list;
     }
 
     @Override
     public int getGroupCount() {
-        return groupData.length;
+        return menuModelList.size();
     }
 
     @Override
     public int getChildrenCount(int groupPosition) {
-        return childData[groupPosition].length;
+        try {
+            return menuModelList.get(groupPosition).getList().size();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
     }
 
     @Override
     public Object getGroup(int groupPosition) {
-        return groupData[groupPosition];
+        return menuModelList.get(groupPosition);
     }
 
     @Override
     public Object getChild(int groupPosition, int childPosition) {
-        return childData[groupPosition][childPosition];
+        return menuModelList.get(groupPosition).getList().get(childPosition);
     }
 
     @Override
@@ -78,7 +81,7 @@ public class GroudAdapter extends BaseExpandableListAdapter {
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         View view=View.inflate(context, R.layout.listview_expandable_group,null);
         TextView tv= view.findViewById(R.id.textview);
-        tv.setText(groupData[groupPosition]);
+        tv.setText(menuModelList.get(groupPosition).getName());
         return view;
     }
 
@@ -86,9 +89,9 @@ public class GroudAdapter extends BaseExpandableListAdapter {
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
        View view=View.inflate(context, R.layout.listview_expandable_child,null);
       TextView tv= view.findViewById(R.id.textview1);
-        tv.setText(childData[groupPosition][childPosition]);
+        tv.setText(menuModelList.get(groupPosition).getList().get(childPosition).getName());
         ImageView iv= view.findViewById(R.id.imageview);
-        iv.setImageResource(images[childPosition]);
+        iv.setImageResource(menuModelList.get(groupPosition).getList().get(childPosition).getIcon());
         return view;
     }
 

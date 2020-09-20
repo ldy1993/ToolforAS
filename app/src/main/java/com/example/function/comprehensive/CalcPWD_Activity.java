@@ -3,23 +3,14 @@ package com.example.function.comprehensive;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.ldy.sign.service.SignServiceImpl;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
 import com.ldy.study.R;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.security.PublicKey;
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Scanner;
-
+@MenuActivity(menu= MenuEnum.有趣功能主菜单,sonMenu = SonMenuEnum.保险箱计算密码)
 public class CalcPWD_Activity extends Activity {
     private static final String TAG = "CalcPWD_Activity";
     private TextView et_data;

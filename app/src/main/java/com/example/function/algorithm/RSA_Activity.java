@@ -7,6 +7,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
 import com.ldy.sign.service.SignServiceImpl;
 import com.ldy.study.R;
 
@@ -15,7 +18,7 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+@MenuActivity(menu= MenuEnum.实例算法主菜单,sonMenu = SonMenuEnum.RSA算法)
 public class RSA_Activity extends Activity {
     private static final String TAG = "RSA_Activity";
     private TextView et_data;

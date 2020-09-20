@@ -17,12 +17,16 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
 import com.ldy.utils.ReflactUtils;
 import com.ldy.view.CustomWidget.Keyboard.CustomKeyboard;
 import com.ldy.study.R;
 
+import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum.自定义界面主菜单;
+import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum.登录界面;
 
 
+@MenuActivity(menu=自定义界面主菜单,sonMenu =登录界面)
 public class View_Login_Activity extends Activity {
     private Button bt_login;
     private RelativeLayout rl_logo;

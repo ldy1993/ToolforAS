@@ -4,9 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
 import com.ldy.view.CustomWidget.FrameLayout.InputAmt;
 import com.ldy.study.R;
-
+@MenuActivity(menu= MenuEnum.自定义界面主菜单,sonMenu = SonMenuEnum.输入金额界面)
 public class View_InputAmount_Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

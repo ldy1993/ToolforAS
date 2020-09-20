@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
 import com.ldy.ThreadPool.ThreadPoolManager;
 import com.ldy.apache.http.HttpClientTool;
 import com.ldy.view.CustomWidget.TimePicker.TimeUtils;
@@ -22,7 +23,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
 
+import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum.有趣功能主菜单;
+import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum.日志上传;
 
+
+@MenuActivity(menu=有趣功能主菜单,sonMenu = 日志上传)
 public class upLogActivity extends Activity {
     private Handler handler;
     private static Context context;

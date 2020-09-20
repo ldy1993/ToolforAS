@@ -11,10 +11,13 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
 import com.ldy.study.R;
 
 import java.util.ArrayList;
-
+@MenuActivity(menu= MenuEnum.学习功能主菜单,sonMenu = SonMenuEnum.对话框)
 public class Day9_Activity extends Activity {
 
     @Override

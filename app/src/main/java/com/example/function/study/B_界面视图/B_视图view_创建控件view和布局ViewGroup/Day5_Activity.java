@@ -9,8 +9,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
 import com.ldy.study.R;
-
+@MenuActivity(menu= MenuEnum.学习功能主菜单,sonMenu = SonMenuEnum.创建控件)
 public class Day5_Activity extends Activity {
 
     @Override

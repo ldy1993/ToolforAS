@@ -9,12 +9,16 @@ import android.view.View;
 import android.widget.EditText;
         import android.widget.ImageView;
 
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
 import com.ldy.study.R;
 import com.example.function.scan.idcard.one.smartvision_bankCard.ScanCamera;
 
+import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum.图像识别主菜单;
+import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum.银行卡识别;
+
 //import io.card.payment.CardIOActivity;
 //        import io.card.payment.CreditCard;
-
+@MenuActivity(menu=图像识别主菜单,sonMenu =银行卡识别)
 public class IdCardMainActivity extends Activity implements View.OnClickListener{
 
     private EditText et_name;//显示银行卡姓名

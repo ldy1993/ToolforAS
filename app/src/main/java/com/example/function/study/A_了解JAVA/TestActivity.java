@@ -22,19 +22,31 @@ import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计�
 import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.接口隔离原则ISP.符合.Bird;
 import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.接口隔离原则ISP.符合.Person;
 import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.里氏替换原则LSP.Ostrich;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.Compiler;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.FindViewById;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.OnBind;
 import com.ldy.log.Log;
 import com.ldy.study.R;
 
+import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum.学习功能主菜单;
+import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum.了解JAVA界面;
+
+
+@MenuActivity(menu=学习功能主菜单,sonMenu =了解JAVA界面)
 public class TestActivity extends Activity {
-
-
-
+    @OnBind("临时值")
+    private String temp;
+    @OnBind
+    private String defaultValue;
+    @FindViewById(R.id.bt_basic_characteristics)
+    public Button bt_basic_characteristics;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-
-        Button bt_basic_characteristics = findViewById(R.id.bt_basic_characteristics);
+        Compiler.onBindCompiler(this);
+        Compiler.findViewByIdCompiler(this);
         bt_basic_characteristics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,6 +84,7 @@ public class TestActivity extends Activity {
 
     }
 
+
     View.OnClickListener ISPSucListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -86,18 +99,18 @@ public class TestActivity extends Activity {
     View.OnClickListener SRPSucListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            GetParam getParam=new GetParam();
+            GetParam getParam = new GetParam();
             getParam.execute();
-            PostFile postFile=new PostFile();
+            PostFile postFile = new PostFile();
             postFile.execute();
-            PostParam postParam=new PostParam();
+            PostParam postParam = new PostParam();
             postParam.execute();
         }
     };
     View.OnClickListener MethodSRPErrListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            NetworkMethod networkMethod=new NetworkMethod();
+            NetworkMethod networkMethod = new NetworkMethod();
             networkMethod.getParam();
             networkMethod.postFile();
             networkMethod.postParam();
@@ -106,7 +119,7 @@ public class TestActivity extends Activity {
     View.OnClickListener CodeSRPErrListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            NetworkCode networkCode=new NetworkCode();
+            NetworkCode networkCode = new NetworkCode();
             networkCode.execute(NetworkCode.GET_PARAM);
             networkCode.execute(NetworkCode.POST_FILE);
             networkCode.execute(NetworkCode.POST_PARAM);
@@ -115,44 +128,44 @@ public class TestActivity extends Activity {
     View.OnClickListener LSPErr1Listener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Ostrich ostrich=new Ostrich();
+            Ostrich ostrich = new Ostrich();
             ostrich.running();
         }
     };
     View.OnClickListener LSPErr2Listener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Ostrich ostrich=new Ostrich();
+            Ostrich ostrich = new Ostrich();
             ostrich.fly();
         }
     };
     View.OnClickListener DIPConform1Listener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            DbSaveFromPhone dbSaveFromPhone=new DbSaveFromPhone();
-            DbSaveFromWeb dbSaveFromWeb=new DbSaveFromWeb();
-            RegisterUser register=new RegisterUser(dbSaveFromPhone);
+            DbSaveFromPhone dbSaveFromPhone = new DbSaveFromPhone();
+            DbSaveFromWeb dbSaveFromWeb = new DbSaveFromWeb();
+            RegisterUser register = new RegisterUser(dbSaveFromPhone);
             register.setDbSave(dbSaveFromPhone);
-            register.register(dbSaveFromPhone,"张三","123456");
-             register=new RegisterUser(dbSaveFromWeb);
+            register.register(dbSaveFromPhone, "张三", "123456");
+            register = new RegisterUser(dbSaveFromWeb);
             register.setDbSave(dbSaveFromWeb);
-            register.register(dbSaveFromWeb,"李四","654321");
+            register.register(dbSaveFromWeb, "李四", "654321");
         }
     };
     View.OnClickListener DIPINCONFORMITYListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Register register=new Register();
-            DBSave dbSave=new DBSave();
-            register.registerFromWeb(dbSave,"张三","123456");
-            register.registerFromPhone(dbSave,"李四","654321");
+            Register register = new Register();
+            DBSave dbSave = new DBSave();
+            register.registerFromWeb(dbSave, "张三", "123456");
+            register.registerFromPhone(dbSave, "李四", "654321");
         }
     };
     View.OnClickListener btOCPListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Save save=new Save();
-            User user=new User();
+            Save save = new Save();
+            User user = new User();
             user.setName("王五");
             user.setPwd("321654");
             user.setAccount("7373473");

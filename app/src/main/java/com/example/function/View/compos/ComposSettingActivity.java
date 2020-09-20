@@ -7,6 +7,9 @@ import android.widget.AdapterView;
 import android.widget.LinearLayout;
 
 import com.example.function.View.compos.adapter.MenuListViewAdapter;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
 import com.ldy.view.CustomWidget.ListView.DirectiveMenu;
 import com.ldy.view.CustomWidget.ListView.MenuListView;
 import com.ldy.view.set.WrapperList;
@@ -14,7 +17,7 @@ import com.ldy.log.Log;
 import com.ldy.study.R;
 
 import java.util.ArrayList;
-
+@MenuActivity(menu= MenuEnum.自定义界面主菜单,sonMenu = SonMenuEnum.COMPOS设置界面)
 public class ComposSettingActivity extends Activity {
     private  MenuListView menuListView;
     private LinearLayout menu_list_empty_view;
