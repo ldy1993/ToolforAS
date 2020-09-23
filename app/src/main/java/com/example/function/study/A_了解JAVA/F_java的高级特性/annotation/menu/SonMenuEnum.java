@@ -31,7 +31,8 @@ public enum SonMenuEnum {
     日志上传("日志上传", 1, R.drawable.ic_category_0),
     保险箱计算密码("保险箱计算密码", 2, R.drawable.ic_category_0),
     异屏双显("异屏双显", 3, R.drawable.ic_category_0),
-    播放广告("播放广告", 4, R.drawable.ic_category_0);
+    播放广告("播放广告", 4, R.drawable.ic_category_0),
+    MVC框架("MVC框架", 0, R.drawable.ic_category_0);
         private String title;
         private int index;
         private  int icon;
