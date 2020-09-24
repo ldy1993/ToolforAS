@@ -4,6 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.function.study.D_手写框架.MVC框架.view.MVCActivity">
+    tools:context="com.example.function.study.D_常用框架.MVC框架.view.MVCActivity">
 
+    <GridView
+        android:id="@+id/vp_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="0.0dip"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0.0dip" >
+    </GridView>
 </android.support.constraint.ConstraintLayout>

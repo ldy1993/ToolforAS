@@ -1,4 +1,4 @@
-package com.example.function.study.D_手写框架.MVC框架.model;
+package com.example.function.study.D_常用框架.MVC框架.model;
 
 public class ActionResult {
     public final static int SUCCESS=0;
