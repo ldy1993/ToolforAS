@@ -4,7 +4,7 @@
     package="com.ldy.study"
     android:versionCode="10"
     android:versionName="V2.0.0_20190826">
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
+
     <application
         android:name="com.app.BaseApplication"
         android:exported="false"
@@ -12,7 +12,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name="com.example.function.study.D_手写框架.MVC框架.view.MVCActivity"></activity>
+        <activity android:name="com.example.function.study.D_手写框架.面向切面和依赖注入框架.ButterKnifeActivity"></activity>
+        <activity android:name="com.example.function.study.D_手写框架.MVC框架.view.MVCActivity" />
         <activity android:name="com.example.function.View.compos.ComposSettingActivity" />
         <activity android:name="com.example.function.View.compos.ComposShowActivity" />
         <activity android:name="com.example.function.study.A_了解JAVA.TestActivity" />
@@ -79,17 +80,15 @@
             android:icon="@drawable/icon_bq_6"
             android:label="@string/title_jni_test" />
     </application>
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 摄像头设备权限 -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_PROFILE" /> <!-- socket套接字对外权限 -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- 摄像头设备权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- socket套接字对外权限 -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission
