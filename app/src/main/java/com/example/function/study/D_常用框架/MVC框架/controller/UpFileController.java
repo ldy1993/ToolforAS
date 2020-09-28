@@ -1,9 +1,9 @@
-package com.example.function.study.D_手写框架.MVC框架.controller;
+package com.example.function.study.D_常用框架.MVC框架.controller;
 
-import com.example.function.study.D_手写框架.MVC框架.action.AAction;
-import com.example.function.study.D_手写框架.MVC框架.action.ActionCommunication;
-import com.example.function.study.D_手写框架.MVC框架.action.ActionListSdcard;
-import com.example.function.study.D_手写框架.MVC框架.model.ActionResult;
+import com.example.function.study.D_常用框架.MVC框架.action.AAction;
+import com.example.function.study.D_常用框架.MVC框架.action.ActionCommunication;
+import com.example.function.study.D_常用框架.MVC框架.action.ActionListSdcard;
+import com.example.function.study.D_常用框架.MVC框架.model.ActionResult;
 import com.ldy.log.Log;
 
 public class UpFileController extends AController {

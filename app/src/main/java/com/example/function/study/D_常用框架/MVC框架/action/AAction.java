@@ -1,7 +1,7 @@
-package com.example.function.study.D_手写框架.MVC框架.action;
+package com.example.function.study.D_常用框架.MVC框架.action;
 
 
-import com.example.function.study.D_手写框架.MVC框架.model.ActionResult;
+import com.example.function.study.D_常用框架.MVC框架.model.ActionResult;
 
 /**
  * Action 抽象类定义

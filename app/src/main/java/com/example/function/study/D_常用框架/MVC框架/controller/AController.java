@@ -1,10 +1,9 @@
-package com.example.function.study.D_手写框架.MVC框架.controller;
+package com.example.function.study.D_常用框架.MVC框架.controller;
 
 
-import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.最少知识原则LKP.符合.A;
-import com.example.function.study.D_手写框架.MVC框架.action.AAction;
-import com.example.function.study.D_手写框架.MVC框架.model.ActionResult;
-import com.example.function.study.D_手写框架.MVC框架.model.ControllerResult;
+import com.example.function.study.D_常用框架.MVC框架.action.AAction;
+import com.example.function.study.D_常用框架.MVC框架.model.ActionResult;
+import com.example.function.study.D_常用框架.MVC框架.model.ControllerResult;
 import com.ldy.log.Log;
 
 import java.util.HashMap;
