@@ -20,6 +20,7 @@ public enum SonMenuEnum {
     基于线程池的异步任务("基于线程池的异步任务", 9, R.drawable.ic_category_0),
     异步任务下的网络请求("异步任务下的网络请求", 10, R.drawable.ic_category_0),
     静态fragment("静态fragment", 11, R.drawable.ic_category_0),
+    设计模式("设计模式", 12, R.drawable.ic_category_0),
     RSA算法("RSA算法", 0, R.drawable.ic_category_0),
     sm2对称加密("sm2对称加密", 1, R.drawable.ic_category_0),
     sm4对称加密("sm4对称加密", 2, R.drawable.ic_category_0),

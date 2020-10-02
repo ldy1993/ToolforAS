@@ -13,7 +13,8 @@
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
         <activity android:name="com.example.function.study.G_了解框架.面向切面和依赖注入框架.ButterKnifeActivity"></activity>
-        <activity android:name="com.example.function.study.D_手写框架.MVC框架.view.MVCActivity" />
+        <activity android:name="com.example.function.study.E_设计模式.DesignPatternActivity" />
+        <activity android:name="com.example.function.study.G_了解框架.MVC框架.view.MVCActivity" />
         <activity android:name="com.example.function.View.compos.ComposSettingActivity" />
         <activity android:name="com.example.function.View.compos.ComposShowActivity" />
         <activity android:name="com.example.function.study.A_了解JAVA.TestActivity" />
