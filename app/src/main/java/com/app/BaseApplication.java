@@ -2,7 +2,7 @@ package com.app;
 
 import android.app.Application;
 
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivityCompiler;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuActivityCompiler;
 
 public class BaseApplication extends Application {
     @Override

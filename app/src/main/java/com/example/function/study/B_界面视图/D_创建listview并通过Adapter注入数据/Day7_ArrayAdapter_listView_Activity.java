@@ -8,9 +8,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.SonMenuEnum;
 import com.ldy.study.R;
 @MenuActivity(menu= MenuEnum.学习功能主菜单,sonMenu = SonMenuEnum.基础ListView)
 public class Day7_ArrayAdapter_listView_Activity extends Activity {

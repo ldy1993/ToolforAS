@@ -7,7 +7,7 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuModel;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuModel;
 import com.ldy.study.R;
 
 import java.util.List;

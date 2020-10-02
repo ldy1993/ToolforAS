@@ -22,15 +22,15 @@ import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计�
 import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.接口隔离原则ISP.符合.Bird;
 import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.接口隔离原则ISP.符合.Person;
 import com.example.function.study.A_了解JAVA.B_jdk中的设计模式.A_设计过程中的六个基本原则.里氏替换原则LSP.Ostrich;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.Compiler;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.FindViewById;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.OnBind;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.Compiler;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.FindViewById;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.OnBind;
 import com.ldy.log.Log;
 import com.ldy.study.R;
 
-import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum.学习功能主菜单;
-import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum.了解JAVA界面;
+import static com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuEnum.学习功能主菜单;
+import static com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.SonMenuEnum.了解JAVA界面;
 
 
 @MenuActivity(menu=学习功能主菜单,sonMenu =了解JAVA界面)
