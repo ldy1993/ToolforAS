@@ -6,5 +6,4 @@ include ':app',
         ':SRnOTool_OkHttp3_Lib',
         ':SRnOTool_ApacheHttpClient_Lib',
         ':SRnOTool_Utils_Lib',
-        ':SRnOTool_ThreadTask_Lib',
-        ':app1'
+        ':SRnOTool_ThreadTask_Lib'
