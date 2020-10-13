@@ -34,5 +34,5 @@ static def releaseTime() {
 }
 
 dependencies {
-implementation 'com.android.support:support-annotations:28.0.0'
+implementation 'androidx.annotation:annotation:1.0.0'
 }

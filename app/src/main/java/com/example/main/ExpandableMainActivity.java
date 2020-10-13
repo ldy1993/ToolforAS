@@ -12,8 +12,8 @@ import android.view.WindowManager;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivityCompiler;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuModel;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuActivityCompiler;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuModel;
 import com.example.main.adapter.MenuActivityAdapter;
 import com.ldy.study.R;
 

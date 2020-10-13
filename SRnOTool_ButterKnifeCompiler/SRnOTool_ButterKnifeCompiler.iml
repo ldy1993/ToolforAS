@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":SRnOTool_ButterKnifeCompiler" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="ToolforAS" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":SRnOTool_ButterKnifeCompiler" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" />
+        <option name="LAST_KNOWN_AGP_VERSION" />
+      </configuration>
+    </facet>
+    <facet type="java-gradle" name="Java-Gradle">
+      <configuration>
+        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/build" />
+        <option name="BUILDABLE" value="true" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+    <output url="file://$MODULE_DIR$/build/classes/java/main" />
+    <output-test url="file://$MODULE_DIR$/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="SRnOTool_ButterKnifeAnnotation" exported="" />
+    <orderEntry type="library" exported="" name="Gradle: javapoet-1.10.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: auto-service-1.0-rc3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: appcompat-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: auto-common-0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: guava-19.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: fragment-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: vectordrawable-animated-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: legacy-support-core-ui-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: legacy-support-core-utils-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: vectordrawable-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: loader-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: viewpager-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: coordinatorlayout-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: drawerlayout-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: slidingpanelayout-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: customview-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: swiperefreshlayout-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: asynclayoutinflater-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: core-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: versionedparcelable-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: collection-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: cursoradapter-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: lifecycle-runtime-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: documentfile-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: localbroadcastmanager-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: print-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: lifecycle-viewmodel-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: lifecycle-livedata-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: lifecycle-livedata-core-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: lifecycle-common-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: core-runtime-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: core-common-2.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: interpolator-1.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: annotation-1.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: annotation-1.1.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: annotation-1.1.0" level="project" />
+  </component>
+</module>

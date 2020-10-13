@@ -8,11 +8,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.KeyTool.KEY;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuEnum;
 import com.ldy.study.R;
 
-import static com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum.JNI测试;
+import static com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.SonMenuEnum.JNI测试;
 
 @MenuActivity(menu= MenuEnum.NDK功能主菜单,sonMenu =JNI测试)
 public class JniTestActivity extends Activity {

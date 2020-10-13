@@ -1,3 +1,6 @@
+include ':SRnOTool_ButterKnifeAnnotation'
+include ':SRnOTool_ButterKnifeCompiler'
+include ':SRnOTool_Glide_Lib'
 include ':app',
         ':SRnOTool_CustomView_Lib',
         ':SRnOTool_Annotation_Lib',

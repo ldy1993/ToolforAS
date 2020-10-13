@@ -10,9 +10,9 @@ import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.SonMenuEnum;
 import com.ldy.log.Log;
 import com.ldy.study.R;
 

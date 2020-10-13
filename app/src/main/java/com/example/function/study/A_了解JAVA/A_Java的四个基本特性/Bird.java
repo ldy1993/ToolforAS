@@ -9,7 +9,7 @@ package com.example.function.study.A_了解JAVA.A_Java的四个基本特性;
  * 修订历史：
  * ================================================
  */
-public abstract class Bird {
+public abstract class Bird implements IBird{
     /**
      * 鸟类翅膀数量，数据抽象；
      */
@@ -17,5 +17,7 @@ public abstract class Bird {
     /**
      * 鸟类吃方法，行为抽象；
      */
+
+    @Override
     public abstract void eat();
 }

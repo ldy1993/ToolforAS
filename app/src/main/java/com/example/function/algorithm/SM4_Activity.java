@@ -3,9 +3,9 @@ package com.example.function.algorithm;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuActivity;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.MenuEnum;
-import com.example.function.study.A_了解JAVA.F_java的高级特性.annotation.menu.SonMenuEnum;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuActivity;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.MenuEnum;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.menu.SonMenuEnum;
 import com.ldy.sign.instantiation.SM4.SM4Utils;
 import com.ldy.study.R;
 

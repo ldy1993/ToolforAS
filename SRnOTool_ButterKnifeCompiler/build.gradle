@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // 用于生成Java文件的库
+    implementation 'com.squareup:javapoet:1.10.0'
+    implementation 'com.google.auto.service:auto-service:1.0-rc3'
+    implementation project(':SRnOTool_ButterKnifeAnnotation')
+//    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
