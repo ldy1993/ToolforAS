@@ -12,8 +12,8 @@ import java.lang.reflect.Modifier;
 
 public class Compiler {
     public static void onBindCompiler(Object object) {
+        Log.e("ldy","onBindCompiler");
         OnBind value = null;
-
         Class clazz = object.getClass();
         Field[] fields = clazz.getDeclaredFields();
         for (Field field : fields) {

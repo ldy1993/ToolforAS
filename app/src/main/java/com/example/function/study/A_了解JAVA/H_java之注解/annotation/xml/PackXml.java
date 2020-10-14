@@ -10,18 +10,18 @@ package com.example.function.study.A_了解JAVA.H_java之注解.annotation.xml;
  * ================================================
  */
 
-@XStreamAlias("LinearLayout")
-class packXml {
+@XStreamRoot
+class PackXml {
     @XStreamAlias("TextView")
-    private String arg1;
+    private PackBodyXml arg1;
     @XStreamAlias("Button")
     private String arg2;
 
-    public String getArg1() {
+    public PackBodyXml getArg1() {
         return arg1;
     }
 
-    public void setArg1(String arg1) {
+    public void setArg1(PackBodyXml arg1) {
         this.arg1 = arg1;
     }
 
@@ -33,7 +33,5 @@ class packXml {
         this.arg2 = arg2;
     }
 
-    public String toXml() {
-        return null;
-    }
+
 }

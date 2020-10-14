@@ -15,13 +15,15 @@ import android.util.Log;
  * 修订历史：
  * ================================================
  */
-class testUtil {
+public class TestUtil {
     private static final String TAG = "testUtil";
-    public void testPackXml()
+    public static void testPackXml()
     {
-        packXml linearLayout=new packXml();
-        linearLayout.setArg1("hehe");
-        linearLayout.setArg2("haha");
-        Log.d(TAG, "testPackXml: "+linearLayout.toXml());
+        PackXml packXml=new PackXml();
+        PackBodyXml packBodyXml=new PackBodyXml();
+        packBodyXml.setArg("good");
+        packXml.setArg1(packBodyXml);
+        packXml.setArg2("haha");
+        Log.d(TAG, "testPackXml: "+XmlCompiler.toXml("LinearLayout",packXml));
     }
 }

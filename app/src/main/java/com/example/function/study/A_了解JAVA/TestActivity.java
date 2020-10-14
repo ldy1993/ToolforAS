@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import com.example.function.study.A_了解JAVA.A_Java的四个基本特性.Eagles;
 import com.example.function.study.A_了解JAVA.A_Java的四个基本特性.Spadger;
+import com.example.function.study.A_了解JAVA.H_java之注解.annotation.xml.TestUtil;
 import com.example.function.study.E_设计模式.A_设计过程中的六个基本原则.依赖倒置原则DIP.不符合.DBSave;
 import com.example.function.study.E_设计模式.A_设计过程中的六个基本原则.依赖倒置原则DIP.不符合.Register;
 import com.example.function.study.E_设计模式.A_设计过程中的六个基本原则.依赖倒置原则DIP.符合.DbSaveFromPhone;
@@ -47,6 +48,7 @@ public class TestActivity extends Activity {
         setContentView(R.layout.activity_test);
         Compiler.onBindCompiler(this);
         Compiler.findViewByIdCompiler(this);
+        TestUtil.testPackXml();
         bt_basic_characteristics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

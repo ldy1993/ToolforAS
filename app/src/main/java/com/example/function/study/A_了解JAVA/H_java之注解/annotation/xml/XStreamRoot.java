@@ -16,6 +16,5 @@ import java.lang.annotation.RetentionPolicy;
 // 如果是Class的话。就是在存储器中的.class二进制文件中生效。
 //如果是RUNTIME--》运行时，就是对内存中的对象生效。
 @Retention(RetentionPolicy.RUNTIME)
-@interface XStreamAlias {
-    String value() default "gogo";
+@interface XStreamRoot {
 }
