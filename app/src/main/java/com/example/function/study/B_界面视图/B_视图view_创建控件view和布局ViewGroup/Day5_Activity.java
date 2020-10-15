@@ -5,7 +5,11 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewParent;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,19 +23,35 @@ public class Day5_Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        getWindow().getDecorView();
-//        ViewParent viewParent= (ViewParent) getWindow().getDecorView();
-//        FrameLayout frameLayout= (FrameLayout) viewParent;
+       // 1、通过代码方式设置界面视图
+//        ViewGroup viewGroup= (ViewGroup) getWindow().getDecorView();
+//        TextView tv=new TextView(this);
+//        tv.setText("这是一个文本");
+//        tv.setTextSize(100);
+//        viewGroup.addView(tv,300,300);
+
+
+        //2、通过打气的方式获取到xml配置，然后通过1、中的类似方法去设置界面视图
+//        LayoutInflater inflater=getLayoutInflater();
+//        //第一种方法
+//        inflater.inflate(R.layout.activity_day5,(ViewGroup) getWindow().getDecorView());
+//        //第二种方法
+//        View view=  inflater.inflate(R.layout.activity_day5,null);
+//        View view1=findViewById(R.id.ll);
+//        ViewGroup viewGroup= (ViewGroup) getWindow().getDecorView();
+//        viewGroup.addView(view,300,300);
+        //        getWindow().getDecorView();
+//        FrameLayout frameLayout= (FrameLayout) getWindow().getDecorView();
 //        LinearLayout linearLayout=new LinearLayout(this);
 //        Button bt=new Button(this);
 //        bt.setText("这是一个按钮");
-//        LinearLayout.LayoutParams layoutParams =   new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT，ViewGroup.LayoutParams.FILL_PARENT);
+//        LinearLayout.LayoutParams layoutParams =   new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.FILL_PARENT);
 //        linearLayout.addView(bt,300,300);
 //        frameLayout.addView(linearLayout,layoutParams);
 
 
-
-    //第一种xml转换成view
+//3、安卓最常用的设置view的方法，通过2中打气的方法设置
+//    //第一种xml转换成view
         setContentView(R.layout.activity_day5);
         TextView tv=findViewById(R.id.tv);
         Button bt=(Button) findViewById(R.id.bt);
@@ -48,10 +68,6 @@ public class Day5_Activity extends Activity {
 
             }
         });
-        //第二种xml转换成view
-        LayoutInflater layoutInflater = (LayoutInflater)
-                getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//        其实第一种就是第二种的简单写法，只是Android给我们做了一下封装而已。得到了LayoutInflater的实例之后就可以调用它的inflate()方法来加载布局了，如下所示：
-        layoutInflater.inflate(R.layout.activity_day5, null);
+
     }
 }

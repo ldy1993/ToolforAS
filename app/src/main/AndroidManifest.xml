@@ -4,7 +4,7 @@
     package="com.ldy.study"
     android:versionCode="10"
     android:versionName="V2.0.0_20190826">
-
+    <!-- 摄像头设备权限 -->
     <application
         android:name="com.app.BaseApplication"
         android:exported="false"
@@ -12,7 +12,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name="com.example.function.study.A_了解JAVA.G_java之反射.ReflectActivity"></activity>
+
+        <activity android:name="com.example.function.study.A_了解JAVA.G_java之反射.ReflectActivity" />
         <activity android:name="com.example.function.study.G_了解框架.面向切面和依赖注入框架.ButterKnifeActivity" />
         <activity android:name="com.example.function.study.E_设计模式.DesignPatternActivity" />
         <activity android:name="com.example.function.study.A_了解JAVA.E_java之线程和线程池.Day11_Activity" />
@@ -43,14 +44,7 @@
         <activity android:name="com.example.function.study.B_界面视图.F_对话框Dialog.Day9_Activity" />
         <activity android:name="com.example.function.study.B_界面视图.G_popupWindow和contextMenu.Day10_Activity" />
         <activity android:name="com.example.function.algorithm.SokobanActivity" /> <!-- <activity -->
-        <!-- android:name="com.example.main.MainActivity" -->
-        <!-- android:icon="@drawable/icon_bq_3" -->
-        <!-- android:label="@string/title_activity_main"> -->
-        <!-- <intent-filter> -->
-        <!-- <action android:name="android.intent.action.MAIN" /> -->
-        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-        <!-- </intent-filter> -->
-        <!-- </activity> -->
+
         <activity
             android:name="com.example.main.ExpandableMainActivity"
             android:icon="@drawable/icon_bq_3"
@@ -61,6 +55,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<!--        <activity android:name="com.example.main.MainActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
         <activity
             android:name="com.example.function.scan.idcard.one.IdCardMainActivity"
             android:icon="@drawable/icon_bq_2"
@@ -82,10 +83,9 @@
             android:name="com.example.function.jni.jniTest.JniTestActivity"
             android:icon="@drawable/icon_bq_6"
             android:label="@string/title_jni_test" />
-    </application> <!-- 摄像头设备权限 -->
-    <uses-feature android:name="android.hardware.camera" />
-
-    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- socket套接字对外权限 -->
+    </application>
+    <uses-feature android:name="android.hardware.camera" /> <!-- socket套接字对外权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
