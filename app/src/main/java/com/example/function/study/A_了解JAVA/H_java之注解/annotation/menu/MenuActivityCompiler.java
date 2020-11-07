@@ -9,7 +9,10 @@ import com.ldy.study.R;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.IdentityHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentMap;
 
 import dalvik.system.DexFile;
 
@@ -34,7 +37,6 @@ public class MenuActivityCompiler {
                 MenuActivity annotation = aClass.getAnnotation(MenuActivity.class);
                 entryMenu(aClass, annotation);
             }
-
         }
     }
 
