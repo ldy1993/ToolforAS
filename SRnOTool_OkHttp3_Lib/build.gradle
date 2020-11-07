@@ -1,14 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
     resourcePrefix "okhttp3_"
+    compileSdkVersion compile_Sdk_Version.toInteger()
 
     defaultConfig {
-        minSdkVersion 22
-        targetSdkVersion 28
+        minSdkVersion min_Sdk_Version.toInteger()
+        targetSdkVersion target_Sdk_Version.toInteger()
         versionCode 1
         versionName "2.9.9"
     }

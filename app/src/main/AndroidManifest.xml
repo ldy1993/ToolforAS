@@ -28,7 +28,7 @@
         <activity android:name="com.example.function.algorithm.SM4_Activity" />
         <activity android:name="com.example.function.UndeterminedActivity" />
         <activity android:name="com.example.function.algorithm.SM2_Activity" />
-        <activity android:name="com.example.function.comprehensive.upLogActivity" />
+        <activity android:name="com.example.function.comprehensive.日志收集和网络上送.UpLogActivity" />
         <activity android:name="com.example.function.View.Menu.View_Menu_Activity" />
         <activity android:name="com.example.function.View.Login.View_Login_Activity" />
         <activity android:name="com.example.function.View.Amount.View_InputAmount_Activity" />

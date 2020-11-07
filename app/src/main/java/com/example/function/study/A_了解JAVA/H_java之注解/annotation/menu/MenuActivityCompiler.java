@@ -143,7 +143,7 @@ public class MenuActivityCompiler {
                 String className = (String) enumeration.nextElement();
 
                 if (className.contains(packageName)) {//在当前所有可执行的类里面查找包含有该包名的所有类
-                    android.util.Log.e("ldy", "获取到的类名：" + className);
+//                    android.util.Log.e("ldy", "获取到的类名：" + className);
                     try {
                         classList.add(Class.forName(className));
                     } catch (ClassNotFoundException e) {

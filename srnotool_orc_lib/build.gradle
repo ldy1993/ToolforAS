@@ -1,0 +1,71 @@
+if (ocrRunAlone) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+android {
+    compileSdkVersion compile_Sdk_Version.toInteger()
+
+    defaultConfig {
+        if (ocrRunAlone) {
+            applicationId "com.ldy.ocr.lib"
+        }
+        minSdkVersion min_Sdk_Version.toInteger()
+        targetSdkVersion target_Sdk_Version.toInteger()
+        versionCode 1
+        versionName "1.0.0"
+        archivesBaseName = "SRnOTool_OCR_Lib_V" + defaultConfig.versionName + "_${releaseTime()}"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        packagingOptions {
+            exclude 'META-INF/DEPENDENCIES'
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/LICENSE.txt'
+            exclude 'META-INF/NOTICE.txt'
+        }
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+        ndk {
+            //生成的so需要和外部的架构相同
+            abiFilters "armeabi-v7a"
+        }
+
+    }
+    sourceSets {
+        main {
+            if (ocrRunAlone) {
+                manifest.srcFile('src/main/AndroidManifest.xml')
+            } else {
+                manifest.srcFile('src/main/manifest/AndroidManifest.xml')
+            }
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    ndkVersion '21.3.6528147'
+}
+
+static def releaseTime() {
+    return new Date().format("yyyyMMdd")
+}
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+}

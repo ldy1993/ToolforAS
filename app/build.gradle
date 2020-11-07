@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    compileSdkVersion compile_Sdk_Version.toInteger()
+
 
     defaultConfig {
+        minSdkVersion min_Sdk_Version.toInteger()
+        targetSdkVersion target_Sdk_Version.toInteger()
         applicationId "com.ldy.study"
-        minSdkVersion 22
-        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -75,8 +75,9 @@ dependencies {
     implementation project(':SRnOTool_Encryption_Lib')
     implementation project(':SRnOTool_OkHttp3_Lib')
     implementation project(':SRnOTool_Annotation_Lib')
-    implementation project(':SRnOTool_ApacheHttpClient_Lib')
     implementation project(':SRnOTool_ThreadTask_Lib')
+    implementation project(':SRnOTool_Android_SDK_HttpClient_Lib')
+    implementation project(':SRnOTool_ApacheHttpClient_Lib')
 //    implementation 'org.apache.commons:commons-lang3:3.3.2'
 //    implementation 'com.github.bumptech.glide:glide:4.11.0'
 //    annotationProcessor  'com.github.bumptech.glide:compiler:4.11.0'

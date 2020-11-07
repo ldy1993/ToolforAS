@@ -1,3 +1,5 @@
+include ':srnotool_orc_lib'
+include ':SRnOTool_Android_SDK_HttpClient_Lib'
 include ':SRnOTool_ButterKnifeAnnotation'
 include ':SRnOTool_ButterKnifeCompiler'
 include ':SRnOTool_Glide_Lib'
@@ -7,6 +9,6 @@ include ':app',
         ':SRnOTool_Log_Lib',
         ':SRnOTool_Encryption_Lib',
         ':SRnOTool_OkHttp3_Lib',
-        ':SRnOTool_ApacheHttpClient_Lib',
         ':SRnOTool_Utils_Lib',
+        ':SRnOTool_ApacheHttpClient_Lib',
         ':SRnOTool_ThreadTask_Lib'

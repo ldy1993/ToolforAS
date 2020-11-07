@@ -1,12 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion compile_Sdk_Version.toInteger()
 
     defaultConfig {
-        minSdkVersion 22
-        targetSdkVersion 28
+        minSdkVersion min_Sdk_Version.toInteger()
+        targetSdkVersion target_Sdk_Version.toInteger()
         versionCode 20
         versionName "5.0.0"
         archivesBaseName = "SRnOTool_Log_Lib_V" + defaultConfig.versionName + "_${releaseTime()}"
@@ -44,7 +43,8 @@ repositories {
         dirs 'libs'
     }
 }
-dependencies {
+dependencies { 
+
     implementation 'org.bouncycastle:bcprov-jdk15on:1.56'
     implementation 'org.bouncycastle:bcpkix-jdk15on:1.56'
     implementation files('libs/httpclient-4.3.4.jar')

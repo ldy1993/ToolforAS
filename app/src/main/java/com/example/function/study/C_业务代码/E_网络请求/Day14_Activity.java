@@ -21,6 +21,7 @@ import com.ldy.task.SingleAsyncTask;
 import com.ldy.view.CustomWidget.TimePicker.TimeUtils;
 import com.ldy.view.dialog.NetProcessDialog;
 import com.ldy.study.R;
+import com.srno.android.net.http.HttpClient;
 
 import java.io.File;
 import java.util.HashMap;
@@ -37,7 +38,6 @@ public class Day14_Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_day14);
-        HttpClientTool.init(null,null,null);
         Button bt1 = findViewById(R.id.bt1);
         Button bt2 = findViewById(R.id.bt2);
         Button bt5 = findViewById(R.id.bt5);
@@ -179,6 +179,8 @@ public class Day14_Activity extends Activity {
                             urlMap.put("fileSize", fileSize + "kb");
                             npd=new NetProcessDialog(Day14_Activity.this,"上传日志，大小为：" + fileSize + "kb");
                             npd.show();
+                            HttpClientTool.doPOST(URL, headerMap, urlMap, file);
+                            npd.dismiss();
                         }
                     });
                 }
@@ -196,12 +198,16 @@ public class Day14_Activity extends Activity {
 
                 @Override
                 protected void endDeal(String s) {
+                    if(npd!=null)
+                    {
+                        npd.dismiss();
+                    }
+
                     if(file==null||file.length()<0)
                     {
                         tv1.setText( "获取不到日志文件！！！");
                         return ;
                     }
-                    npd.dismiss();
                     LogcatHelper.getInstance(Day14_Activity.this).stop();
 
                     Log.e("ldy","通讯结束处理");
