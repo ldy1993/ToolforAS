@@ -22,10 +22,10 @@ android {
                 cppFlags ""
             }
         }
-        ndk{
-            //生成的so需要和外部的架构相同
-            abiFilters "armeabi-v7a"
-        }
+//        ndk{
+//            //生成的so需要和外部的架构相同
+//            abiFilters "armeabi-v7a"
+//        }
 
     }
     externalNativeBuild {
@@ -39,7 +39,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    ndkVersion '21.3.6528147'
+//    ndkVersion '22.1.7171670'
 }
 
 static def releaseTime() {

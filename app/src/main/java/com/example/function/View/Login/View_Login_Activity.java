@@ -153,29 +153,6 @@ public class View_Login_Activity extends Activity {
                                 return params;
                             }
                         });
-//                        if (Build.VERSION.SDK_INT < 21) {
-//                            ReflactUtils.setFieldValue(
-//                                    Class.class,
-//                                    ReflactUtils
-//                                            .<PropertyValuesHolder[]> getFieldValue(
-//                                                    ValueAnimator.class,
-//                                                    animator, "mValues")[0],
-//                                    "mValueType", ViewGroup.LayoutParams.class);
-//                        } else {
-//                            ReflactUtils
-//                                    .<PropertyValuesHolder[]> getFieldValue(
-//                                            ValueAnimator.class, animator,
-//                                            "mValues")[0]
-//                                    .setConverter(new TypeConverter<LinearLayout.LayoutParams, ViewGroup.LayoutParams>(
-//                                            LinearLayout.LayoutParams.class,
-//                                            ViewGroup.LayoutParams.class) {
-//                                        @Override
-//                                        public ViewGroup.LayoutParams convert(
-//                                                android.widget.LinearLayout.LayoutParams value) {
-//                                            return (ViewGroup.LayoutParams) value;
-//                                        }
-//                                    });
-//                        }
                         animator.start();
                     }
                 });

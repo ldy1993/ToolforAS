@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\Android\tool\ToolforAS\SRnOTool_Encryption_Lib\.cxx\cmake\debug\x86'
+ninja: no work to do.

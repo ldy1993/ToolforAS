@@ -98,4 +98,17 @@ public class 线性数据结构 {
         System.out.print( System.currentTimeMillis()+"链式线性表:"+"清除结束\n");
 
     }
+    /**
+     * 一天销售额
+     * @param amount 商品原价
+     * @param rateAM 早上折率
+     * @param ratePM 下午折率
+     * @return 销售额
+     */
+    public static long saleroomFromOneDay(long amount,double rateAM,double ratePM)
+    {
+        long amountAM = (long) (amount * rateAM);
+        long amountPM = (long) (amountAM * ratePM);
+        return (20+(amount-amountAM)*5)*amountAM+(20+(amount-amountPM)*5)*amountPM;
+    }
 }

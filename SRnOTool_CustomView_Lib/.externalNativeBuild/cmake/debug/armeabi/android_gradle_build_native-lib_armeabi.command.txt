@@ -1,8 +1,0 @@
-Executable : C:\JAVA\adt-bundle-windows-x86_64-20140702\sdk\cmake\3.6.4111459\bin\cmake.exe
-arguments : 
---build
-F:\AndroidStudioProject\ToolforAS\SRnOTool_CustomView_Lib\.externalNativeBuild\cmake\debug\armeabi
---target
-native-lib
-jvmArgs : 
-

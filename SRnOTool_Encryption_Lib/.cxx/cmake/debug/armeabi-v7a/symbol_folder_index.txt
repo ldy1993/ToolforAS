@@ -1,0 +1,1 @@
+D:\Android\tool\ToolforAS\SRnOTool_Encryption_Lib\build\intermediates\cmake\debug\obj\armeabi-v7a

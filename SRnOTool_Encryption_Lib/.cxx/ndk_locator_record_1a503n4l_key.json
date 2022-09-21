@@ -1,0 +1,12 @@
+{
+  "ndkVersionFromDsl": "22.1.7171670",
+  "ndkDirProperty": "E:\\SDK\\ndk-bundle",
+  "sdkFolder": "E:\\SDK",
+  "sideBySideNdkFolderNames": [
+    "21.1.6352462",
+    "21.4.7075529",
+    "22.0.7026061",
+    "22.1.7171670",
+    "24.0.8215888"
+  ]
+}

@@ -27,21 +27,21 @@ import javax.lang.model.util.Elements;
 @SuppressWarnings("NullAway")
 public final class ButterKnifeProcessor extends AbstractProcessor {
     /**
-     * ÎÄ¼şÏà¹ØµÄ¸¨ÖúÀà
+     * æ–‡ä»¶ç›¸å…³çš„è¾…åŠ©ç±»
      */
     private Filer mFiler;
     /**
-     * ÔªËØÏà¹ØµÄ¸¨ÖúÀà
+     * å…ƒç´ ç›¸å…³çš„è¾…åŠ©ç±»
      */
     private Elements mElementUtils;
     /**
-     * ÈÕÖ¾Ïà¹ØµÄ¸¨ÖúÀà
+     * æ—¥å¿—ç›¸å…³çš„è¾…åŠ©ç±»
      */
     private Messager mMessager;
     /**
-     * Ã¿Ò»¸ö×¢½â´¦ÀíÆ÷Àà¶¼±ØĞëÓĞÒ»¸ö¿ÕµÄ¹¹Ôìº¯Êı
-     * È»¶ø£¬ÕâÀïÓĞÒ»¸öÌØÊâµÄinit()·½·¨£¬Ëü»á±»×¢½â´¦Àí¹¤¾ßµ÷ÓÃ
-     * ²¢ÊäÈëProcessingEnviroment²ÎÊı
+     * æ¯ä¸€ä¸ªæ³¨è§£å¤„ç†å™¨ç±»éƒ½å¿…é¡»æœ‰ä¸€ä¸ªç©ºçš„æ„é€ å‡½æ•°
+     * ç„¶è€Œï¼Œè¿™é‡Œæœ‰ä¸€ä¸ªç‰¹æ®Šçš„init()æ–¹æ³•ï¼Œå®ƒä¼šè¢«æ³¨è§£å¤„ç†å·¥å…·è°ƒç”¨
+     * å¹¶è¾“å…¥ProcessingEnviromentå‚æ•°
      * @param processingEnvironment
      */
     @Override
@@ -54,22 +54,22 @@ public final class ButterKnifeProcessor extends AbstractProcessor {
 
     @Override
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
-        //Éú³ÉTestClassÀà
+        //ç”ŸæˆTestClassç±»
         TypeSpec.Builder tb = TypeSpec.classBuilder("ButterKnifeActivity_ViewBinding")
                 .addModifiers(Modifier.PUBLIC);
-        //Éú³Émain·½·¨
+        //ç”Ÿæˆmainæ–¹æ³•
         MethodSpec.Builder mb = MethodSpec.methodBuilder("ButterKnifeActivity_ViewBinding")
                 .addModifiers(Modifier.PUBLIC, Modifier.STATIC)
                 .returns(void.class);
 //                .addParameter(Activity.class, "activity")
 //                .addParameter(View.class, "source")
 
-        //Éú³É´úÂë¿é£¬²¢Ìí¼Óµ½main·½·¨ÖĞ
+        //ç”Ÿæˆä»£ç å—ï¼Œå¹¶æ·»åŠ åˆ°mainæ–¹æ³•ä¸­
         for(TypeElement e : ElementFilter.typesIn(roundEnvironment.getElementsAnnotatedWith(BindView.class))){
             CodeBlock cb = CodeBlock.builder()
                     .addStatement("$T.out.println(\"$L + $L\")", System.class,
                             e.getAnnotation(BindView.class).value(), e.getSimpleName())
-                    .addStatement("$T.out.println(\"Áõ¶«Ñô\")", System.class)
+                    .addStatement("$T.out.println(\"åˆ˜ä¸œé˜³\")", System.class)
                     .addStatement("$T.out.println(args)", System.class)
                     .build();
             mb.addCode(cb);
@@ -78,7 +78,7 @@ public final class ButterKnifeProcessor extends AbstractProcessor {
         tb.addMethod(mb.build());
 
         JavaFile jf = JavaFile.builder("com.srno.annotation", tb.build()).build();
-        //½«´úÂëĞ´ÈëjavaÎÄ¼şÖĞ
+        //å°†ä»£ç å†™å…¥javaæ–‡ä»¶ä¸­
         try {
             jf.writeTo(processingEnv.getFiler());
         } catch (IOException e) {
@@ -88,9 +88,9 @@ public final class ButterKnifeProcessor extends AbstractProcessor {
         return true;
     }
     /**
-     * ÕâÀï±ØĞëÖ¸¶¨£¬Õâ¸ö×¢½â´¦ÀíÆ÷ÊÇ×¢²á¸øÄÄ¸ö×¢½âµÄ¡£
-     * ×¢Òâ£¬ËüµÄ·µ»ØÖµÊÇÒ»¸ö×Ö·û´®µÄ¼¯ºÏ£¬°üº¬±¾´¦ÀíÆ÷ÏëÒª´¦ÀíµÄ×¢½âÀàĞÍµÄºÏ·¨È«³Æ¡£
-     * »»¾ä»°Ëµ£¬ÔÚÕâÀï¶¨ÒåÄãµÄ×¢½â´¦ÀíÆ÷×¢²áµ½ÄÄĞ©×¢½âÉÏ¡£
+     * è¿™é‡Œå¿…é¡»æŒ‡å®šï¼Œè¿™ä¸ªæ³¨è§£å¤„ç†å™¨æ˜¯æ³¨å†Œç»™å“ªä¸ªæ³¨è§£çš„ã€‚
+     * æ³¨æ„ï¼Œå®ƒçš„è¿”å›å€¼æ˜¯ä¸€ä¸ªå­—ç¬¦ä¸²çš„é›†åˆï¼ŒåŒ…å«æœ¬å¤„ç†å™¨æƒ³è¦å¤„ç†çš„æ³¨è§£ç±»å‹çš„åˆæ³•å…¨ç§°ã€‚
+     * æ¢å¥è¯è¯´ï¼Œåœ¨è¿™é‡Œå®šä¹‰ä½ çš„æ³¨è§£å¤„ç†å™¨æ³¨å†Œåˆ°å“ªäº›æ³¨è§£ä¸Šã€‚
      * @return
      */
     @Override

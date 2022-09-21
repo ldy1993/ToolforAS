@@ -1,0 +1,1 @@
+D:\Android\tool\ToolforAS\SRnOTool_Encryption_Lib\src\main\cpp\CMakeLists.txt

@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'kotlin-android'
 android {
     compileSdkVersion compile_Sdk_Version.toInteger()
 
@@ -69,6 +69,7 @@ dependencies {
     })
     compile files('libs/sun.misc.BASE64Decoder.jar')
     compile files('libs/GLComm_V1.01.00_20171222.jar')
+
     testCompile 'junit:junit:4.12'
     implementation project(':SRnOTool_CustomView_Lib')
     implementation project(':SRnOTool_Log_Lib')

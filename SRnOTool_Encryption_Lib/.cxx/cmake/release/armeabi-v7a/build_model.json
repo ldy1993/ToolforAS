@@ -1,0 +1,213 @@
+{
+  "abi": "ARMEABI_V7A",
+  "info": {
+    "abi": "ARMEABI_V7A",
+    "bitness": 32,
+    "deprecated": false,
+    "default": true
+  },
+  "originalCxxBuildFolder": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\release\\armeabi-v7a",
+  "cxxBuildFolder": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\release\\armeabi-v7a",
+  "abiPlatformVersion": 22,
+  "cmake": {
+    "cmakeWrappingBaseFolder": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cxx\\release\\armeabi-v7a",
+    "cmakeArtifactsBaseFolder": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\release\\armeabi-v7a",
+    "effectiveConfiguration": {
+      "name": "traditional-android-studio-cmake-environment",
+      "description": "Composite reified CMakeSettings configuration",
+      "generator": "Ninja",
+      "inheritEnvironments": [
+        "ndk"
+      ],
+      "buildRoot": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\release\\armeabi-v7a",
+      "cmakeToolchain": "E:\\SDK\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+      "cmakeExecutable": "E:\\SDK\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
+      "variables": [
+        {
+          "name": "CMAKE_FIND_ROOT_PATH",
+          "value": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\release\\prefab\\armeabi-v7a\\prefab"
+        },
+        {
+          "name": "CMAKE_BUILD_TYPE",
+          "value": "Release"
+        },
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "E:\\SDK\\ndk-bundle\\build\\cmake\\android.toolchain.cmake"
+        },
+        {
+          "name": "ANDROID_ABI",
+          "value": "armeabi-v7a"
+        },
+        {
+          "name": "ANDROID_NDK",
+          "value": "E:\\SDK\\ndk-bundle"
+        },
+        {
+          "name": "ANDROID_PLATFORM",
+          "value": "android-22"
+        },
+        {
+          "name": "CMAKE_ANDROID_ARCH_ABI",
+          "value": "armeabi-v7a"
+        },
+        {
+          "name": "CMAKE_ANDROID_NDK",
+          "value": "E:\\SDK\\ndk-bundle"
+        },
+        {
+          "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
+          "value": "ON"
+        },
+        {
+          "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
+          "value": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a"
+        },
+        {
+          "name": "CMAKE_RUNTIME_OUTPUT_DIRECTORY",
+          "value": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a"
+        },
+        {
+          "name": "CMAKE_MAKE_PROGRAM",
+          "value": "E:\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
+        },
+        {
+          "name": "CMAKE_SYSTEM_NAME",
+          "value": "Android"
+        },
+        {
+          "name": "CMAKE_SYSTEM_VERSION",
+          "value": "22"
+        }
+      ]
+    },
+    "cmakeServerLogFile": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\release\\armeabi-v7a\\cmake_server_log.txt"
+  },
+  "variant": {
+    "buildSystemArgumentList": [],
+    "cFlagsList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "release",
+    "objFolder": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\build\\intermediates\\cmake\\release\\obj",
+    "soFolder": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\build\\intermediates\\cmake\\release\\lib",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A"
+    ],
+    "buildTargetSet": [],
+    "implicitBuildTargetSet": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "module": {
+      "cxxFolder": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx",
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\build\\intermediates",
+      "gradleModulePathName": ":SRnOTool_Encryption_Lib",
+      "moduleRootFolder": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib",
+      "moduleBuildFile": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\build.gradle",
+      "makeFile": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\src\\main\\cpp\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "ndkFolder": "E:\\SDK\\ndk-bundle",
+      "ndkVersion": "22.1.7171670",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
+      "ndkMetaPlatforms": {
+        "min": 16,
+        "max": 30,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29,
+          "R": 30
+        }
+      },
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "originalCmakeToolchainFile": "E:\\SDK\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+      "cmakeToolchainFile": "E:\\SDK\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+      "cmake": {
+        "isValidCmakeAvailable": true,
+        "cmakeExe": "E:\\SDK\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
+        "minimumCmakeVersion": "3.10.2",
+        "ninjaExe": "E:\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "isPreferCmakeFileApiEnabled": true
+      },
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "E:\\SDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
+          "ARM64_V8A": "E:\\SDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+          "X86": "E:\\SDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
+          "X86_64": "E:\\SDK\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      },
+      "project": {
+        "rootBuildGradleFolder": "D:\\Android\\tool\\ToolforAS",
+        "cxxFolder": "D:\\Android\\tool\\ToolforAS\\.cxx",
+        "compilerSettingsCacheFolder": "D:\\Android\\tool\\ToolforAS\\.cxx",
+        "sdkFolder": "E:\\SDK",
+        "isNativeCompilerSettingsCacheEnabled": false,
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isPrefabEnabled": false,
+        "isV2NativeModelEnabled": true
+      },
+      "nativeBuildOutputLevel": "QUIET"
+    },
+    "prefabDirectory": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\release\\prefab"
+  },
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "prefabFolder": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\release\\prefab\\armeabi-v7a"
+}

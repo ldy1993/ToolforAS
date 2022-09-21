@@ -1,0 +1,6 @@
+# ninja log v5
+0	1181	671093679	CMakeFiles/native-lib.dir/native-lib.cpp.o	d2e75415f2803451
+1182	1330	671093679	D:/Android/tool/ToolforAS/SRnOTool_Encryption_Lib/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	fc2172f9f6c0230c
+1	7	0	clean	a8d5e79b2e4e6957
+1	434	671094188	CMakeFiles/native-lib.dir/native-lib.cpp.o	d2e75415f2803451
+434	610	671094188	D:/Android/tool/ToolforAS/SRnOTool_Encryption_Lib/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	fc2172f9f6c0230c

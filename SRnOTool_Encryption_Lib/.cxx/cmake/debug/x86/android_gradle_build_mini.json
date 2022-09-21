@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "E:\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\debug\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "E:\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\debug\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native-lib-Debug-x86": {
+      "artifactName": "native-lib",
+      "buildCommandComponents": [
+        "E:\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\.cxx\\cmake\\debug\\x86",
+        "native-lib"
+      ],
+      "abi": "x86",
+      "output": "D:\\Android\\tool\\ToolforAS\\SRnOTool_Encryption_Lib\\build\\intermediates\\cmake\\debug\\obj\\x86\\libnative-lib.so",
+      "runtimeFiles": []
+    }
+  }
+}

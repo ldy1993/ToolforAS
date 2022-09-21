@@ -1,0 +1,3 @@
+ninja: Entering directory `D:\Android\tool\ToolforAS\SRnOTool_Encryption_Lib\.cxx\cmake\debug\x86_64'
+[1/2] Building CXX object CMakeFiles/native-lib.dir/native-lib.cpp.o
+[2/2] Linking CXX shared library D:\Android\tool\ToolforAS\SRnOTool_Encryption_Lib\build\intermediates\cmake\debug\obj\x86_64\libnative-lib.so

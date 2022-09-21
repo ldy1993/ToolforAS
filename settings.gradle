@@ -1,8 +1,7 @@
-include ':srnotool_orc_lib'
+
 include ':SRnOTool_Android_SDK_HttpClient_Lib'
 include ':SRnOTool_ButterKnifeAnnotation'
 include ':SRnOTool_ButterKnifeCompiler'
-include ':SRnOTool_Glide_Lib'
 include ':app',
         ':SRnOTool_CustomView_Lib',
         ':SRnOTool_Annotation_Lib',

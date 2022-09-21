@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/src/main/cpp/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"C:\\JAVA\\adt-bundle-windows-x86_64-20140702\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\AndroidStudioProject\\ToolforAS\\SRnOTool_Encryption_Lib\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "C:\\JAVA\\adt-bundle-windows-x86_64-20140702\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\AndroidStudioProject\\ToolforAS\\SRnOTool_Encryption_Lib\\.externalNativeBuild\\cmake\\debug\\armeabi-v7a --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi22 --gcc-toolchain=C:/JAVA/adt-bundle-windows-x86_64-20140702/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/JAVA/adt-bundle-windows-x86_64-20140702/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "F:/AndroidStudioProject/ToolforAS/SRnOTool_Encryption_Lib/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so",
+			"toolchain" : "2866771085"
+		}
+	},
+	"toolchains" : 
+	{
+		"2866771085" : 
+		{
+			"cCompilerExecutable" : "C:/JAVA/adt-bundle-windows-x86_64-20140702/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/JAVA/adt-bundle-windows-x86_64-20140702/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

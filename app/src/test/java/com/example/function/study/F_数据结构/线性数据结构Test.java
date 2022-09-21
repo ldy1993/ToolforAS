@@ -27,4 +27,9 @@ public class 线性数据结构Test extends 线性数据结构 {
     {
         super.linkedList();
     }
+    @Test
+    public void saleroomFromOneDay()
+    {
+        super.saleroomFromOneDay(25,0.8,0.8);
+    }
 }
